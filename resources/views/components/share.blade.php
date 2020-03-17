@@ -17,7 +17,7 @@
                 </a>
             </div>
             <div class="w-1/4 mx-auto text-center">
-                <a href="https://wa.me/?text={{ config('app.url') }}" class="block bg-orange-500 mr-4 p-4 font-bold text-orange-900 hover:bg-green-700 hover:text-white mx-auto">
+                <a href="https://wa.me/?text={{ trans('socials.whatsapp.message') }}" class="block bg-orange-500 mr-4 p-4 font-bold text-orange-900 hover:bg-green-700 hover:text-white mx-auto">
                     WhatsApp
                 </a>
             </div>
