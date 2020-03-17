@@ -19,6 +19,7 @@
         "sass-loader": "^8.0.0"
     },
     "dependencies": {
+        "feather-icons": "^4.26.0",
         "tailwindcss": "^1.2.0"
     }
 }

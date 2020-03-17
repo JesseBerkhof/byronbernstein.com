@@ -13,12 +13,12 @@
             <div class="flex mt-24">
                 <div class="w-2/4 text-center">
                     <h2 class="text-2xl text-orange-900">
-                        Cough? <span class="font-bold">DAB!</span>
+                        <i data-feather="check" class="text-green-700 inline-block"></i> Cough? <span class="font-bold">DAB!</span>
                     </h2>
                 </div>
                 <div class="w-2/4 text-center">
                     <h2 class="text-2xl text-orange-900">
-                        Sneeze? <span class="font-bold">DAB!</span>
+                        <i data-feather="check" class="text-green-700 inline-block"></i> Sneeze? <span class="font-bold">DAB!</span>
                     </h2>
                 </div>
             </div>
@@ -101,21 +101,21 @@
                 </div>
             </div>
         </div>
-        <div class="flex my-24">
-            <div class="w-full">
-                <h1 class="text-6xl text-orange-900 text-center mb-8">
-                    FAQ (coming soon)
-                </h1>
-                <div class="w-1/3 mx-auto">
-                    <ul class="list-inside sm:list-outside md:list-inside lg:list-outside xl:list-inside text-yellow-900 text-lg">
+{{--        <div class="flex my-24">--}}
+{{--            <div class="w-full">--}}
+{{--                <h1 class="text-6xl text-orange-900 text-center mb-8">--}}
+{{--                    FAQ (coming soon)--}}
+{{--                </h1>--}}
+{{--                <div class="w-1/3 mx-auto">--}}
+{{--                    <ul class="list-inside sm:list-outside md:list-inside lg:list-outside xl:list-inside text-yellow-900 text-lg">--}}
 {{--                        <li class="font-bold">Why is it so important?</li>--}}
 {{--                        <li class="mb-4">Er zijn veel klachten over de bezorgingen van DHL. Pakketjes die te laat of helemaal niet aankomen, bezorgers die aggressief zijn, noem het maar op. Klagen bij DHL zelf heeft niet veel zin, maar als we de webshops zelf kunnen laten weten hoe vervelend online bestellen is door de bezorgdienst die de webshop heeft gekozen. Wellicht dat zij overwegen om zich aan te sluiten bij een andere bezorgdienst.</li>--}}
 {{--                        <li class="font-bold">De webshop waar ik heb besteld staat er niet bij, wat nu?</li>--}}
 {{--                        <li class="mb-4">Je kunt een webshop die DHL als bezorg optie heeft <a href="{{ route('webshop.create') }}" class="font-bold hover:text-yellow-800">hier</a> gemakkelijk toevoegen</li>--}}
 {{--                        <li class="font-bold">Waarom moet ik zoveel gegevens opgeven?</li>--}}
 {{--                        <li class="mb-4">De gegevens gebruiken we alleen voor onze statistieken. Om aan te kunnen tonen hoeveel klachten er zijn, en waar deze vandaan komen. De gegevens worden niet vermeld in de e-mail die naar de webshop gaat.</li>--}}
-                    </ul>
-                </div>
-            </div>
-        </div>
+{{--                    </ul>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
 @endsection
