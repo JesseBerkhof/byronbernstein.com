@@ -14,7 +14,7 @@ return [
     ],
     'thanks' => [
         'title' => 'Bedankt.',
-        'subtitle' => 'Alle hard werkende mensen in vitale sectoren die ons veilig houden en het nieuwe corona virus bestrijden.',
+        'subtitle' => 'Aan alle hard werkende mensen in vitale sectoren die ons veilig houden en het nieuwe corona virus bestrijden.',
         'from' => 'vanuit',
         'thank_you' => 'bedankt jullie',
         'thank_you_2' => 'waardeert jullie',

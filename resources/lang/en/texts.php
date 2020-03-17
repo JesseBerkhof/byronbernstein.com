@@ -14,7 +14,7 @@ return [
     ],
     'thanks' => [
         'title' => 'Thank you.',
-        'subtitle' => 'All the hard working people keeping us safe and fighting this new corona virus.',
+        'subtitle' => 'To all the hard working people keeping us safe and fighting this new corona virus.',
         'from' => 'from',
         'thank_you' => 'thank you',
         'thank_you2' => '',
