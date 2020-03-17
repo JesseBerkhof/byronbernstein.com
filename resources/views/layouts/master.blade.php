@@ -26,17 +26,17 @@
     </head>
     <body class="bg-yellow-500 @if(config('app.env') === 'local') lg:bg-red-500 sm:bg-blue-500 lg:bg-pink-500 xl:bg-green-500 @endif">
 
-    <div class="container mx-auto">
-        <div class="flex mt-8">
-            <div class="sm:w-full md:w-full lg:w-full xl:w-full text-center">
-                @include('components.navigation')
+        <div class="container mx-auto">
+            <div class="flex mt-4 sm:mt-8 md:mt-8 lg:mt-8 xl:mt-8">
+                <div class="w-full sm:w-full md:w-full lg:w-full xl:w-full text-center">
+                    @include('components.navigation')
+                </div>
             </div>
         </div>
-    </div>
 
         <div class="flex mt-24">
-            <div class="sm:w-full md:w-full xl:w-full text-center">
-                <img src="{{ asset('images/dab.png') }}" class="w-48 mx-auto">
+            <div class="sm:w-full md:w-full lg:w-full xl:w-full text-center">
+                <img src="{{ asset('images/dab.png') }}" class="w-32 sm:w-48 md:w-48 lg:w-48 xl:w-48 mx-auto">
             </div>
         </div>
         @yield('content')
