@@ -3,6 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1" name="viewport">
+        <meta property="og:title" content="{{ config('app.name') }}"/>
+        <meta property="og:type" content="charity"/>
+        <meta property="og:url" content="{{ config('app.url') }}"/>
+{{--        <meta property="og:image" content="http://ia.media-imdb.com/rock.jpg"/>--}}
+        <meta property="og:site_name" content="{{ config('app.name') }}"/>
+        <meta property="og:description"
+              content="{{ trans('socials.facebook.message') }}"/>
 
         <title>
             {{ config('app.name') }}
