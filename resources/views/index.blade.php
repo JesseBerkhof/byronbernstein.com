@@ -11,12 +11,12 @@
                 </div>
             </div>
             <div class="flex mt-24">
-                <div class="w-1/6 mx-auto">
+                <div class="w-1/3 text-right mx-auto">
                     <h2 class="text-2xl text-orange-900">
                         <i data-feather="check" class="text-green-700 inline-block"></i> Cough? <span class="font-bold">DAB!</span>
                     </h2>
                 </div>
-                <div class="w-1/6 mx-auto">
+                <div class="w-1/3 text-left mx-auto">
                     <h2 class="text-2xl text-orange-900">
                         <i data-feather="check" class="text-green-700 inline-block"></i> Sneeze? <span class="font-bold">DAB!</span>
                     </h2>
