@@ -35,7 +35,7 @@
         </div>
 
         <div class="flex mt-24">
-            <div class="sm:w-full md:w-full lg:w-full xl:w-full text-center">
+            <div class="w-full sm:w-full md:w-full lg:w-full xl:w-full text-center">
                 <img src="{{ asset('images/dab.png') }}" class="w-32 sm:w-48 md:w-48 lg:w-48 xl:w-48 mx-auto">
             </div>
         </div>
