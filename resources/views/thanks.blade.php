@@ -11,7 +11,7 @@
                 <h2 class="text-2xl text-orange-900 text-center mb-8">
                     @lang('texts.thanks.subtitle')
                 </h2>
-                <div class="w-2/3 mx-auto">
+                <div class="w-full sm:w-2/3 md:w-2/3 lg:w-2/3 xl:w-2/3 mx-auto">
                     <div class="flex mt-6">
                         <div class="w-2/3 mx-auto bg-red-100 p-8 shadow-md">
                             @if($errors->isNotEmpty())
@@ -27,28 +27,28 @@
                             @endif
                             <form class="w-full" action="{{ route('thanks.store') }}" method="POST">
                                 @csrf
-                                <div class="flex flex-wrap -mx-3 mb-6">
-                                    <div class="w-full md:w-1/2 px-3">
+                                <div class="flex flex-wrap mb-6">
+                                    <div class="w-full sm::w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 px-3 mb-6">
                                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="first_name">
                                             @lang('fields.first_name')
                                         </label>
                                         <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="first_name" placeholder="Your firstname" type="text">
                                     </div>
-                                    <div class="w-full md:w-1/2 px-3">
+                                    <div class="w-full sm::w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 px-3 mb-6">
                                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="last_name">
                                             @lang('fields.last_name') (@lang('fields.optional'))
                                         </label>
                                         <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="last_name" placeholder="Your lastname" type="text">
                                     </div>
                                 </div>
-                                <div class="flex flex-wrap -mx-3 mb-4">
-                                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                                <div class="flex flex-wrap mb-4">
+                                    <div class="w-full sm::w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 px-3 mb-6 md:mb-0">
                                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="city">
                                             @lang('fields.city') (@lang('fields.optional'))
                                         </label>
                                         <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="city" placeholder="Your city" type="text">
                                     </div>
-                                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                                    <div class="w-full sm::w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 px-3 mb-6 md:mb-0">
                                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="country">
                                             @lang('fields.country')
                                         </label>
@@ -82,9 +82,9 @@
         </div>
 
         @foreach($appreciations->chunk(3) as $chunk)
-        <div class="flex mt-6">
+        <div class="flex mt-6 mb-8">
             @foreach($chunk as $appreciation)
-                <div class="w-1/3 mx-2 bg-red-100 p-4 shadow-md text-gray-900">
+                <div class="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 xl:w-1/3 mx-2 bg-red-100 p-4 shadow-md text-gray-900">
                     {{ $appreciation->name }} @lang('texts.thanks.from') <span class="font-bold text-red-700">@lang('texts.thanks.thank_you')</span> from <span class="font-bold">{{ $appreciation->location }}</span>
                 </div>
             @endforeach
