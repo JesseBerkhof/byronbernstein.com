@@ -6,11 +6,11 @@ return [
         'subtitle' => 'Fighting corona one dab at a time.'
     ],
     'home' => [
-        'cough' => 'Moet je hoesten? DAB!',
-        'sneeze' => 'Moet je niezen? DAB!',
+        'cough' => 'Moet je hoesten? <span class="font-bold">DAB!</span>',
+        'sneeze' => 'Moet je niezen? <span class="font-bold">DAB!</span>',
         'cta_title' => 'Verspreid bewustzijn',
         'cta_description' => 'Stop het virus door te dabben wanneer je moet hoesten of niezen.',
-        'cta_ending' => 'Samen kunnen we de verspreiding tegen gaan. Gebruik #CoronaDab op sociaal media.'
+        'cta_ending' => 'Samen kunnen we de verspreiding tegen gaan. Gebruik <span class="font-bold">#CoronaDab</span> op sociaal media.'
     ],
     'thanks' => [
         'title' => 'We bedanken..',

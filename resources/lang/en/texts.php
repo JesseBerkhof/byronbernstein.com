@@ -6,11 +6,11 @@ return [
         'subtitle' => 'Fighting Corona one dab at a time.'
     ],
     'home' => [
-        'cough' => 'Cough? DAB!',
-        'sneeze' => 'Sneeze? DAB!',
+        'cough' => 'Cough? <span class="font-bold">DAB</span>!',
+        'sneeze' => 'Sneeze? <span class="font-bold">DAB</span>!',
         'cta_title' => 'Spread awareness',
         'cta_description' => 'Stop the virus from spreading by dabbing your cough or sneeze.',
-        'cta_ending' => 'Together we can stop the spread. Use #CoronaDab on socials.'
+        'cta_ending' => 'Together we can stop the spread. Use <span class="font-bold">#CoronaDab</span> on socials.'
     ],
     'thanks' => [
         'title' => 'Thanks to..',
