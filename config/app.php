@@ -4,6 +4,7 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
     'analytics' => env('GOOGLE_ANALYTICS', null),
+    'country' => env('APP_COUNTRY', 'Netherlands'),
 
     /*
     |--------------------------------------------------------------------------
