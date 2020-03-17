@@ -10,7 +10,7 @@ return [
         'sneeze' => 'Moet je niezen? <span class="font-bold">DAB!</span>',
         'cta_title' => 'Verspreid bewustzijn',
         'cta_description' => 'Stop het virus door te dabben wanneer je moet hoesten of niezen.',
-        'cta_ending' => 'Samen kunnen we de verspreiding tegen gaan. Gebruik <span class="font-bold">#CoronaDab</span> op sociaal media.'
+        'cta_ending' => 'Wil je jouw foto hier op onze site terwijl je een dab doet? Gebruik <span class="font-bold">#CoronaDab</span> op sociaal media.'
     ],
     'thanks' => [
         'title' => 'Bedankt.',
