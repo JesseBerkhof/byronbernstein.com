@@ -4,7 +4,7 @@
         <meta charset="utf-8">
             <meta content="width=device-width, initial-scale=1" name="viewport">
                 <title>
-                    Weg met DHL
+                    {{ config('app.name') }}
                 </title>
                 <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet"></link>
                 <link href="{{ mix('css/app.css') }}" rel="stylesheet"></link>
