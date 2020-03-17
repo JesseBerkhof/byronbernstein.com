@@ -7,8 +7,8 @@
         <title>
             {{ config('app.name') }}
         </title>
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet"></link>
-        <link href="{{ mix('css/app.css') }}" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link href="{{ mix('css/app.css') }}" rel="stylesheet">
         <script src="https://unpkg.com/feather-icons"></script>
         <script defer="" src="{{ mix('js/app.js') }}"></script>
 
