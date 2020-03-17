@@ -29,27 +29,27 @@
                                 @csrf
                                 <div class="flex flex-wrap -mx-3 mb-6">
                                     <div class="w-full md:w-1/2 px-3">
-                                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="first_name">
                                             Firstname
                                         </label>
-                                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="first_name" placeholder="Jane" type="text">
+                                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="first_name" placeholder="Your firstname" type="text">
                                     </div>
                                     <div class="w-full md:w-1/2 px-3">
-                                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="last_name">
                                             Lastname (optional)
                                         </label>
-                                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="last_name" placeholder="Doe" type="text">
+                                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="last_name" placeholder="Your lastname" type="text">
                                     </div>
                                 </div>
                                 <div class="flex flex-wrap -mx-3 mb-4">
                                     <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
-                                            City
+                                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="city">
+                                            City (optional)
                                         </label>
-                                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="city" placeholder="Schiedam" type="text">
+                                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="city" placeholder="Your city" type="text">
                                     </div>
                                     <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+                                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="country">
                                             Country
                                         </label>
                                         <div class="relative">
