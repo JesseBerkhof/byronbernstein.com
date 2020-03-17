@@ -6,10 +6,10 @@
         <div class="flex my-24">
             <div class="w-full">
                 <h1 class="text-6xl text-orange-900 text-center">
-                    Thanks to..
+                    @lang('texts.thanks.title')
                 </h1>
                 <h2 class="text-2xl text-orange-900 text-center mb-8">
-                    All the hard working people keeping us safe and fighting this new corona virus.
+                    @lang('texts.thanks.subtitle')
                 </h2>
                 <div class="w-2/3 mx-auto">
                     <div class="flex mt-6">
