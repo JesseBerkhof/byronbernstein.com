@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateWebshopsTable extends Migration
+class CreateAppreciationsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class CreateWebshopsTable extends Migration
      */
     public function up()
     {
-        Schema::create('webshops', function (Blueprint $table) {
+        Schema::create('appreciations', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('email')->nullable();
-            $table->boolean('active')->default(false);
+            $table->string('first_name');
+            $table->string('last_name')->nullable();
+            $table->string('city')->nullable();
+            $table->string('country');
             $table->timestamps();
         });
     }
@@ -29,6 +30,6 @@ class CreateWebshopsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('webshops');
+        Schema::dropIfExists('appreciations');
     }
 }
