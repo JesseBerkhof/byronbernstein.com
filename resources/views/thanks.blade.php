@@ -32,13 +32,13 @@
                                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="first_name">
                                             @lang('fields.first_name')
                                         </label>
-                                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="first_name" placeholder="Your firstname" type="text">
+                                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="first_name" placeholder="@lang('fields.placeholders.firstname')" type="text">
                                     </div>
                                     <div class="w-full sm::w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 px-3 mb-6">
                                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="last_name">
                                             @lang('fields.last_name') (@lang('fields.optional'))
                                         </label>
-                                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="last_name" placeholder="Your lastname" type="text">
+                                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="last_name" placeholder="@lang('fields.placeholders.last_name')" type="text">
                                     </div>
                                 </div>
                                 <div class="flex flex-wrap mb-4">
@@ -46,7 +46,7 @@
                                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="city">
                                             @lang('fields.city') (@lang('fields.optional'))
                                         </label>
-                                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="city" placeholder="Your city" type="text">
+                                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="city" placeholder="@lang('fields.placeholders.city')" type="text">
                                     </div>
                                     <div class="w-full sm::w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 px-3 mb-6 md:mb-0">
                                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="country">

@@ -5,5 +5,10 @@ return [
     'last_name' => 'Last name',
     'city' => 'City',
     'country' => 'Country',
-    'optional' => 'Optional'
+    'optional' => 'Optional',
+    'placeholders' => [
+        'first_name' => 'Your first name',
+        'last_name' => 'Your last name',
+        'city' => 'Your city',
+    ],
 ];
