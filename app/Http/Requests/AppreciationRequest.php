@@ -24,9 +24,7 @@ class AppreciationRequest extends FormRequest
     public function rules()
     {
         return [
-            'first_name' => 'string|required|max:30',
-            'last_name' => 'string|max:30',
-            'city' => 'string|max:100',
+            'first_name' => 'string|required',
         ];
     }
 }
