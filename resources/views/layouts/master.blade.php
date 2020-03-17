@@ -24,7 +24,7 @@
             gtag('config', '{{ config('app.analytics') }}');
         </script>
     </head>
-    <body class="bg-yellow-500 lg:bg-red-500 sm:bg-blue-500 lg:bg-pink-500 xl:bg-green-500">
+    <body class="bg-yellow-500 @if(config('app.env') === 'local') lg:bg-red-500 sm:bg-blue-500 lg:bg-pink-500 xl:bg-green-500 @endif">
 
     <div class="container mx-auto">
         <div class="flex mt-8">
