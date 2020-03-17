@@ -17,7 +17,8 @@ return [
         'subtitle' => 'To all the hard working people keeping us safe and fighting this new corona virus.',
         'from' => 'from',
         'thank_you' => 'thank you',
-        'thank_you2' => '',
+        'thank_you_2' => 'appreciates you',
+        'thank_you_3' => 'is happy with you',
     ],
     'faq' => [
         'title' => 'FAQ',
