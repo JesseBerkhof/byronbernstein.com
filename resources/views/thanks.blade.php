@@ -30,13 +30,13 @@
                                 <div class="flex flex-wrap -mx-3 mb-6">
                                     <div class="w-full md:w-1/2 px-3">
                                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="first_name">
-                                            Firstname
+                                            @lang('fields.first_name')
                                         </label>
                                         <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="first_name" placeholder="Your firstname" type="text">
                                     </div>
                                     <div class="w-full md:w-1/2 px-3">
                                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="last_name">
-                                            Lastname (optional)
+                                            @lang('fields.last_name') (@lang('fields.optional'))
                                         </label>
                                         <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="last_name" placeholder="Your lastname" type="text">
                                     </div>
@@ -44,13 +44,13 @@
                                 <div class="flex flex-wrap -mx-3 mb-4">
                                     <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="city">
-                                            City (optional)
+                                            @lang('fields.city') (@lang('fields.optional'))
                                         </label>
                                         <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="city" placeholder="Your city" type="text">
                                     </div>
                                     <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="country">
-                                            Country
+                                            @lang('fields.country')
                                         </label>
                                         <div class="relative">
                                             <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="country">
@@ -71,7 +71,7 @@
                                 </div>
                                 <div class="flex flex-wrap mt-12 mb-2">
                                     <button class="block w-full bg-gray-500 p-4 font-bold text-gray-900 hover:bg-red-600 hover:text-white" type="submit">
-                                        Send them your love & support
+                                        @lang('buttons.thanks.submit')
                                     </button>
                                 </div>
                             </form>
@@ -85,7 +85,7 @@
         <div class="flex mt-6">
             @foreach($chunk as $appreciation)
                 <div class="w-1/3 mx-2 bg-red-100 p-4 shadow-md text-gray-900">
-                    {{ $appreciation->name }} says <span class="font-bold text-red-700">thank you</span> from <span class="font-bold">{{ $appreciation->location }}</span>
+                    {{ $appreciation->name }} @lang('texts.thanks.from') <span class="font-bold text-red-700">@lang('texts.thanks.thank_you')</span> from <span class="font-bold">{{ $appreciation->location }}</span>
                 </div>
             @endforeach
         </div>
