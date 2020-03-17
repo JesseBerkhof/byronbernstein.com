@@ -24,18 +24,18 @@
             gtag('config', '{{ config('app.analytics') }}');
         </script>
     </head>
-    <body class="bg-yellow-500">
+    <body class="bg-yellow-500 lg:bg-red-500 sm:bg-blue-500 lg:bg-pink-500 xl:bg-green-500">
 
     <div class="container mx-auto">
         <div class="flex mt-8">
-            <div class="w-full text-center">
+            <div class="sm:w-full md:w-full lg:w-full xl:w-full text-center">
                 @include('components.navigation')
             </div>
         </div>
     </div>
 
         <div class="flex mt-24">
-            <div class="w-full text-center">
+            <div class="sm:w-full md:w-full xl:w-full text-center">
                 <img src="{{ asset('images/dab.png') }}" class="w-48 mx-auto">
             </div>
         </div>
