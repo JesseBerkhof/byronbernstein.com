@@ -10,6 +10,9 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
         <script src="https://unpkg.com/feather-icons"></script>
+
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="{{ asset('js/share.js') }}"></script>
         <script defer="" src="{{ mix('js/app.js') }}"></script>
 
         <script async src="https://www.googletagmanager.com/gtag/js?id={{ config('app.analytics') }}"></script>

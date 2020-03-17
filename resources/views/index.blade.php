@@ -22,13 +22,7 @@
                     </h2>
                 </div>
             </div>
-{{--            <div class="flex mt-24">--}}
-{{--                <div class="w-2/6 mx-auto text-center">--}}
-{{--                    <submit href="#" class="block bg-gray-600 p-4 font-bold text-gray-900 hover:bg-gray-700 mx-auto" disabled>--}}
-{{--                        Tell your friends! (We're still working on this feature.)--}}
-{{--                    </submit>--}}
-{{--                </div>--}}
-{{--            </div>--}}
+            @include('components.share')
             <div class="flex mt-24">
                 <div class="w-full text-center">
                     <h1 class="text-6xl text-orange-900">
