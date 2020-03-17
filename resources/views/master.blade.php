@@ -11,6 +11,15 @@
         <link href="{{ mix('css/app.css') }}" rel="stylesheet"></link>
         <script src="https://unpkg.com/feather-icons"></script>
         <script defer="" src="{{ mix('js/app.js') }}"></script>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145004761-4"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-145004761-4');
+        </script>
     </head>
     <body class="bg-yellow-500">
         @yield('content')
