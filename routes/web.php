@@ -1,10 +1,7 @@
 <?php
 
 Route::get('/', function () {
-    return view('index')->with([
-    	'provinces' => App\Province::all(), 
-    	'webshops' => App\Webshop::all(),
-    ]);
+    return view('index');
 })->name('home');
 
 Route::get('/voorbeeld-email', static function () {
