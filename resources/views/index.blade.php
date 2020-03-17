@@ -22,13 +22,13 @@
                     </h2>
                 </div>
             </div>
-            <div class="flex mt-24">
-                <div class="w-1/6 mx-auto text-center">
-                    <a href="{{ route('preview') }}" class="block bg-yellow-600 p-4 font-bold text-yellow-900 hover:bg-yellow-700 mx-auto">
-                        Tell your friends!
-                    </a>
-                </div>
-            </div>
+{{--            <div class="flex mt-24">--}}
+{{--                <div class="w-2/6 mx-auto text-center">--}}
+{{--                    <submit href="#" class="block bg-gray-600 p-4 font-bold text-gray-900 hover:bg-gray-700 mx-auto" disabled>--}}
+{{--                        Tell your friends! (We're still working on this feature.)--}}
+{{--                    </submit>--}}
+{{--                </div>--}}
+{{--            </div>--}}
 
             <div class="flex mt-24">
                 <div class="w-full text-center">
@@ -52,7 +52,7 @@
                         </div>
                     </div>
                     @endif
-                    <form class="w-full" action="{{ route('complaint') }}" method="POST">
+                    <form class="w-full" action="#" method="POST">
                         @csrf
                         <div class="flex flex-wrap -mx-3 mb-6">
                             <div class="w-full md:w-1/2 px-3">
