@@ -13,10 +13,12 @@ return [
         'cta_ending' => 'Samen kunnen we de verspreiding tegen gaan. Gebruik <span class="font-bold">#CoronaDab</span> op sociaal media.'
     ],
     'thanks' => [
-        'title' => 'We bedanken..',
+        'title' => 'Bedankt.',
         'subtitle' => 'Alle hard werkende mensen in vitale sectoren die ons veilig houden en het nieuwe corona virus bestrijden.',
         'from' => 'vanuit',
-        'thank_you' => 'bedankt jullie'
+        'thank_you' => 'bedankt jullie',
+        'thank_you_2' => 'waardeert jullie',
+        'thank_you_3' => 'is blij met jullie',
     ],
     'faq' => [
         'title' => 'Vragen & Antwoorden',

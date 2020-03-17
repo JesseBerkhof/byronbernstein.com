@@ -13,10 +13,11 @@ return [
         'cta_ending' => 'Together we can stop the spread. Use <span class="font-bold">#CoronaDab</span> on socials.'
     ],
     'thanks' => [
-        'title' => 'Thanks to..',
+        'title' => 'Thank you.',
         'subtitle' => 'All the hard working people keeping us safe and fighting this new corona virus.',
         'from' => 'from',
-        'thank_you' => 'thank you'
+        'thank_you' => 'thank you',
+        'thank_you2' => '',
     ],
     'faq' => [
         'title' => 'FAQ',
