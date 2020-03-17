@@ -28,10 +28,10 @@ return [
         'title' => 'Hygiene',
         'most_important_measures' => 'The most important measures you can take to prevent spread of the virus',
         '1' => 'Wash your hands regularly.',
-        '2' => 'Use paper towels when coughing or sneezing.',
+        '2' => 'Use paper towels.',
         '3' => 'Do not shake hands.',
         '4' => 'Stay at home when you\'re feeling sick.',
-        '5' => 'Catch that sneeze or cough in a DAB.'
+        '5' => '#CoronaDab'
     ],
 
 ];

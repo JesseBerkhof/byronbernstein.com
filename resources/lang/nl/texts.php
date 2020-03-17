@@ -29,10 +29,10 @@ return [
         'title' => 'Hygiëne',
         'most_important_measures' => 'De meest belangrijke tips om het virus tegen te gaan',
         '1' => 'Was je handen regelmatig.',
-        '2' => 'Gebruik papieren doekjes wanneer je moet niezen of hoesten.',
+        '2' => 'Gebruik papieren zakdoekjes.',
         '3' => 'Schud geen handen.',
         '4' => 'Blijf thuis wanneer je je ziek voelt.',
-        '5' => 'Geen papieren doekjes op zak? Doe dan een dab wanneer je moet niezen of hoesten!'
+        '5' => '#CoronaDab'
     ],
 
 ];
