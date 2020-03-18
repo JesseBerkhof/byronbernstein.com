@@ -9,3 +9,7 @@ Route::get(trans('routes.thanks'), 'SiteController@thanks')->name('thanks');
 Route::get(trans('routes.donate'), 'SiteController@donate')->name('donate');
 
 Route::post('/thanks', 'AppreciationController@store')->name('thanks.store');
+
+Route::get('/debug-sentry', function () {
+    throw new Exception('My first Sentry error!');
+});
