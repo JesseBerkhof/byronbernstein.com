@@ -16,18 +16,18 @@ class Appreciation extends Model
     public function getNameAttribute()
     {
         if (!$this->last_name) {
-            return $this->first_name;
+            return ucfirst($this->first_name);
         }
 
-        return "$this->first_name $this->last_name";
+        return ucfirst($this->first_name) . ' ' . ucfirst($this->last_name);
     }
 
     public function getLocationAttribute()
     {
         if (!$this->city) {
-            return $this->country;
+            return ucfirst($this->country);
         }
 
-        return "$this->country, $this->city";
+        return ucfirst($this->country) . ', ' . ucfirst($this->city);
     }
 }
