@@ -74,6 +74,12 @@
                                         @lang('buttons.thanks.submit')
                                     </button>
                                 </div>
+
+                                <div class="flex mt-12">
+                                    <div class="w-full">
+                                        <div class="sharethis-inline-share-buttons"></div>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                     </div>
