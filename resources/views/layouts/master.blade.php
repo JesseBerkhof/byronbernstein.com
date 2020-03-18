@@ -47,7 +47,14 @@
                 <img src="{{ asset('images/dab.png') }}" class="w-32 sm:w-48 md:w-48 lg:w-48 xl:w-48 mx-auto">
             </div>
         </div>
+
         @yield('content')
+
+        <div class="flex text-center">
+            <div class="w-full my-8 text-orange-900 text-xs">
+                @lang('texts.footer.reach_me') <a href="mailto:jesseberkhof95@gmail.com" class="font-bold">{{ config('app.email') }}</a>
+            </div>
+        </div>
     </body>
 
     <script>

@@ -88,7 +88,7 @@
         </div>
 
         @foreach($appreciations->chunk(3) as $chunk)
-        <div class="flex flex-wrap mt-6 mb-8 justify-center">
+        <div class="flex flex-wrap justify-center">
             @foreach($chunk as $appreciation)
                 <div class="w-full sm:w-full md:w-full lg:w-1/4 xl:w-1/4 m-2 bg-red-100 p-4 shadow-md text-gray-900">
                     {{ $appreciation->name }} <span class="font-bold text-red-700">{{ \Illuminate\Support\Arr::random([

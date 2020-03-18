@@ -37,5 +37,7 @@ return [
         '4' => 'Stay at home when you\'re feeling sick.',
         '5' => '#CoronaDab'
     ],
-
+    'footer' => [
+        'reach_me' => 'Do you have any suggestions? Reach me at '
+    ],
 ];
