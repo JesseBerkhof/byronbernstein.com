@@ -22,7 +22,7 @@ return [
         'thank_you_3' => 'is blij met jullie',
     ],
     'faq' => [
-        'title' => 'Vragen & Antwoorden',
+        'title' => 'Vraag & Antwoord',
         'questionOne' => 'Waarom is het zo belangrijk?',
         'answerOne' => 'Het nieuwe corona virus verspreid zich gemakkelijk via mens-op-mens transmissie. En voornamelijk wanneer je hoest of niest. Het is de bedoeling dat je je hoest of nies tegen houdt, maar ook op de juiste manier. Doe dit met behulp van je arm, zo kunnen we gezamelijk de verspreiding van het virus tegen gaan. Dab wanneer je moet niezen of hoesten!',
         ],
