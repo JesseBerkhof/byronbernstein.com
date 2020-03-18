@@ -37,5 +37,7 @@ return [
         '4' => 'Blijf thuis wanneer je je ziek voelt.',
         '5' => '#CoronaDab'
     ],
-
+    'footer' => [
+        'reach_me' => 'Heb je nog suggesties? Je kunt me bereiken op '
+    ],
 ];

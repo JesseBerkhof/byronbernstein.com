@@ -52,7 +52,7 @@
 
         <div class="flex text-center">
             <div class="w-full my-8 text-orange-900 text-xs">
-                @lang('texts.footer.reach_me') <a href="mailto:jesseberkhof95@gmail.com" class="font-bold">{{ config('app.email') }}</a>
+                @lang('texts.footer.reach_me') <a href="mailto:{{ config('app.email') }}m" class="font-bold">{{ config('app.email') }}</a>
             </div>
         </div>
     </body>
