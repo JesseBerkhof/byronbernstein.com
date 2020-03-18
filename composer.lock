@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ba7f70a13dc1c8717adbf3b69412c273",
+    "content-hash": "f317a60ce9d060d2d31cbfa077ffd50f",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -57,6 +57,92 @@
                 "stream_filter_register"
             ],
             "time": "2019-04-09T12:31:48+00:00"
+        },
+        {
+            "name": "divineomega/is_offensive",
+            "version": "v1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DivineOmega/is_offensive.git",
+                "reference": "f66203ef4c6793bf29b1a42a7cb5f585309ae8e9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DivineOmega/is_offensive/zipball/f66203ef4c6793bf29b1a42a7cb5f585309ae8e9",
+                "reference": "f66203ef4c6793bf29b1a42a7cb5f585309ae8e9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "snipe/banbuilder": "^2.2.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.5",
+                "satooshi/php-coveralls": "^2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DivineOmega\\IsOffensive\\": "src/"
+                },
+                "files": [
+                    "src/IsOffensiveFunction.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "Jordan Hall",
+                    "email": "jordan@hall05.co.uk"
+                }
+            ],
+            "description": "This PHP package provides an `is_offensive` helper function. Passing a string to `is_offensive` will return a boolean telling you if it contains offensive words.",
+            "time": "2018-09-13T08:44:09+00:00"
+        },
+        {
+            "name": "divineomega/laravel-offensive-validation-rule",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DivineOmega/laravel-offensive-validation-rule.git",
+                "reference": "bda8571494bc0ad0c0de4a82b404bffd850ba480"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DivineOmega/laravel-offensive-validation-rule/zipball/bda8571494bc0ad0c0de4a82b404bffd850ba480",
+                "reference": "bda8571494bc0ad0c0de4a82b404bffd850ba480",
+                "shasum": ""
+            },
+            "require": {
+                "divineomega/is_offensive": "^1.4.0",
+                "laravel/framework": "^5.5||^6.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^3.5",
+                "phpunit/phpunit": "^6.0",
+                "satooshi/php-coveralls": "^2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DivineOmega\\LaravelOffensiveValidationRule\\": "./src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "Jordan Hall",
+                    "email": "jordan@hall05.co.uk"
+                }
+            ],
+            "description": "Laravel validation rule that checks if a string is offensive.",
+            "time": "2020-02-13T23:10:19+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -2912,6 +2998,54 @@
                 "sentry"
             ],
             "time": "2020-02-26T09:01:08+00:00"
+        },
+        {
+            "name": "snipe/banbuilder",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/snipe/banbuilder.git",
+                "reference": "621d6d857400983d0fd6cd291f105a835a317748"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/snipe/banbuilder/zipball/621d6d857400983d0fd6cd291f105a835a317748",
+                "reference": "621d6d857400983d0fd6cd291f105a835a317748",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Snipe\\BanBuilder\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "snipe",
+                    "email": "snipe@snipe.net",
+                    "role": "Creator & Developer"
+                }
+            ],
+            "description": "Library to easily handle profanity filtering in PHP projects.",
+            "homepage": "http://banbuilder.com",
+            "keywords": [
+                "filter",
+                "language",
+                "profanity",
+                "strings",
+                "swear"
+            ],
+            "time": "2018-08-30T22:45:56+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",

@@ -9,6 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
+        "divineomega/laravel-offensive-validation-rule": "^1.2",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "^6.2",
         "laravel/telescope": "^3.2",
