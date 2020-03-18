@@ -10,6 +10,13 @@
                     </h2>
                 </div>
                 <div class="w-1/2 sm:w-1/3 md:w-1/3 lg:w-1/3 xl:w-1/6 text-center mx-auto">
+                    <h2 class="text-1xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl text-orange-900">
+                        <a href="{{ route('thanks') }}" class="block bg-red-500 p-4 sm:p-4 xl:p-4 w-24 font-bold text-orange-900 hover:bg-red-700 hover:text-white mx-auto">
+                            <i data-feather="heart" class="text-white-700 inline-block"></i>
+                        </a>
+                    </h2>
+                </div>
+                <div class="w-1/2 sm:w-1/3 md:w-1/3 lg:w-1/3 xl:w-1/6 text-center mx-auto">
                     <h2 class="text-1xl sm:text-2xl md::text-2xl lg:text-2xl xl:text-2xl text-orange-900">
                         <i data-feather="check" class="text-green-700 inline-block"></i> @lang('texts.home.sneeze')
                     </h2>

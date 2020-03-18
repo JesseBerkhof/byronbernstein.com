@@ -14,7 +14,18 @@
                         <li class="mb-4">
                             @lang('texts.faq.answerOne')
                         </li>
+                        <li class="font-bold">@lang('texts.faq.questionTwo')</li>
+                        <li class="mb-4">
+                            @lang('texts.faq.answerTwo')
+                        </li>
                     </ul>
+                </div>
+                <div class="flex">
+                    <div class="w-2/2 mx-auto">
+                        <div class="justify-center mt-4 text-center">
+                            <iframe src="https://giphy.com/embed/xUOwGmG2pRfFZUmdVe" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
