@@ -5,7 +5,7 @@ return [
         'home' => 'Home',
         'hygiene' => 'Hygiene',
         'faq' => 'FAQ',
-        'thanks' => 'Thanks',
+        'thanks' => 'Thank You',
     ],
     'thanks' => [
         'submit' => 'Send them your love & support',
