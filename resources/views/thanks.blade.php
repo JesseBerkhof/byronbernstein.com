@@ -91,41 +91,6 @@
                         trans('texts.thanks.thank_you_3')
                     ]) }}</span>  @lang('texts.thanks.from')  <span class="font-bold">{{ $appreciation->location }}</span>
                 </div>
-                <div class="w-full sm:w-full md:w-full lg:w-1/4 xl:w-1/4 m-2 bg-red-100 p-4 shadow-md text-gray-900">
-                    {{ $appreciation->name }} <span class="font-bold text-red-700">{{ \Illuminate\Support\Arr::random([
-                        trans('texts.thanks.thank_you'),
-                        trans('texts.thanks.thank_you_2'),
-                        trans('texts.thanks.thank_you_3')
-                    ]) }}</span>  @lang('texts.thanks.from')  <span class="font-bold">{{ $appreciation->location }}</span>
-                </div>
-                <div class="w-full sm:w-full md:w-full lg:w-1/4 xl:w-1/4 m-2 bg-red-100 p-4 shadow-md text-gray-900">
-                    {{ $appreciation->name }} <span class="font-bold text-red-700">{{ \Illuminate\Support\Arr::random([
-                        trans('texts.thanks.thank_you'),
-                        trans('texts.thanks.thank_you_2'),
-                        trans('texts.thanks.thank_you_3')
-                    ]) }}</span>  @lang('texts.thanks.from')  <span class="font-bold">{{ $appreciation->location }}</span>
-                </div>
-                <div class="w-full sm:w-full md:w-full lg:w-1/4 xl:w-1/4 m-2 bg-red-100 p-4 shadow-md text-gray-900">
-                    {{ $appreciation->name }} <span class="font-bold text-red-700">{{ \Illuminate\Support\Arr::random([
-                        trans('texts.thanks.thank_you'),
-                        trans('texts.thanks.thank_you_2'),
-                        trans('texts.thanks.thank_you_3')
-                    ]) }}</span>  @lang('texts.thanks.from')  <span class="font-bold">{{ $appreciation->location }}</span>
-                </div>
-                <div class="w-full sm:w-full md:w-full lg:w-1/4 xl:w-1/4 m-2 bg-red-100 p-4 shadow-md text-gray-900">
-                    {{ $appreciation->name }} <span class="font-bold text-red-700">{{ \Illuminate\Support\Arr::random([
-                        trans('texts.thanks.thank_you'),
-                        trans('texts.thanks.thank_you_2'),
-                        trans('texts.thanks.thank_you_3')
-                    ]) }}</span>  @lang('texts.thanks.from')  <span class="font-bold">{{ $appreciation->location }}</span>
-                </div>
-                <div class="w-full sm:w-full md:w-full lg:w-1/4 xl:w-1/4 m-2 bg-red-100 p-4 shadow-md text-gray-900">
-                    {{ $appreciation->name }} <span class="font-bold text-red-700">{{ \Illuminate\Support\Arr::random([
-                        trans('texts.thanks.thank_you'),
-                        trans('texts.thanks.thank_you_2'),
-                        trans('texts.thanks.thank_you_3')
-                    ]) }}</span>  @lang('texts.thanks.from')  <span class="font-bold">{{ $appreciation->location }}</span>
-                </div>
             @endforeach
         </div>
         @endforeach
