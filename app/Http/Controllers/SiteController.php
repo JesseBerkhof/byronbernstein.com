@@ -22,7 +22,7 @@ class SiteController extends Controller
      public function thanks() {
         return view('thanks')->with([
             'countries' => trans('countries'),
-            'appreciations' => Appreciation::all()
+            'appreciations' => Appreciation::all()->sortByDesc('created_at')
         ]);
      }
 
