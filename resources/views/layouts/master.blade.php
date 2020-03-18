@@ -31,7 +31,7 @@
             gtag('config', '{{ config('app.analytics') }}');
         </script>
     </head>
-    <body class="bg-yellow-500 @if(config('app.env') === 'local' && env('RESPONSIVE_DEBUG')) lg:bg-red-500 sm:bg-blue-500 lg:bg-pink-500 xl:bg-green-500 @endif">
+    <body class="bg-yellow-500 @if(config('app.env') === 'local' && env('RESPONSIVE_DEBUG'))sm:bg-red-500 md:bg-blue-500 lg:bg-pink-500 xl:bg-green-500 @endif">
 
         <div class="container mx-auto">
             <div class="flex mt-4 sm:mt-8 md:mt-8 lg:mt-8 xl:mt-8">

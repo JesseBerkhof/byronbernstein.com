@@ -5,40 +5,50 @@
         @include('components.header')
         <div class="flex my-24">
             <div class="w-full">
-                <h1 class="text-6xl text-orange-900 text-center mb-8">
+                <h1 class="text-6xl text-orange-900 text-center">
                     @lang('texts.hygiene.title')
                 </h1>
                 <div class="w-full mx-auto">
-                    <div class="flex mt-6 mb-8">
-                        <div class="w-full sm:w-1/5 md:w-1/4 lg:w-1/4 xl:w-1/4 mx-2 bg-red-100 p-4 shadow-md text-gray-900">
-                            <span class="font-bold">
-                                <i data-feather="check" class="text-green-700 inline-block"></i>
-                                @lang('texts.hygiene.1')
-                            </span>
+                    <div class="flex flex-wrap my-16 justify-center">
+                        <div class="w-full sm:w-full md:w-1/4 lg:w-1/6 xl:w-1/8 m-4 sm:m-4 md:m-1 bg-white py-4 sm:py-10 md:py-4 shadow-md text-gray-900 h-40 text-center">
+                            <div class="flex">
+                                <div class="w-full">
+                                    <i data-feather="check" class="my-8 sm:my-1 md:my-6 lg:my-6 xl:my-6 text-green-700 inline-block"></i>
+                                </div>
+                            </div>
+                            <span class="font-bold">@lang('texts.hygiene.1')</span>
                         </div>
-                        <div class="w-full sm:w-1/5 md:w-1/4 lg:w-1/4 xl:w-1/4 mx-2 bg-red-100 p-4 shadow-md text-gray-900">
-                            <span class="font-bold">
-                                <i data-feather="check" class="text-green-700 inline-block"></i>
-                                @lang('texts.hygiene.2')
-                            </span>
+                        <div class="w-full sm:w-full md:w-1/3 lg:w-1/6 xl:w-1/8 m-4 sm:m-4 md:m-1 bg-white py-4 sm:py-10 md:py-4 shadow-md text-gray-900 h-40 text-center">
+                            <div class="flex">
+                                <div class="w-full">
+                                    <i data-feather="check" class="my-8 sm:my-1 md:my-6 lg:my-6 xl:my-6 text-green-700 inline-block"></i>
+                                </div>
+                            </div>
+                            <span class="font-bold">@lang('texts.hygiene.2')</span>
                         </div>
-                        <div class="w-full sm:w-1/5 md:w-1/4 lg:w-1/4 xl:w-1/4 mx-2 bg-red-100 p-4 shadow-md text-gray-900">
-                            <span class="font-bold">
-                                <i data-feather="check" class="text-green-700 inline-block"></i>
-                                @lang('texts.hygiene.3')
-                            </span>
+                        <div class="w-full sm:w-full md:w-1/3 lg:w-1/6 xl:w-1/8 m-4 sm:m-4 md:m-1 bg-white py-4 sm:py-10 md:py-4 shadow-md text-gray-900 h-40 text-center">
+                            <div class="flex">
+                                <div class="w-full">
+                                    <i data-feather="check" class="my-8 sm:my-1 md:my-6 lg:my-6 xl:my-6 text-green-700 inline-block"></i>
+                                </div>
+                            </div>
+                            <span class="font-bold">@lang('texts.hygiene.3')</span>
                         </div>
-                        <div class="w-full sm:w-1/5 md:w-1/4 lg:w-1/4 xl:w-1/4 mx-2 bg-red-100 p-4 shadow-md text-gray-900">
-                            <span class="font-bold">
-                                <i data-feather="check" class="text-green-700 inline-block"></i>
-                                @lang('texts.hygiene.4')
-                            </span>
+                        <div class="w-full sm:w-full md:w-1/3 lg:w-1/6 xl:w-1/8 m-4 sm:m-4 md:m-1 bg-white py-4 sm:py-10 md:py-4 shadow-md text-gray-900 h-40 text-center">
+                            <div class="flex">
+                                <div class="w-full">
+                                    <i data-feather="check" class="my-8 sm:my-1 md:my-6 lg:my-6 xl:my-6 text-green-700 inline-block"></i>
+                                </div>
+                            </div>
+                            <span class="font-bold">@lang('texts.hygiene.4')</span>
                         </div>
-                        <div class="w-full sm:w-1/5 md:w-1/4 lg:w-1/4 xl:w-1/4 mx-2 bg-red-100 p-4 shadow-md text-gray-900">
-                            <span class="font-bold">
-                                <i data-feather="check" class="text-green-700 inline-block"></i>
-                                @lang('texts.hygiene.5')
-                            </span>
+                        <div class="w-full sm:w-full md:w-1/3 lg:w-1/6 xl:w-1/8 m-4 sm:m-4 md:m-1 bg-white py-4 sm:py-10 md:py-4 shadow-md text-gray-900 h-40 text-center">
+                            <div class="flex">
+                                <div class="w-full">
+                                    <i data-feather="check" class="my-8 sm:my-1 md:my-6 lg:my-6 xl:my-6 text-green-700 inline-block"></i>
+                                </div>
+                            </div>
+                            <span class="font-bold">@lang('texts.hygiene.5')</span>
                         </div>
                     </div>
                 </div>
