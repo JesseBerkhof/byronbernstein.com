@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property-read string $last_name
  * @property-read string $country
  * @property-read string $city
+ * @property-read string $ip
  */
 class Appreciation extends Model
 {
@@ -17,6 +18,7 @@ class Appreciation extends Model
         'last_name',
         'city',
         'country',
+        'ip',
     ];
 
     public function getNameAttribute(): string
