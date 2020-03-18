@@ -53,7 +53,7 @@
                                             @lang('fields.country')
                                         </label>
                                         <div class="relative">
-                                            <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="country">
+                                            <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="country" @if(config('app.country') !== 'United States') disabled @endif>
                                                 @foreach($countries as $country)
                                                     <option value="{{ $country }}" @if($country === config('app.country')) selected @endif>
                                                         {{ $country }}
