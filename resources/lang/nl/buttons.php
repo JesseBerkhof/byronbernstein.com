@@ -4,7 +4,7 @@ return [
     'navigation' => [
         'home' => 'Home',
         'hygiene' => 'Hygiëne',
-        'faq' => 'Vragen & Antwoorden',
+        'faq' => 'Vraag & Antwoord',
         'thanks' => 'Bedankt',
     ],
     'thanks' => [
