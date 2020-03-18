@@ -8,28 +8,35 @@ class ComposerStaticInitd33882729ee51da5bcb3ef6b6c1281ff
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
-        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
+        'decc78cc4436b1292c6c0d151b19445c' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/bootstrap.php',
+        '56823cacd97af379eceaf82ad00b928f' => __DIR__ . '/..' . '/phpseclib/bcmath_compat/lib/bcmath.php',
         'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
-        'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
         '538ca81a9a966a6716601ecf48f4eaef' => __DIR__ . '/..' . '/opis/closure/functions.php',
+        'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
-        '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
-        'b6ec61354e97f32c0ae683041c78392a' => __DIR__ . '/..' . '/scrivo/highlight.php/HighlightUtilities/functions.php',
         '9cdd7b9056abc3081735233ba9dd9c7f' => __DIR__ . '/..' . '/facade/flare-client-php/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
+        '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
+        'b6ec61354e97f32c0ae683041c78392a' => __DIR__ . '/..' . '/scrivo/highlight.php/HighlightUtilities/functions.php',
         'ed962a97bd972bc82007176b647d4e36' => __DIR__ . '/..' . '/facade/ignition/src/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
         'p' => 
         array (
+            'phpseclib\\' => 10,
             'phpDocumentor\\Reflection\\' => 25,
+        ),
+        'b' => 
+        array (
+            'bcmath_compat\\' => 14,
         ),
         'X' => 
         array (
@@ -94,6 +101,8 @@ class ComposerStaticInitd33882729ee51da5bcb3ef6b6c1281ff
         ),
         'M' => 
         array (
+            'Moontoast\\Math\\Exception\\' => 25,
+            'Moontoast\\Math\\' => 15,
             'Monolog\\' => 8,
         ),
         'L' => 
@@ -101,6 +110,7 @@ class ComposerStaticInitd33882729ee51da5bcb3ef6b6c1281ff
             'League\\Flysystem\\' => 17,
             'League\\CommonMark\\' => 18,
             'Laravel\\Tinker\\' => 15,
+            'Laravel\\Telescope\\' => 18,
         ),
         'J' => 
         array (
@@ -143,11 +153,19 @@ class ComposerStaticInitd33882729ee51da5bcb3ef6b6c1281ff
     );
 
     public static $prefixDirsPsr4 = array (
+        'phpseclib\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib',
+        ),
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+        ),
+        'bcmath_compat\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpseclib/bcmath_compat/src',
         ),
         'XdgBaseDir\\' => 
         array (
@@ -297,6 +315,14 @@ class ComposerStaticInitd33882729ee51da5bcb3ef6b6c1281ff
         array (
             0 => __DIR__ . '/..' . '/nunomaduro/collision/src',
         ),
+        'Moontoast\\Math\\Exception\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/moontoast/math/src/Moontoast/Math/Exception',
+        ),
+        'Moontoast\\Math\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/moontoast/math/src/Moontoast/Math',
+        ),
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
@@ -312,6 +338,10 @@ class ComposerStaticInitd33882729ee51da5bcb3ef6b6c1281ff
         'Laravel\\Tinker\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/tinker/src',
+        ),
+        'Laravel\\Telescope\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel/telescope/src',
         ),
         'JakubOnderka\\PhpConsoleHighlighter\\' => 
         array (
@@ -405,18 +435,18 @@ class ComposerStaticInitd33882729ee51da5bcb3ef6b6c1281ff
     );
 
     public static $classMap = array (
-        'App\\Complaint' => __DIR__ . '/../..' . '/app/Complaint.php',
+        'App\\Appreciation' => __DIR__ . '/../..' . '/app/Appreciation.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\AppreciationController' => __DIR__ . '/../..' . '/app/Http/Controllers/AppreciationController.php',
         'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
-        'App\\Http\\Controllers\\ComplaintController' => __DIR__ . '/../..' . '/app/Http/Controllers/ComplaintController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
-        'App\\Http\\Controllers\\WebshopController' => __DIR__ . '/../..' . '/app/Http/Controllers/WebshopController.php',
+        'App\\Http\\Controllers\\SiteController' => __DIR__ . '/../..' . '/app/Http/Controllers/SiteController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\CheckForMaintenanceMode' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckForMaintenanceMode.php',
@@ -425,15 +455,14 @@ class ComposerStaticInitd33882729ee51da5bcb3ef6b6c1281ff
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Http\\Requests\\AppreciationRequest' => __DIR__ . '/../..' . '/app/Http/Requests/AppreciationRequest.php',
         'App\\Http\\Requests\\ComplaintRequest' => __DIR__ . '/../..' . '/app/Http/Requests/ComplaintRequest.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
-        'App\\Province' => __DIR__ . '/../..' . '/app/Province.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
-        'App\\Webshop' => __DIR__ . '/../..' . '/app/Webshop.php',
         'Carbon\\Carbon' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Carbon.php',
         'Carbon\\CarbonImmutable' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonImmutable.php',
         'Carbon\\CarbonInterface' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonInterface.php',
@@ -2095,6 +2124,76 @@ class ComposerStaticInitd33882729ee51da5bcb3ef6b6c1281ff
         'JakubOnderka\\PhpConsoleColor\\InvalidStyleException' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/InvalidStyleException.php',
         'JakubOnderka\\PhpConsoleHighlighter\\Highlighter' => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src/Highlighter.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
+        'Laravel\\Telescope\\AuthorizesRequests' => __DIR__ . '/..' . '/laravel/telescope/src/AuthorizesRequests.php',
+        'Laravel\\Telescope\\Console\\ClearCommand' => __DIR__ . '/..' . '/laravel/telescope/src/Console/ClearCommand.php',
+        'Laravel\\Telescope\\Console\\InstallCommand' => __DIR__ . '/..' . '/laravel/telescope/src/Console/InstallCommand.php',
+        'Laravel\\Telescope\\Console\\PruneCommand' => __DIR__ . '/..' . '/laravel/telescope/src/Console/PruneCommand.php',
+        'Laravel\\Telescope\\Console\\PublishCommand' => __DIR__ . '/..' . '/laravel/telescope/src/Console/PublishCommand.php',
+        'Laravel\\Telescope\\Contracts\\ClearableRepository' => __DIR__ . '/..' . '/laravel/telescope/src/Contracts/ClearableRepository.php',
+        'Laravel\\Telescope\\Contracts\\EntriesRepository' => __DIR__ . '/..' . '/laravel/telescope/src/Contracts/EntriesRepository.php',
+        'Laravel\\Telescope\\Contracts\\PrunableRepository' => __DIR__ . '/..' . '/laravel/telescope/src/Contracts/PrunableRepository.php',
+        'Laravel\\Telescope\\Contracts\\TerminableRepository' => __DIR__ . '/..' . '/laravel/telescope/src/Contracts/TerminableRepository.php',
+        'Laravel\\Telescope\\EntryResult' => __DIR__ . '/..' . '/laravel/telescope/src/EntryResult.php',
+        'Laravel\\Telescope\\EntryType' => __DIR__ . '/..' . '/laravel/telescope/src/EntryType.php',
+        'Laravel\\Telescope\\EntryUpdate' => __DIR__ . '/..' . '/laravel/telescope/src/EntryUpdate.php',
+        'Laravel\\Telescope\\ExceptionContext' => __DIR__ . '/..' . '/laravel/telescope/src/ExceptionContext.php',
+        'Laravel\\Telescope\\ExtractProperties' => __DIR__ . '/..' . '/laravel/telescope/src/ExtractProperties.php',
+        'Laravel\\Telescope\\ExtractTags' => __DIR__ . '/..' . '/laravel/telescope/src/ExtractTags.php',
+        'Laravel\\Telescope\\ExtractsMailableTags' => __DIR__ . '/..' . '/laravel/telescope/src/ExtractsMailableTags.php',
+        'Laravel\\Telescope\\FormatModel' => __DIR__ . '/..' . '/laravel/telescope/src/FormatModel.php',
+        'Laravel\\Telescope\\Http\\Controllers\\CacheController' => __DIR__ . '/..' . '/laravel/telescope/src/Http/Controllers/CacheController.php',
+        'Laravel\\Telescope\\Http\\Controllers\\CommandsController' => __DIR__ . '/..' . '/laravel/telescope/src/Http/Controllers/CommandsController.php',
+        'Laravel\\Telescope\\Http\\Controllers\\DumpController' => __DIR__ . '/..' . '/laravel/telescope/src/Http/Controllers/DumpController.php',
+        'Laravel\\Telescope\\Http\\Controllers\\EntryController' => __DIR__ . '/..' . '/laravel/telescope/src/Http/Controllers/EntryController.php',
+        'Laravel\\Telescope\\Http\\Controllers\\EventsController' => __DIR__ . '/..' . '/laravel/telescope/src/Http/Controllers/EventsController.php',
+        'Laravel\\Telescope\\Http\\Controllers\\ExceptionController' => __DIR__ . '/..' . '/laravel/telescope/src/Http/Controllers/ExceptionController.php',
+        'Laravel\\Telescope\\Http\\Controllers\\GatesController' => __DIR__ . '/..' . '/laravel/telescope/src/Http/Controllers/GatesController.php',
+        'Laravel\\Telescope\\Http\\Controllers\\HomeController' => __DIR__ . '/..' . '/laravel/telescope/src/Http/Controllers/HomeController.php',
+        'Laravel\\Telescope\\Http\\Controllers\\LogController' => __DIR__ . '/..' . '/laravel/telescope/src/Http/Controllers/LogController.php',
+        'Laravel\\Telescope\\Http\\Controllers\\MailController' => __DIR__ . '/..' . '/laravel/telescope/src/Http/Controllers/MailController.php',
+        'Laravel\\Telescope\\Http\\Controllers\\MailEmlController' => __DIR__ . '/..' . '/laravel/telescope/src/Http/Controllers/MailEmlController.php',
+        'Laravel\\Telescope\\Http\\Controllers\\MailHtmlController' => __DIR__ . '/..' . '/laravel/telescope/src/Http/Controllers/MailHtmlController.php',
+        'Laravel\\Telescope\\Http\\Controllers\\ModelsController' => __DIR__ . '/..' . '/laravel/telescope/src/Http/Controllers/ModelsController.php',
+        'Laravel\\Telescope\\Http\\Controllers\\MonitoredTagController' => __DIR__ . '/..' . '/laravel/telescope/src/Http/Controllers/MonitoredTagController.php',
+        'Laravel\\Telescope\\Http\\Controllers\\NotificationsController' => __DIR__ . '/..' . '/laravel/telescope/src/Http/Controllers/NotificationsController.php',
+        'Laravel\\Telescope\\Http\\Controllers\\QueriesController' => __DIR__ . '/..' . '/laravel/telescope/src/Http/Controllers/QueriesController.php',
+        'Laravel\\Telescope\\Http\\Controllers\\QueueController' => __DIR__ . '/..' . '/laravel/telescope/src/Http/Controllers/QueueController.php',
+        'Laravel\\Telescope\\Http\\Controllers\\RecordingController' => __DIR__ . '/..' . '/laravel/telescope/src/Http/Controllers/RecordingController.php',
+        'Laravel\\Telescope\\Http\\Controllers\\RedisController' => __DIR__ . '/..' . '/laravel/telescope/src/Http/Controllers/RedisController.php',
+        'Laravel\\Telescope\\Http\\Controllers\\RequestsController' => __DIR__ . '/..' . '/laravel/telescope/src/Http/Controllers/RequestsController.php',
+        'Laravel\\Telescope\\Http\\Controllers\\ScheduleController' => __DIR__ . '/..' . '/laravel/telescope/src/Http/Controllers/ScheduleController.php',
+        'Laravel\\Telescope\\Http\\Controllers\\ViewsController' => __DIR__ . '/..' . '/laravel/telescope/src/Http/Controllers/ViewsController.php',
+        'Laravel\\Telescope\\Http\\Middleware\\Authorize' => __DIR__ . '/..' . '/laravel/telescope/src/Http/Middleware/Authorize.php',
+        'Laravel\\Telescope\\IncomingDumpEntry' => __DIR__ . '/..' . '/laravel/telescope/src/IncomingDumpEntry.php',
+        'Laravel\\Telescope\\IncomingEntry' => __DIR__ . '/..' . '/laravel/telescope/src/IncomingEntry.php',
+        'Laravel\\Telescope\\IncomingExceptionEntry' => __DIR__ . '/..' . '/laravel/telescope/src/IncomingExceptionEntry.php',
+        'Laravel\\Telescope\\ListensForStorageOpportunities' => __DIR__ . '/..' . '/laravel/telescope/src/ListensForStorageOpportunities.php',
+        'Laravel\\Telescope\\RegistersWatchers' => __DIR__ . '/..' . '/laravel/telescope/src/RegistersWatchers.php',
+        'Laravel\\Telescope\\Storage\\DatabaseEntriesRepository' => __DIR__ . '/..' . '/laravel/telescope/src/Storage/DatabaseEntriesRepository.php',
+        'Laravel\\Telescope\\Storage\\EntryModel' => __DIR__ . '/..' . '/laravel/telescope/src/Storage/EntryModel.php',
+        'Laravel\\Telescope\\Storage\\EntryQueryOptions' => __DIR__ . '/..' . '/laravel/telescope/src/Storage/EntryQueryOptions.php',
+        'Laravel\\Telescope\\Telescope' => __DIR__ . '/..' . '/laravel/telescope/src/Telescope.php',
+        'Laravel\\Telescope\\TelescopeApplicationServiceProvider' => __DIR__ . '/..' . '/laravel/telescope/src/TelescopeApplicationServiceProvider.php',
+        'Laravel\\Telescope\\TelescopeServiceProvider' => __DIR__ . '/..' . '/laravel/telescope/src/TelescopeServiceProvider.php',
+        'Laravel\\Telescope\\Watchers\\CacheWatcher' => __DIR__ . '/..' . '/laravel/telescope/src/Watchers/CacheWatcher.php',
+        'Laravel\\Telescope\\Watchers\\CommandWatcher' => __DIR__ . '/..' . '/laravel/telescope/src/Watchers/CommandWatcher.php',
+        'Laravel\\Telescope\\Watchers\\DumpWatcher' => __DIR__ . '/..' . '/laravel/telescope/src/Watchers/DumpWatcher.php',
+        'Laravel\\Telescope\\Watchers\\EventWatcher' => __DIR__ . '/..' . '/laravel/telescope/src/Watchers/EventWatcher.php',
+        'Laravel\\Telescope\\Watchers\\ExceptionWatcher' => __DIR__ . '/..' . '/laravel/telescope/src/Watchers/ExceptionWatcher.php',
+        'Laravel\\Telescope\\Watchers\\FetchesStackTrace' => __DIR__ . '/..' . '/laravel/telescope/src/Watchers/FetchesStackTrace.php',
+        'Laravel\\Telescope\\Watchers\\FormatsClosure' => __DIR__ . '/..' . '/laravel/telescope/src/Watchers/FormatsClosure.php',
+        'Laravel\\Telescope\\Watchers\\GateWatcher' => __DIR__ . '/..' . '/laravel/telescope/src/Watchers/GateWatcher.php',
+        'Laravel\\Telescope\\Watchers\\JobWatcher' => __DIR__ . '/..' . '/laravel/telescope/src/Watchers/JobWatcher.php',
+        'Laravel\\Telescope\\Watchers\\LogWatcher' => __DIR__ . '/..' . '/laravel/telescope/src/Watchers/LogWatcher.php',
+        'Laravel\\Telescope\\Watchers\\MailWatcher' => __DIR__ . '/..' . '/laravel/telescope/src/Watchers/MailWatcher.php',
+        'Laravel\\Telescope\\Watchers\\ModelWatcher' => __DIR__ . '/..' . '/laravel/telescope/src/Watchers/ModelWatcher.php',
+        'Laravel\\Telescope\\Watchers\\NotificationWatcher' => __DIR__ . '/..' . '/laravel/telescope/src/Watchers/NotificationWatcher.php',
+        'Laravel\\Telescope\\Watchers\\QueryWatcher' => __DIR__ . '/..' . '/laravel/telescope/src/Watchers/QueryWatcher.php',
+        'Laravel\\Telescope\\Watchers\\RedisWatcher' => __DIR__ . '/..' . '/laravel/telescope/src/Watchers/RedisWatcher.php',
+        'Laravel\\Telescope\\Watchers\\RequestWatcher' => __DIR__ . '/..' . '/laravel/telescope/src/Watchers/RequestWatcher.php',
+        'Laravel\\Telescope\\Watchers\\ScheduleWatcher' => __DIR__ . '/..' . '/laravel/telescope/src/Watchers/ScheduleWatcher.php',
+        'Laravel\\Telescope\\Watchers\\ViewWatcher' => __DIR__ . '/..' . '/laravel/telescope/src/Watchers/ViewWatcher.php',
+        'Laravel\\Telescope\\Watchers\\Watcher' => __DIR__ . '/..' . '/laravel/telescope/src/Watchers/Watcher.php',
         'Laravel\\Tinker\\ClassAliasAutoloader' => __DIR__ . '/..' . '/laravel/tinker/src/ClassAliasAutoloader.php',
         'Laravel\\Tinker\\Console\\TinkerCommand' => __DIR__ . '/..' . '/laravel/tinker/src/Console/TinkerCommand.php',
         'Laravel\\Tinker\\TinkerCaster' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerCaster.php',
@@ -2504,6 +2603,11 @@ class ComposerStaticInitd33882729ee51da5bcb3ef6b6c1281ff
         'Monolog\\SignalHandler' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/SignalHandler.php',
         'Monolog\\Test\\TestCase' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Test/TestCase.php',
         'Monolog\\Utils' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Utils.php',
+        'Moontoast\\Math\\AbstractBigNumber' => __DIR__ . '/..' . '/moontoast/math/src/Moontoast/Math/AbstractBigNumber.php',
+        'Moontoast\\Math\\BigNumber' => __DIR__ . '/..' . '/moontoast/math/src/Moontoast/Math/BigNumber.php',
+        'Moontoast\\Math\\BigNumberImmutable' => __DIR__ . '/..' . '/moontoast/math/src/Moontoast/Math/BigNumberImmutable.php',
+        'Moontoast\\Math\\BigNumberInterface' => __DIR__ . '/..' . '/moontoast/math/src/Moontoast/Math/BigNumberInterface.php',
+        'Moontoast\\Math\\Exception\\ArithmeticException' => __DIR__ . '/..' . '/moontoast/math/src/Moontoast/Math/Exception/ArithmeticException.php',
         'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider' => __DIR__ . '/..' . '/nunomaduro/collision/src/Adapters/Laravel/CollisionServiceProvider.php',
         'NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler' => __DIR__ . '/..' . '/nunomaduro/collision/src/Adapters/Laravel/ExceptionHandler.php',
         'NunoMaduro\\Collision\\Adapters\\Laravel\\Inspector' => __DIR__ . '/..' . '/nunomaduro/collision/src/Adapters/Laravel/Inspector.php',
@@ -3301,7 +3405,6 @@ class ComposerStaticInitd33882729ee51da5bcb3ef6b6c1281ff
         'Prophecy\\Prophet' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Prophet.php',
         'Prophecy\\Util\\ExportUtil' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Util/ExportUtil.php',
         'Prophecy\\Util\\StringUtil' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Util/StringUtil.php',
-        'ProvinceSeeder' => __DIR__ . '/../..' . '/database/seeds/ProvinceSeeder.php',
         'Psr\\Container\\ContainerExceptionInterface' => __DIR__ . '/..' . '/psr/container/src/ContainerExceptionInterface.php',
         'Psr\\Container\\ContainerInterface' => __DIR__ . '/..' . '/psr/container/src/ContainerInterface.php',
         'Psr\\Container\\NotFoundExceptionInterface' => __DIR__ . '/..' . '/psr/container/src/NotFoundExceptionInterface.php',
@@ -4357,7 +4460,6 @@ class ComposerStaticInitd33882729ee51da5bcb3ef6b6c1281ff
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Processor' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Processor.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Rule' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Rule.php',
         'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',
-        'WebshopSeeder' => __DIR__ . '/../..' . '/database/seeds/WebshopSeeder.php',
         'Whoops\\Exception\\ErrorException' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/ErrorException.php',
         'Whoops\\Exception\\Formatter' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/Formatter.php',
         'Whoops\\Exception\\Frame' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/Frame.php',
@@ -4377,6 +4479,7 @@ class ComposerStaticInitd33882729ee51da5bcb3ef6b6c1281ff
         'Whoops\\Util\\SystemFacade' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/SystemFacade.php',
         'Whoops\\Util\\TemplateHelper' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/TemplateHelper.php',
         'XdgBaseDir\\Xdg' => __DIR__ . '/..' . '/dnoegel/php-xdg-base-dir/src/Xdg.php',
+        'bcmath_compat\\BCMath' => __DIR__ . '/..' . '/phpseclib/bcmath_compat/src/BCMath.php',
         'phpDocumentor\\Reflection\\DocBlock' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlock.php',
         'phpDocumentor\\Reflection\\DocBlockFactory' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlockFactory.php',
         'phpDocumentor\\Reflection\\DocBlockFactoryInterface' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlockFactoryInterface.php',
@@ -4448,6 +4551,30 @@ class ComposerStaticInitd33882729ee51da5bcb3ef6b6c1281ff
         'phpDocumentor\\Reflection\\Types\\String_' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/String_.php',
         'phpDocumentor\\Reflection\\Types\\This' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/This.php',
         'phpDocumentor\\Reflection\\Types\\Void_' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/Void_.php',
+        'phpseclib\\Crypt\\AES' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/AES.php',
+        'phpseclib\\Crypt\\Base' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/Base.php',
+        'phpseclib\\Crypt\\Blowfish' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/Blowfish.php',
+        'phpseclib\\Crypt\\DES' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/DES.php',
+        'phpseclib\\Crypt\\Hash' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/Hash.php',
+        'phpseclib\\Crypt\\RC2' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/RC2.php',
+        'phpseclib\\Crypt\\RC4' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/RC4.php',
+        'phpseclib\\Crypt\\RSA' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/RSA.php',
+        'phpseclib\\Crypt\\Random' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/Random.php',
+        'phpseclib\\Crypt\\Rijndael' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/Rijndael.php',
+        'phpseclib\\Crypt\\TripleDES' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/TripleDES.php',
+        'phpseclib\\Crypt\\Twofish' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/Twofish.php',
+        'phpseclib\\File\\ANSI' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/File/ANSI.php',
+        'phpseclib\\File\\ASN1' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/File/ASN1.php',
+        'phpseclib\\File\\ASN1\\Element' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/File/ASN1/Element.php',
+        'phpseclib\\File\\X509' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/File/X509.php',
+        'phpseclib\\Math\\BigInteger' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Math/BigInteger.php',
+        'phpseclib\\Net\\SCP' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Net/SCP.php',
+        'phpseclib\\Net\\SFTP' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Net/SFTP.php',
+        'phpseclib\\Net\\SFTP\\Stream' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Net/SFTP/Stream.php',
+        'phpseclib\\Net\\SSH1' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Net/SSH1.php',
+        'phpseclib\\Net\\SSH2' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Net/SSH2.php',
+        'phpseclib\\System\\SSH\\Agent' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/System/SSH/Agent.php',
+        'phpseclib\\System\\SSH\\Agent\\Identity' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/System/SSH/Agent/Identity.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
