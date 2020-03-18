@@ -4,7 +4,7 @@
 	<div class="container mx-auto">
             @include('components.header')
             <div class="flex mt-24">
-                <div class="w-1/2 sm:w-1/3 md:w-1/3 lg:w-1/3 xl:w-1/6 text-center sm:text-left md:text-left lg:text-left mx-auto">
+                <div class="w-1/2 sm:w-1/3 md:w-1/3 lg:w-1/3 xl:w-1/6 text-center mx-auto">
                     <h2 class="text-1xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl text-orange-900">
                         <i data-feather="check" class="text-green-700 inline-block"></i> @lang('texts.home.cough')
                     </h2>

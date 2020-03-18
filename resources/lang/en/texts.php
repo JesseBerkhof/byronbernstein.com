@@ -8,6 +8,7 @@ return [
     'home' => [
         'cough' => 'Cough? <span class="font-bold">DAB</span>!',
         'sneeze' => 'Sneeze? <span class="font-bold">DAB</span>!',
+        'cta_social' => 'Share on social media',
         'cta_title' => 'Spread awareness',
         'cta_description' => 'Stop the virus from spreading by dabbing your cough or sneeze.',
         'cta_ending' => 'Want your picture or video featured here? Post a dab on your social media platform and use <span class="font-bold">#CoronaDab</span>'
