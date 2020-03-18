@@ -25,6 +25,8 @@ return [
         'title' => 'FAQ',
         'questionOne' => 'Why is it so important?',
         'answerOne' => 'The new corona virus is easily spread through human-to-human transmission. Mostly by not covering you cough or sneeze. But also when not covering it properly. That\'s why you should always cough or sneeze in your arm, to reduce spread of any virus. That\'s why we launched this website. To spread awareness on how to cover your cough or sneeze. Just dab on that corona virus.',
+        'questionTwo' => 'But, what\'s a dab?',
+        'answerTwo' => 'The dab was trending some time ago and a great way to cover your cough. This is what it looks like:',
     ],
     'hygiene' => [
         'title' => 'Hygiene',
