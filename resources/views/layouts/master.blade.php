@@ -52,7 +52,11 @@
 
         <div class="flex text-center">
             <div class="w-full my-8 text-orange-900 text-xs">
-                @lang('texts.footer.reach_me') <a href="mailto:{{ config('app.email') }}m" class="font-bold">{{ config('app.email') }}</a>
+                @lang('texts.footer.reach_me') <a href="mailto:{{ config('app.email') }}m" class="font-bold">{{ config('app.email') }}</a><br>
+                @if(config('app.government'))
+                    Meer actuele informatie over het coronavirus is te vinden op de website van het <a href="{{ config('app.government') }}" class="font-bold">RIVM.</a><br>
+                @endif
+                <a href="https://instagram.com/coronadabnl" class="font-bold">@CoronaDabNL</a>
             </div>
         </div>
     </body>

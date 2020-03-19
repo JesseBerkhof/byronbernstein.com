@@ -15,7 +15,7 @@ return [
     ],
     'thanks' => [
         'title' => 'Bedankt.',
-        'subtitle' => 'Aan al het hard werkend personeel in vitale sectoren die ons land veilig houden en het nieuwe corona virus bestrijden.',
+        'subtitle' => 'Aan al het hard werkend personeel in vitale sectoren die ons land veilig houden en het nieuwe coronavirus bestrijden.',
         'from' => 'vanuit',
         'thank_you' => 'bedankt jullie',
         'thank_you_2' => 'waardeert jullie',
@@ -24,7 +24,7 @@ return [
     'faq' => [
         'title' => 'Vraag & Antwoord',
         'questionOne' => 'Waarom is het zo belangrijk?',
-        'answerOne' => 'Het nieuwe corona virus verspreid zich gemakkelijk via mens-op-mens transmissie. En voornamelijk wanneer je hoest of niest. Het is de bedoeling dat je je hoest of nies tegen houdt, maar ook op de juiste manier. Doe dit met behulp van je arm, zo kunnen we gezamelijk de verspreiding van het virus tegen gaan. Dab wanneer je moet niezen of hoesten!',
+        'answerOne' => 'Het nieuwe coronavirus verspreid zich razend snel in ons land en over de hele wereld. Dit gebeurt voornamelijk wanneer je moet hoesten of niezen. Uiteraard moet je je mond afschermen wanneer je dit doen. Het belangrijkste is door dit in de binnenkant van je arm te doen. Hiermee voorkom je verdere verspreiding van het coronavirus. Dus dab wanneer je moet niezen of hoesten!',
         'questionTwo' => 'Maar wat is een dab?',
         'answerTwo' => 'De dab is een trend geweest onder jongeren en wordt volgens Wikipedia als volgt beschreven: \'De dab is een dansbeweging waarin de danser het hoofd laat zakken terwijl hij zijn arm en elleboog omhoog werpt, wat veel op niezen lijkt.\'. Of voor het gemak, hier een gifje:',
     ],

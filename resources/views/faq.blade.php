@@ -23,7 +23,11 @@
                 <div class="flex">
                     <div class="w-2/2 mx-auto">
                         <div class="justify-center mt-4 text-center">
-                            <iframe src="https://giphy.com/embed/xUOwGmG2pRfFZUmdVe" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+{{--                            <iframe src="https://giphy.com/embed/xUOwGmG2pRfFZUmdVe" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>--}}
+                            <video width="320" height="240" controls autoplay>
+                                <source src="{{ asset('videos/coronadab.mp4') }}" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                     </div>
                 </div>

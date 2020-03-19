@@ -8,6 +8,7 @@ return [
     'analytics' => env('GOOGLE_ANALYTICS', null),
     'country' => env('APP_COUNTRY', 'Netherlands'),
     'email' => env('APP_EMAIL', 'info@coronadab.com'),
+    'government' => env('APP_GOVERNMENT', null),
 
     /*
     |--------------------------------------------------------------------------
