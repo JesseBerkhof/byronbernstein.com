@@ -5,17 +5,12 @@
         @include('components.header')
         <div class="flex my-24">
             <div class="w-full">
-                <h1 class="text-6xl text-orange-900 text-center mb-8">
-                    Donate
+                <h1 class="text-6xl text-blue-900 text-center mb-8">
+                    Coronavirus
                 </h1>
-                <div class="w-2/3 mx-auto">
-                    <ul class="list-inside sm:list-outside md:list-inside lg:list-outside xl:list-inside text-yellow-900 text-lg">
-                        <li class="font-bold">Why is it so important?</li>
-                        <li class="mb-4">
-                            Human-to-human transmission is easily spread when not covering your sneeze or cough but also even when not covering it up properly.
-                        </li>
-                    </ul>
-                </div>
+                <h1 class="text-3xl text-blue-900 text-center">
+                    Meer relevante info is te vinden op de website van het RIVM
+                </h1>
             </div>
         </div>
     </div>

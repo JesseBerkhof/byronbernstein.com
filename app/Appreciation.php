@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Arr;
 
 /**
  * @property-read string $first_name
@@ -21,21 +22,25 @@ class Appreciation extends Model
         'ip',
     ];
 
-    public function getNameAttribute(): string
+    public function getMessageAttribute(): string
     {
-        if (!$this->last_name) {
-            return ucfirst($this->first_name);
-        }
+        $firstName = ucfirst($this->first_name);
+        $lastName = ucfirst($this->last_name);
+        $name = $firstName . ' ' . $lastName;
 
-        return ucfirst($this->first_name) . ' ' . ucfirst($this->last_name);
-    }
-
-    public function getLocationAttribute(): string
-    {
         if (!$this->city) {
-            return ucfirst($this->country);
+            return trans('texts.thanks.message_without_city', [
+                'name' => $name,
+                'random' => Arr::random(trans('texts.thanks.random'))
+            ]);
         }
 
-        return ucfirst($this->country) . ', ' . ucfirst($this->city);
+        $city = ucfirst($this->city);
+
+        return trans('texts.thanks.message', [
+            'name' => $name,
+            'city' => $city,
+            'random' => Arr::random(trans('texts.thanks.random'))
+        ]);
     }
 }

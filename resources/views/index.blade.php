@@ -2,28 +2,30 @@
 
 @section('content')
 	<div class="container mx-auto mb-auto h-screen">
-            @include('components.header')
-            <div class="flex mt-24">
-                <div class="w-1/2 sm:w-1/3 md:w-1/3 lg:w-1/3 xl:w-2/6 text-center mx-auto">
-                    <h2 class="text-1xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl text-orange-900">
-                        <i data-feather="check" class="text-green-700 inline-block"></i> @lang('texts.home.cough')
-                    </h2>
-                </div>
-                <div class="w-1/2 sm:w-1/3 md:w-1/3 lg:w-1/3 xl:w-2/6 text-center mx-auto">
-                    <h2 class="text-1xl sm:text-2xl md::text-2xl lg:text-2xl xl:text-2xl text-orange-900">
-                        <i data-feather="check" class="text-green-700 inline-block"></i> @lang('texts.home.sneeze')
-                    </h2>
-                </div>
-            </div>
-            <div class="flex mt-24">
-                <div class="sm:w-full md:w-full lg:w-full xl:w-full text-center">
-                    <h1 class="text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl text-orange-900">
-                        @lang('texts.home.cta_title')
-                    </h1>
-                    <h2 class="text-2xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl text-orange-900 mb-4">@lang('texts.home.cta_description')</h2>
-                    <h2 class="text-1xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl text-orange-900">@lang('texts.home.cta_ending')</h2>
-                </div>
-            </div>
-            @include('components.share')
+        @include('components.header')
+
+        <div class="flex items-center justify-center mt-24">
+            <button class="modal-button shadow-xl rounded-md bg-red-300 p-4 font-bold w-1/4 text-red-700 hover:bg-red-600 hover:text-white">
+                Laat je waardering achter
+            </button>
         </div>
+
+        <div class="flex mt-24 mb-12">
+            <div class="sm:w-full md:w-full lg:w-full xl:w-full text-center">
+                <h1 class="text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-5xl text-blue-900">
+                    {{ $appreciations->count() }} <br>Nederlanders <br>zijn blij met jullie.
+                </h1>
+            </div>
+        </div>
+
+        @foreach($appreciations->chunk(3) as $chunk)
+            <div class="flex flex-wrap justify-center">
+                @foreach($chunk as $appreciation)
+                    <div class="w-full sm:w-full md:w-full lg:w-1/4 xl:w-1/4 m-2 bg-white p-4 shadow-md text-gray-900">
+                        {!! $appreciation->message !!}
+                    </div>
+                @endforeach
+            </div>
+        @endforeach
+    </div>
 @endsection

@@ -4,8 +4,7 @@ return [
     'navigation' => [
         'home' => 'Home',
         'hygiene' => 'Hygiëne',
-        'faq' => 'Vraag & Antwoord',
-        'thanks' => 'Bedankt',
+        'donate' => 'Doneren',
     ],
     'thanks' => [
         'submit' => 'Laat je steun en waardering zien!',

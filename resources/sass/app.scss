@@ -9,3 +9,12 @@
 h1 {
 	font-family: 'Montserrat';
 }
+
+.modal {
+	transition: opacity 0.25s ease;
+}
+
+.stop-scrolling {
+	height: 100%;
+	overflow: hidden;
+}

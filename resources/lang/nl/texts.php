@@ -2,24 +2,18 @@
 
 return [
     'header' => [
-        'title' => '#CoronaDab',
-        'subtitle' => 'Fighting corona one dab at a time.'
-    ],
-    'home' => [
-        'cough' => 'Moet je hoesten? <span class="font-bold">DAB!</span>',
-        'sneeze' => 'Moet je niezen? <span class="font-bold">DAB!</span>',
-        'cta_social' => 'Deel op social media',
-        'cta_title' => 'Verspreid bewustzijn',
-        'cta_description' => 'Stop het virus door te dabben wanneer je moet hoesten of niezen.',
-        'cta_ending' => 'Wil je jouw foto hier op onze site terwijl je een dab doet? Gebruik <span class="font-bold">#CoronaDab</span> op social media.'
+        'title' => 'Zorgverleners, bedankt.',
+        'subtitle' => 'Voor het werk dat jullie doen.'
     ],
     'thanks' => [
-        'title' => 'Bedankt.',
-        'subtitle' => 'Aan al het hard werkend personeel in vitale sectoren die ons land veilig houden en het nieuwe coronavirus bestrijden.',
-        'from' => 'vanuit',
-        'thank_you' => 'bedankt jullie',
-        'thank_you_2' => 'waardeert jullie',
-        'thank_you_3' => 'is blij met jullie',
+        'message' => '<b>:name</b> uit <b>:city</b> :random',
+        'message_without_city' => '<b>:name</b> :random',
+        'random' => [
+            'bedankt jullie',
+            'waardeert jullie',
+            'is blij met jullie',
+            'steunt jullie',
+        ]
     ],
     'faq' => [
         'title' => 'Vraag & Antwoord',

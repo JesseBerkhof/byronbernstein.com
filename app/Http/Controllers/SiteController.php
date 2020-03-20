@@ -8,7 +8,9 @@ class SiteController extends Controller
 {
 
      public function index() {
-        return view('index');
+        return view('index')->with([
+            'appreciations' => Appreciation::all()->sortByDesc('created_at')
+        ]);
      }
 
      public function hygiene() {
@@ -17,13 +19,6 @@ class SiteController extends Controller
 
      public function faq() {
         return view('faq');
-     }
-
-     public function thanks() {
-        return view('thanks')->with([
-            'countries' => trans('countries'),
-            'appreciations' => Appreciation::all()->sortByDesc('created_at')
-        ]);
      }
 
      public function donate() {

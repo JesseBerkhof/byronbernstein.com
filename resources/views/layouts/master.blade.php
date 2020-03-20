@@ -32,36 +32,61 @@
             gtag('config', '{{ config('app.analytics') }}');
         </script>
     </head>
-    <body class="bg-yellow-500 @if(config('app.env') === 'local' && env('RESPONSIVE_DEBUG'))sm:bg-red-500 md:bg-blue-500 lg:bg-pink-500 xl:bg-green-500 @endif">
+    <body class="bg-blue-100 @if(config('app.env') === 'local' && env('RESPONSIVE_DEBUG'))sm:bg-red-500 md:bg-blue-500 lg:bg-pink-500 xl:bg-green-500 @endif">
+
+        @if($errors->isNotEmpty())
+            <div class="flex mb-8">
+                <div class="w-full bg-red-400 text-red-900 p-4">
+                    <ul>
+                        @foreach($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            </div>
+        @endif
 
         <div class="container mx-auto">
-            <div class="flex mt-4 sm:mt-8 md:mt-8 lg:mt-8 xl:mt-8">
+            <div class="flex mt-4 sm:mt-8 md:mt-8 lg:mt-8 xl:mt-8 mb-24">
                 <div class="w-full sm:w-full md:w-full lg:w-full xl:w-full text-center">
                     @include('components.navigation')
                 </div>
             </div>
         </div>
 
-        <div class="flex mt-24">
-            <div class="w-full sm:w-full md:w-full lg:w-full xl:w-full text-center">
-                <img src="{{ asset('images/dab.png') }}" class="w-32 sm:w-48 md:w-48 lg:w-48 xl:w-48 mx-auto">
-            </div>
-        </div>
-
+        @include('modals.thanks')
         @yield('content')
 
-        <div class="flex text-center">
-            <div class="w-full my-8 text-orange-900 text-xs">
-                @lang('texts.footer.reach_me') <a href="mailto:{{ config('app.email') }}m" class="font-bold">{{ config('app.email') }}</a><br>
-                @if(config('app.government'))
-                    Meer actuele informatie over het coronavirus is te vinden op de website van het <a href="{{ config('app.government') }}" class="font-bold">RIVM.</a><br>
-                @endif
-                <a href="https://instagram.com/coronadabnl" class="font-bold">@CoronaDabNL</a>
-            </div>
-        </div>
+{{--        <div class="flex text-center">--}}
+{{--            <div class="w-full my-8 text-orange-900 text-xs">--}}
+{{--                @lang('texts.footer.reach_me') <a href="mailto:{{ config('app.email') }}m" class="font-bold">{{ config('app.email') }}</a><br>--}}
+{{--                @if(config('app.government'))--}}
+{{--                    Meer actuele informatie over het coronavirus is te vinden op de website van het <a href="{{ config('app.government') }}" class="font-bold">RIVM.</a><br>--}}
+{{--                @endif--}}
+{{--                <a href="https://instagram.com/coronadabnl" class="font-bold">@CoronaDabNL</a>--}}
+{{--            </div>--}}
+{{--        </div>--}}
     </body>
 
     <script>
         feather.replace()
+    </script>
+    <script>
+        $('body').removeClass('stop-scrolling')
+        const button = document.querySelector('.modal-button')
+        button.addEventListener('click', toggleModal)
+
+        const overlay = document.querySelector('.modal-overlay')
+        overlay.addEventListener('click', toggleModal)
+
+        let open = 0;
+
+        function toggleModal () {
+            const modal = document.querySelector('.modal')
+            modal.classList.toggle('opacity-0')
+            modal.classList.toggle('pointer-events-none')
+            $('body').toggleClass('stop-scrolling');
+        }
+
     </script>
 </html>
