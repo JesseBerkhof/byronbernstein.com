@@ -20,6 +20,7 @@ class Appreciation extends Model
         'city',
         'country',
         'ip',
+        'approved_at',
     ];
 
     public function getMessageAttribute(): string
