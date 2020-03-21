@@ -2,6 +2,7 @@
 
 namespace App\Http;
 
+use App\Http\Middleware\Admin;
 use App\Http\Middleware\Blocked;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
@@ -42,6 +43,10 @@ class Kernel extends HttpKernel
         'api' => [
             'throttle:60,1',
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
+        ],
+
+        'admin' => [
+            Admin::class
         ],
     ];
 

@@ -58,6 +58,20 @@
                 @foreach($chunk as $appreciation)
                     <div class="w-full sm:w-full md:w-full lg:w-1/6 xl:w-1/6 m-2 bg-white p-4 shadow-md text-gray-900">
                         {!! $appreciation->message !!}
+
+                        @if(in_array(\Illuminate\Support\Facades\Request::ip(), ['163.158.214.111', '127.0.0.1'], true))
+                        <form action="{{ route('appreciation.delete') }}" method="POST">
+                            @method('DELETE')
+                            @csrf
+                            <input hidden name="appreciation_id" value="{{ $appreciation->id }}">
+                            <button class="w-full bg-red-300 px-2 py-1 mt-2 text-red-800 hover:bg-red-400 hover:text-red-900">Verwijderen</button>
+                        </form>
+                        <form action="{{ route('ip.store') }}" method="POST">
+                            @csrf
+                            <input hidden name="ip" value="{{ $appreciation->ip }}">
+                            <button class="w-full bg-purple-300 px-2 py-1 mt-2 text-purple-800 hover:bg-purple-400 hover:text-red-900">Blokkeren</button>
+                        </form>
+                        @endif
                     </div>
                 @endforeach
             </div>

@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Arr;
 
 /**
@@ -14,6 +15,8 @@ use Illuminate\Support\Arr;
  */
 class Appreciation extends Model
 {
+    use SoftDeletes;
+
     protected $fillable = [
         'first_name',
         'last_name',
@@ -22,6 +25,8 @@ class Appreciation extends Model
         'ip',
         'approved_at',
     ];
+
+    protected $dates = ['deleted_at'];
 
     public function getMessageAttribute(): string
     {
