@@ -6,12 +6,28 @@
         <meta property="og:title" content="{{ config('app.name') }}"/>
         <meta property="og:type" content="charity"/>
         <meta property="og:url" content="{{ config('app.url') }}"/>
-{{--        <meta property="og:image" content="{{ asset('images/dab.png') }}"/>--}}
+        <meta property="og:image" content="{{ asset('images/og_image.png') }}"/>
         <meta property="og:site_name" content="{{ config('app.name') }}"/>
         <meta property="og:description" content="{{ trans('socials.description') }}"/>
-        <title>
-            {{ config('app.name') }}
-        </title>
+        <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('icons/apple-icon-57x57.png') }}">
+        <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('icons/apple-icon-60x60.png') }}">
+        <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('icons/apple-icon-72x72.png') }}">
+        <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('icons/apple-icon-76x76.png') }}">
+        <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('icons/apple-icon-114x114.png') }}">
+        <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('icons/apple-icon-120x120.png') }}">
+        <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('icons/apple-icon-144x144.png') }}">
+        <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('icons/apple-icon-152x152.png') }}">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('icons/apple-icon-180x180.png') }}">
+        <link rel="icon" type="image/png" sizes="192x192"  href="{{ asset('icons/android-icon-192x192.png') }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('icons/favicon-32x32.png') }}">
+        <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('icons/favicon-96x96.png') }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('icons/favicon-16x16.png') }}">
+        <link rel="manifest" href="{{ asset('icons/manifest.json') }}">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="{{ asset('icons/ms-icon-144x144.png') }}">
+        <meta name="theme-color" content="#ffffff">
+
+        <title>{{ config('app.name') }}</title>
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
         <script src="https://unpkg.com/feather-icons"></script>
@@ -55,7 +71,7 @@
         @endif
 
 
-            <div class="container mx-auto">
+        <div class="container mx-auto">
             <div class="flex mt-4 sm:mt-8 md:mt-8 lg:mt-8 xl:mt-8 mb-24">
                 <div class="w-full sm:w-full md:w-full lg:w-full xl:w-full text-center">
                     @include('components.navigation')
