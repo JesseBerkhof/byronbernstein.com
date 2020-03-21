@@ -35,7 +35,7 @@
         @if($errors->isNotEmpty())
             <div class="flex mb-8">
                 <div class="w-full bg-red-400 text-red-900 p-4 text-center">
-                    <ul>
+                    <ul class="font-bold">
                         @foreach($errors->all() as $error)
                             <li>{{ $error }}</li>
                         @endforeach
@@ -44,7 +44,18 @@
             </div>
         @endif
 
-        <div class="container mx-auto">
+        @if(Session::has('success'))
+            <div class="flex mb-8">
+                <div class="w-full bg-green-400 text-green-900 p-4 text-center">
+                    <ul class="font-bold">
+                        Het is gelukt! Uw bedankje wordt zo snel mogelijk toegevoegd aan de lijst.
+                    </ul>
+                </div>
+            </div>
+        @endif
+
+
+            <div class="container mx-auto">
             <div class="flex mt-4 sm:mt-8 md:mt-8 lg:mt-8 xl:mt-8 mb-24">
                 <div class="w-full sm:w-full md:w-full lg:w-full xl:w-full text-center">
                     @include('components.navigation')

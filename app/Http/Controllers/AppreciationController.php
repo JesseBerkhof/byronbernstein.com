@@ -17,6 +17,8 @@ class AppreciationController extends Controller
         $appreciation->fill($payload);
         $appreciation->save();
 
+        $request->session()->flash('success', 'Het is gelukt! Uw bedankje wordt zo snel mogelijk toegevoegd aan de lijst.');
+
         return redirect()->back();
     }
 }
