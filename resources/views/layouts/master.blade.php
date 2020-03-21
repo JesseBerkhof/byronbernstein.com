@@ -7,8 +7,8 @@
         <meta property="og:type" content="charity"/>
         <meta property="og:url" content="{{ config('app.url') }}"/>
 {{--        <meta property="og:image" content="{{ asset('images/dab.png') }}"/>--}}
-{{--        <meta property="og:site_name" content="{{ config('app.name') }}"/>--}}
-{{--        <meta property="og:description" content="{{ trans('socials.facebook.message') }}"/>--}}
+        <meta property="og:site_name" content="{{ config('app.name') }}"/>
+        <meta property="og:description" content="{{ trans('socials.description') }}"/>
         <title>
             {{ config('app.name') }}
         </title>
@@ -20,7 +20,7 @@
         <script src="{{ asset('js/share.js') }}"></script>
         <script defer="" src="{{ mix('js/app.js') }}"></script>
 
-        <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5e7294f8d9f9b800124a2d35&product=inline-share-buttons&cms=website' async='async'></script>
+        <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5e7294f8d9f9b800124a2d35&product=inline-share-buttons" async="async"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id={{ config('app.analytics') }}"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
