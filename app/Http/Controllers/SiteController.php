@@ -8,7 +8,7 @@ class SiteController extends Controller
 {
      public function index() {
         return view('index')->with([
-            'appreciations' => Appreciation::all()->whereNotNull('approved_at')->sortByDesc('created_at')
+            'appreciations' => Appreciation::all()->sortByDesc('created_at')
         ]);
      }
 
