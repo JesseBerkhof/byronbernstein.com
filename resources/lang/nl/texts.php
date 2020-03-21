@@ -3,7 +3,7 @@
 return [
     'header' => [
         'title' => 'Zorgverleners, bedankt.',
-        'subtitle' => 'Voor het werk dat jullie doen.'
+        'subtitle' => 'Voor het werk dat jullie verrichten.'
     ],
     'thanks' => [
         'message' => '<b>:name</b> uit <b>:city</b> :random',
