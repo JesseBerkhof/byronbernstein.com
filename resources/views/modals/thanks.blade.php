@@ -1,6 +1,6 @@
-<div class="modal opacity-0 pointer-events-none absolute w-screen h-screen top-0 left-0 flex items-center justify-center">
+<div class="w-modal opacity-0 pointer-events-none absolute w-screen h-screen top-0 left-0 flex items-center justify-center">
     <div class="modal-overlay absolute w-screen h-screen bg-black opacity-25 top-0 left-0 cursor-pointer"></div>
-    <div class="absolute w-1/4 p-8 bg-white rounded-sm shadow-lg flex items-center justify-center">
+    <div class="absolute w-full w-1/4 p-8 bg-white rounded-sm shadow-lg flex items-center justify-center">
         <form class="w-full mb-4" action="{{ route('thanks.store') }}" method="POST">
             @csrf
             <div class="flex flex-wrap mb-6">
