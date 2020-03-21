@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-	<div class="container mx-auto mb-auto h-screen">
+	<div class="container mx-auto mb-12">
         @include('components.header')
 
         <div class="flex items-center justify-center mt-24">
