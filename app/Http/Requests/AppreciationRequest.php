@@ -32,7 +32,7 @@ class AppreciationRequest extends FormRequest
     public function rules()
     {
         return [
-            'first_name' => ['string', 'max:25', 'required', new Offensive(new OffensiveChecker($this->blacklist))],
+            'first_name' => ['max:25', 'required', new Offensive(new OffensiveChecker($this->blacklist))],
             'last_name' => ['max:40', new Offensive(new OffensiveChecker($this->blacklist))],
             'city' => ['max: 120', new Offensive(new OffensiveChecker($this->blacklist))]
         ];

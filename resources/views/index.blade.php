@@ -10,7 +10,7 @@
                     @csrf
                     <div class="flex flex-wrap mb-6">
                         <div class="flex mb-8">
-                            <h1>Laat een bedankje achter</h1>
+                            <h1 class="text-blue-800 text-2xl">Laat een bedankje achter</h1>
                         </div>
                         <div class="w-full mb-6">
                             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="first_name">

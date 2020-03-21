@@ -34,7 +34,7 @@
 
         @if($errors->isNotEmpty())
             <div class="flex mb-8">
-                <div class="w-full bg-red-400 text-red-900 p-4">
+                <div class="w-full bg-red-400 text-red-900 p-4 text-center">
                     <ul>
                         @foreach($errors->all() as $error)
                             <li>{{ $error }}</li>

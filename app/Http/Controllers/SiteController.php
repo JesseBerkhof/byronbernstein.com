@@ -13,16 +13,8 @@ class SiteController extends Controller
         ]);
      }
 
-     public function hygiene() {
-        return view('hygiene');
-     }
-
-     public function faq() {
-        return view('faq');
-     }
-
-     public function donate() {
-        return view('donate');
+     public function measures() {
+        return view('measures');
      }
 
 }
