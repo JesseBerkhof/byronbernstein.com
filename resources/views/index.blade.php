@@ -18,6 +18,8 @@
             </div>
         </div>
 
+        @include('components.share')
+
         @foreach($appreciations->chunk(3) as $chunk)
             <div class="flex flex-wrap justify-center">
                 @foreach($chunk as $appreciation)
