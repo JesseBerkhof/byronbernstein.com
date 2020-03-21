@@ -5,7 +5,7 @@
         @include('components.header')
 
         <div class="flex items-center justify-center mt-24">
-            <div class="w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/3 bg-white shadow p-8">
+            <div class="w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/3 bg-white shadow p-8 rounded">
                 <form class="w-full mb-4" action="{{ route('thanks.store') }}" method="POST">
                     @csrf
                     <div class="flex flex-wrap mb-6">
@@ -32,7 +32,7 @@
                         </div>
                     </div>
                     <div class="flex flex-wrap mb-2">
-                        <button class="block w-full bg-gray-500 p-4 font-bold text-gray-900 hover:bg-red-600 hover:text-white" type="submit">
+                        <button class="block w-full bg-blue-200 p-4 font-bold rounded text-blue-800 hover:bg-red-600 hover:text-white" type="submit">
                             @lang('buttons.thanks.submit')
                         </button>
                     </div>
