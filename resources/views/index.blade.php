@@ -37,6 +37,9 @@
                         </button>
                     </div>
                 </form>
+                <div class="flex w-full sm:w-full md:w-full lg:w-full xl:w-full justify-center mt-8">
+                    <div class="sharethis-inline-share-buttons"></div>
+                </div>
             </div>
         </div>
 
@@ -47,13 +50,13 @@
                 </h1>
             </div>
         </div>
+    </div>
 
-        @include('components.share')
-
-        @foreach($appreciations->chunk(3) as $chunk)
+    <div class="container-fluid">
+        @foreach($appreciations->chunk(4) as $chunk)
             <div class="flex flex-wrap justify-center">
                 @foreach($chunk as $appreciation)
-                    <div class="w-full sm:w-full md:w-full lg:w-1/4 xl:w-1/4 m-2 bg-white p-4 shadow-md text-gray-900">
+                    <div class="w-full sm:w-full md:w-full lg:w-1/6 xl:w-1/6 m-2 bg-white p-4 shadow-md text-gray-900">
                         {!! $appreciation->message !!}
                     </div>
                 @endforeach
