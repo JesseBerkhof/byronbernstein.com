@@ -76,9 +76,10 @@
 
             <div class="flex flex-wrap justify-center">
                 @foreach($chunk as $appreciation)
-                    <div class="w-full sm:w-full md:w-full lg:w-1/6 xl:w-1/6 m-2 bg-white p-4 shadow-md text-gray-900">
+                    <div class="relative w-full sm:w-full md:w-full lg:w-1/6 xl:w-1/6 m-2 bg-white p-4 shadow-md text-gray-900">
                         {!! $appreciation->message !!}
 
+                        <p class="absolute bottom-0 right-0 pr-2 pb-2 text-right text-xs text-gray-600">{{ $appreciation->created_at->diffForHumans() }}</p>
                         @if(in_array(\Illuminate\Support\Facades\Request::ip(), config('admins'), true))
                         <form action="{{ route('appreciation.delete') }}" method="POST">
                             @method('DELETE')
