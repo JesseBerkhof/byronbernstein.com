@@ -56,13 +56,30 @@
     </div>
 
     <div class="container-fluid">
-        @foreach($appreciations->chunk(4) as $chunk)
+        @foreach($appreciations->chunk(4) as $index => $chunk)
+            @if($index === 4)
+                <div class="flex flex-wrap justify-center">
+                    <div class="w-full sm:w-full md:w-full lg:w-1/2 xl:w-1/2 m-2 bg-white p-4 shadow-md text-gray-900 text-center">
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                             style="display:block"
+                             data-ad-format="fluid"
+                             data-ad-layout-key="-ef+6k-30-ac+ty"
+                             data-ad-client="ca-pub-6313840088307831"
+                             data-ad-slot="3491175108"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </div>
+                @endif
+
             <div class="flex flex-wrap justify-center">
                 @foreach($chunk as $appreciation)
-                    <div class="w-full sm:w-full md:w-full lg:w-1/6 xl:w-1/6 m-2 bg-white p-4 shadow-md text-gray-900">
+                    <div class="w-full sm:w-full md:w-full lg:w-1/6 xl:w-1/6 m-2 p-4 text-gray-900">
                         {!! $appreciation->message !!}
 
-                        @if(in_array(\Illuminate\Support\Facades\Request::ip(), ['163.158.214.111', '127.0.0.1'], true))
+                        @if(in_array(\Illuminate\Support\Facades\Request::ip(), config('admins'), true))
                         <form action="{{ route('appreciation.delete') }}" method="POST">
                             @method('DELETE')
                             @csrf
