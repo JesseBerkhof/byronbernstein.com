@@ -4,6 +4,12 @@
 	<div class="container mx-auto mb-12">
         @include('components.header')
 
+        <div class="flex items-center justify-center mt-12">
+            <div class="w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/3 text-center text-2xl text-blue-800">
+                Er is al <b>{{ $totalDonations }}</b> euro opgehaad voor het <br><span class="font-bold text-red-400">Rode Kruis</span>
+            </div>
+        </div>
+
         <div class="flex items-center justify-center mt-24">
             <div class="w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/3 bg-white shadow p-8 rounded">
                 <form class="w-full mb-4" action="{{ route('thanks.store') }}" method="POST">
