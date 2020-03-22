@@ -38,7 +38,7 @@
                     </div>
                 </form>
                 <div class="flex w-full sm:w-full md:w-full lg:w-full xl:w-full justify-center mt-8">
-                    <h1>Deel op social media</h1>
+                    <h1 class="text-blue-800">Deel op social media</h1>
                 </div>
                 <div class="flex w-full sm:w-full md:w-full lg:w-full xl:w-full justify-center mt-2">
                     <div class="sharethis-inline-share-buttons"></div>
