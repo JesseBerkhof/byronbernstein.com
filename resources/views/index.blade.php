@@ -49,7 +49,7 @@
         <div class="flex items-center justify-center mt-24">
             <div class="w-full sm:w-full md:w-full lg:w-full xl:w-full text-center">
                 <h1 class="text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-5xl text-blue-900">
-                    {{ $appreciations->count() }} <br>Nederlanders <br>zijn blij met jullie.
+                    {{ $appreciations->total() }} <br>Nederlanders <br>zijn blij met jullie.
                 </h1>
             </div>
         </div>
@@ -79,5 +79,11 @@
                 @endforeach
             </div>
         @endforeach
+
+        <div class="flex flex-wrap justify-center my-8">
+            <div class="w-full">
+                {{ $appreciations->links() }}
+            </div>
+        </div>
     </div>
 @endsection

@@ -1,7 +1,12 @@
 module.exports = {
-  theme: {
-    extend: {},
-  },
   variants: {},
-  plugins: [],
+  theme: {
+    pagination: theme => ({
+      // Customize the color only. (optional)
+      color: theme('colors.blue.600'),
+    })
+  },
+  plugins: [
+    require('tailwindcss-plugins/pagination'),
+  ],
 }

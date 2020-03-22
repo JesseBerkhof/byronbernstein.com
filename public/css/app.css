@@ -623,6 +623,50 @@ video {
   }
 }
 
+.pagination{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination .page-item .page-link{
+  padding: .75rem;
+  display: block;
+  text-decoration: none;
+  border-top-width: 1px;
+  border-left-width: 1px;
+  border-bottom-width: 1px;
+  background-color: #ffffff;
+  color: #3182ce;
+}
+
+.pagination .page-item .page-link:hover{
+  background-color: #f1f5f8;
+}
+
+.pagination .page-item:first-child .page-link{
+  border-top-left-radius: .25rem;
+  border-bottom-left-radius: .25rem;
+}
+
+.pagination .page-item:last-child .page-link{
+  border-right-width: 1px;
+  border-top-right-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+}
+
+.pagination .page-item.active .page-link{
+  background-color: #3182ce;
+  border-color: #3182ce;
+  color: #ffffff;
+}
+
+.pagination .page-item.disabled .page-link{
+  background-color: #f1f5f8;
+  color: #8795a1;
+}
+
 .sr-only{
   position: absolute;
   width: 1px;
@@ -13947,7 +13991,7 @@ video {
 }
 
 h1 {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
 }
 
 .modal {
@@ -13957,72 +14001,6 @@ h1 {
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
-}
-
-.pulse {
-  z-index: 1;
-  position: relative;
-  font-size: inherit;
-  font-family: inherit;
-  color: white;
-  padding: 0.5em 1em;
-  outline: none;
-  border: none;
-  background-color: #2d3058;
-}
-
-.pulse:hover {
-  cursor: pointer;
-}
-
-.pulse::before {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border: 4px solid #2d3058;
-  transform-origin: center;
-  transform: scale(1);
-}
-
-.pulse:hover::before {
-  transition: all 0.75s ease-in-out;
-  transform-origin: center;
-  transform: scale(1.75);
-  opacity: 0;
-}
-
-.jelly {
-  z-index: 1;
-}
-
-.jelly:hover {
-  cursor: pointer;
-  -webkit-animation: jelly 0.5s;
-          animation: jelly 0.5s;
-}
-
-@-webkit-keyframes jelly {
-  0%, 100% {
-    transform: scale(1, 1);
-  }
-
-  50% {
-    transform: scale(1.05, 1.05);
-  }
-}
-
-@keyframes jelly {
-  0%, 100% {
-    transform: scale(1, 1);
-  }
-
-  50% {
-    transform: scale(1.05, 1.05);
-  }
 }
 
 @media (min-width: 640px){

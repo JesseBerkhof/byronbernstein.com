@@ -13,3 +13,4 @@ Route::middleware(['admin'])->group(static function () {
     Route::delete('/blokkeren', 'BlacklistController@delete')->name('ip.delete');
 });
 
+Route::get('/doneren', 'SiteController@donate')->name('donate');
