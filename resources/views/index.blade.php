@@ -79,20 +79,22 @@
                     <div class="relative w-full sm:w-full md:w-full lg:w-1/6 xl:w-1/6 m-2 bg-white p-4 shadow-md text-gray-900">
                         {!! $appreciation->message !!}
 
-                        <p class="absolute bottom-0 right-0 pr-2 pb-2 text-right text-xs text-gray-600">{{ $appreciation->created_at->diffForHumans() }}</p>
+                        <div class="flex">
                         @if(in_array(\Illuminate\Support\Facades\Request::ip(), config('admins'), true))
                         <form action="{{ route('appreciation.delete') }}" method="POST">
                             @method('DELETE')
                             @csrf
                             <input hidden name="appreciation_id" value="{{ $appreciation->id }}">
-                            <button class="w-full bg-red-300 px-2 py-1 mt-2 text-red-800 hover:bg-red-400 hover:text-red-900">Verwijderen</button>
+                            <button class="px-2 mt-2 p-4"><i data-feather="trash" class="text-gray-700 inline-block"></i></button>
                         </form>
                         <form action="{{ route('ip.store') }}" method="POST">
                             @csrf
                             <input hidden name="ip" value="{{ $appreciation->ip }}">
-                            <button class="w-full bg-purple-300 px-2 py-1 mt-2 text-purple-800 hover:bg-purple-400 hover:text-red-900">Blokkeren</button>
+                            <button class="px-2 mt-2 p-4"><i data-feather="lock" class="text-gray-700 inline-block"></i></button>
                         </form>
                         @endif
+                        </div>
+                        <p class="absolute bottom-0 right-0 p-4 text-right text-xs text-gray-600">{{ $appreciation->created_at->diffForHumans() }}</p>
                     </div>
                 @endforeach
             </div>
