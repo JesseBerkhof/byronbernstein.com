@@ -100,6 +100,7 @@
                         </form>
                         @endif
                         </div>
+                        <br>
                         <p class="absolute bottom-0 right-0 p-4 text-right text-xs text-gray-600">{{ $appreciation->created_at->diffForHumans() }}</p>
                     </div>
                 @endforeach
