@@ -117,18 +117,21 @@
             </div>
         </div>
 
-        @include('modals.thanks')
         @yield('content')
 
-{{--        <div class="flex text-center">--}}
-{{--            <div class="w-full my-8 text-orange-900 text-xs">--}}
-{{--                @lang('texts.footer.reach_me') <a href="mailto:{{ config('app.email') }}m" class="font-bold">{{ config('app.email') }}</a><br>--}}
-{{--                @if(config('app.government'))--}}
-{{--                    Meer actuele informatie over het coronavirus is te vinden op de website van het <a href="{{ config('app.government') }}" class="font-bold">RIVM.</a><br>--}}
-{{--                @endif--}}
-{{--                <a href="https://instagram.com/coronadabnl" class="font-bold">@CoronaDabNL</a>--}}
-{{--            </div>--}}
-{{--        </div>--}}
+        <div class="flex text-center">
+            <div class="w-full my-8 text-blue-900 text-xs">
+                <a href="https://www.facebook.com/zorgverlenersbedankt-103029398010932/" target="_blank" class="font-bold mx-6">
+                    <i data-feather="instagram" class="m-8 sm:m-1 md:m-6 lg:m-6 xl:m-6 text-gray-700 inline-block"></i>
+                </a>
+                <a href="https://instagram.com/zorgverlenersbedankt" target="_blank" class="font-bold mx-6">
+                    <i data-feather="facebook" class="m-8 sm:m-1 md:m-6 lg:m-6 xl:m-6 text-gray-700 inline-block"></i>
+                </a>
+                <a href="mailto:contact@zorgverlenersbedankt.nl" class="font-bold mx-6">
+                    <i data-feather="mail" class="m-8 sm:m-1 md:m-6 lg:m-6 xl:m-6 text-gray-700 inline-block"></i>
+                </a>
+            </div>
+        </div>
     </body>
 
     <script>
