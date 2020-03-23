@@ -122,10 +122,10 @@
         <div class="flex text-center">
             <div class="w-full my-8 text-blue-900 text-xs">
                 <a href="https://www.facebook.com/zorgverlenersbedankt-103029398010932/" target="_blank" class="font-bold mx-6">
-                    <i data-feather="instagram" class="m-8 sm:m-1 md:m-6 lg:m-6 xl:m-6 text-gray-700 inline-block"></i>
+                    <i data-feather="facebook" class="m-8 sm:m-1 md:m-6 lg:m-6 xl:m-6 text-gray-700 inline-block"></i>
                 </a>
                 <a href="https://instagram.com/zorgverlenersbedankt" target="_blank" class="font-bold mx-6">
-                    <i data-feather="facebook" class="m-8 sm:m-1 md:m-6 lg:m-6 xl:m-6 text-gray-700 inline-block"></i>
+                    <i data-feather="instagram" class="m-8 sm:m-1 md:m-6 lg:m-6 xl:m-6 text-gray-700 inline-block"></i>
                 </a>
                 <a href="mailto:contact@zorgverlenersbedankt.nl" class="font-bold mx-6">
                     <i data-feather="mail" class="m-8 sm:m-1 md:m-6 lg:m-6 xl:m-6 text-gray-700 inline-block"></i>
@@ -136,23 +136,5 @@
 
     <script>
         feather.replace()
-    </script>
-    <script>
-        $('body').removeClass('stop-scrolling')
-        const button = document.querySelector('.modal-button')
-        button.addEventListener('click', toggleModal)
-
-        const overlay = document.querySelector('.modal-overlay')
-        overlay.addEventListener('click', toggleModal)
-
-        let open = 0;
-
-        function toggleModal () {
-            const modal = document.querySelector('.modal')
-            modal.classList.toggle('opacity-0')
-            modal.classList.toggle('pointer-events-none')
-            $('body').toggleClass('stop-scrolling');
-        }
-
     </script>
 </html>
