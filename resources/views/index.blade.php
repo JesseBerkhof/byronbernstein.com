@@ -63,22 +63,22 @@
 
     <div class="container-fluid">
         @foreach($appreciations->chunk(4) as $index => $chunk)
-            @if($index === 4)
-                <div class="flex flex-wrap justify-center">
-                    <div class="w-full sm:w-full md:w-full lg:w-1/2 xl:w-1/2 m-2 text-gray-900 text-center">
-                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                        <ins class="adsbygoogle"
-                             style="display:block"
-                             data-ad-format="fluid"
-                             data-ad-layout-key="-ef+6k-30-ac+ty"
-                             data-ad-client="ca-pub-6313840088307831"
-                             data-ad-slot="3491175108"></ins>
-                        <script>
-                            (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script>
-                    </div>
-                </div>
-                @endif
+{{--                @if($index === 4)--}}
+{{--                <div class="flex flex-wrap justify-center">--}}
+{{--                    <div class="w-full sm:w-full md:w-full lg:w-1/2 xl:w-1/2 m-2 text-gray-900 text-center">--}}
+{{--                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>--}}
+{{--                        <ins class="adsbygoogle"--}}
+{{--                             style="display:block"--}}
+{{--                             data-ad-format="fluid"--}}
+{{--                             data-ad-layout-key="-ef+6k-30-ac+ty"--}}
+{{--                             data-ad-client="ca-pub-6313840088307831"--}}
+{{--                             data-ad-slot="3491175108"></ins>--}}
+{{--                        <script>--}}
+{{--                            (adsbygoogle = window.adsbygoogle || []).push({});--}}
+{{--                        </script>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                @endif--}}
 
             <div class="flex flex-wrap justify-center">
                 @foreach($chunk as $appreciation)
