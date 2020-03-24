@@ -40,7 +40,7 @@
                                     <i data-feather="home" class="my-8 sm:my-1 md:my-6 lg:my-6 xl:my-6 text-purple-700 inline-block"></i>
                                 </div>
                             </div>
-                            <span class="font-bold">Blijf thuis wanneer je je ziek voelt.</span>
+                            <span class="font-bold">#BlijfThuis</span>
                         </div>
                         <div class="w-full sm:w-full md:w-1/3 lg:w-1/6 xl:w-1/8 m-4 sm:m-4 md:m-1 bg-white py-4 sm:py-10 md:py-4 shadow-md text-gray-900 h-40 text-center">
                             <div class="flex">
