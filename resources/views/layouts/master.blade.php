@@ -38,7 +38,6 @@
 
         <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5e7294f8d9f9b800124a2d35&product=inline-share-buttons" async="async"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id={{ config('app.analytics') }}"></script>
-        <script data-ad-client="ca-pub-6313840088307831" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
