@@ -24,9 +24,7 @@ class SiteController extends Controller
          //$donationData = json_decode($response->getBody()->getContents(), true)['statistics'];
 
          return view('index')->with([
-            'appreciations' => Appreciation::orderBy('created_at', 'DESC')->paginate(100),
-            //'totalDonations' => $donationData['donationsSum'] ?? null,
-            //'totalDonators' => $donationData['donationsCount'] ?? null
+            'appreciations' => Appreciation::query()->whereNotNull('approved_at')->orderByDesc('created_at')->paginate(100)
         ]);
      }
 
