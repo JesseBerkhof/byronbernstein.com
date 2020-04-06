@@ -36,6 +36,7 @@
         <script src="{{ asset('js/share.js') }}"></script>
         <script defer="" src="{{ mix('js/app.js') }}"></script>
 
+        <script data-ad-client="ca-pub-6887012387729431" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5e7294f8d9f9b800124a2d35&product=inline-share-buttons" async="async"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id={{ config('app.analytics') }}"></script>
         <script>
@@ -87,7 +88,7 @@
             </div>
         @endif
 
-        @if(Session::has('success'))
+        @if(session()->has('success'))
             <div class="flex mb-8">
                 <div class="w-full bg-green-400 text-green-900 p-4 text-center">
                     <ul class="font-bold">
@@ -95,14 +96,11 @@
                     </ul>
                 </div>
             </div>
-        @endif
-
-
-        @if(Session::has('error'))
+        @elseif(session()->has('error'))
             <div class="flex mb-8">
                 <div class="w-full bg-red-400 text-red-900 p-4 text-center">
                     <ul class="font-bold">
-                        {{ Session::get('error') }}
+                        {{ session()->get('error') }}
                     </ul>
                 </div>
             </div>
@@ -121,13 +119,13 @@
         <div class="flex text-center">
             <div class="w-full my-8 text-blue-900 text-xs">
                 <a href="https://www.facebook.com/zorgverlenersbedankt-103029398010932/" target="_blank" class="font-bold mx-6">
-                    <i data-feather="facebook" class="m-8 sm:m-1 md:m-6 lg:m-6 xl:m-6 text-gray-700 inline-block"></i>
+                    <i data-feather="facebook" class="m-1 sm:m-1 md:m-2 lg:m-2 xl:m-2 text-gray-700 inline-block"></i>
                 </a>
                 <a href="https://instagram.com/zorgverlenersbedankt" target="_blank" class="font-bold mx-6">
-                    <i data-feather="instagram" class="m-8 sm:m-1 md:m-6 lg:m-6 xl:m-6 text-gray-700 inline-block"></i>
+                    <i data-feather="instagram" class="m-1 sm:m-1 md:m-2 lg:m-2 xl:m-2 text-gray-700 inline-block"></i>
                 </a>
                 <a href="mailto:contact@zorgverlenersbedankt.nl" class="font-bold mx-6">
-                    <i data-feather="mail" class="m-8 sm:m-1 md:m-6 lg:m-6 xl:m-6 text-gray-700 inline-block"></i>
+                    <i data-feather="mail" class="m-1 sm:m-1 md:m-2 lg:m-2 xl:m-2 text-gray-700 inline-block"></i>
                 </a>
             </div>
         </div>
