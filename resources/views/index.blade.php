@@ -13,7 +13,7 @@
         <div class="flex items-center justify-center mt-12">
             <div class="w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/3 text-center text-blue-800">
                 <li class="mx-2 sm:mx-4 md:mx-6 lg:mx-10 xl:mx-12 inline-block">
-                    <a class="text-blue-900 bg-blue-200 hover:bg-red-400 hover:text-white font-bold p-2 px-4 rounded" href="https://www.geef.nl/nl/actie/covid-19/donateurs" target="_blank">Doneren</a>
+                    <a class="text-blue-900 bg-blue-200 hover:bg-red-400 hover:text-white font-bold p-4 px-8 rounded" href="https://www.geef.nl/nl/actie/covid-19/donateurs" target="_blank">Doneren</a>
                 </li>
             </div>
         </div>
@@ -81,7 +81,16 @@
             @if($index === 3)
                 <div class="flex flex-wrap justify-center">
                     <div class="w-full sm:w-full md:w-full lg:w-1/2 xl:w-1/2 m-2 font-bold text-blue-900 text-center">
-                        Meer doen dan alleen een bedankje achterlaten? Blijf zoveel mogelijk thuis!
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                             style="display:block"
+                             data-ad-format="fluid"
+                             data-ad-layout-key="-gw-3+1f-3d+2z"
+                             data-ad-client="ca-pub-6313840088307831"
+                             data-ad-slot="5273939724"></ins>
+                        <script>
+                             (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
                     </div>
                 </div>
             @endif
