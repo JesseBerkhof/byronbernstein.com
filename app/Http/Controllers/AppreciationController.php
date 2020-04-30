@@ -23,6 +23,17 @@ class AppreciationController extends Controller
         return redirect()->back();
     }
 
+    public function approve(Appreciation $appreciation, Request $request)
+    {
+        $appreciation->update([
+            'approved_at' => now()
+        ]);
+
+        $appreciation->save();
+
+        return redirect()->back();
+    }
+
     public function delete(Request $request)
     {
         $appreciation = Appreciation::find($request->appreciation_id);

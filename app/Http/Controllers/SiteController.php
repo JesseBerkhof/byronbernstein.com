@@ -9,22 +9,12 @@ class SiteController extends Controller
 {
      public function index() {
 
-         //$token = 'OTdjMzhkOGVmMDM3MzYzMjFkNzA0Y2Y4ZGRlMDAwNmFmOTFkYmVjZjBhMDIxYWExOGMyZDE1OTM2MmJkMjFhMQ';
-         //$client = new Client();
-         //
-         //$headers = [
-         //    'Authorization' => 'Bearer ' . $token,
-         //    'Accept' => 'application/json',
-         //];
-         //
-         //$response = $client->request('GET', 'https://api.geef.nl/actions/covid-19', [
-         //    'headers' => $headers
-         //]);
-         //
-         //$donationData = json_decode($response->getBody()->getContents(), true)['statistics'];
+         $appreciations = Appreciation::query()->whereNotNull('approved_at')->orderByDesc('created_at')->paginate(100);
+         $unapproved = Appreciation::query()->whereNull('approved_at')->orderByDesc('created_at')->paginate(100);
 
          return view('index')->with([
-            'appreciations' => Appreciation::query()->whereNotNull('approved_at')->orderByDesc('created_at')->paginate(100)
+            'appreciations' => $appreciations,
+             'unapproved' => $unapproved
         ]);
      }
 
