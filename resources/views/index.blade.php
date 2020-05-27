@@ -74,29 +74,27 @@
         @foreach($unapproved->chunk(4) as $index => $chunk)
             <div class="flex flex-wrap justify-center">
                 @foreach($chunk as $appreciation)
-                    <div class="relative w-full sm:w-full md:w-full lg:w-1/6 xl:w-1/6 m-2 bg-gray-200 p-4 shadow-md text-gray-900">
+                    <div class="relative w-full sm:w-full md:w-full lg:w-1/6 xl:w-1/6 m-2 bg-gray-200 p-4 text-gray-900">
                         {!! $appreciation->message !!}
 
                         <div class="flex">
                                 <form action="{{ route('appreciation.approve', $appreciation) }}" method="POST">
                                     @csrf
                                     @method('PUT')
-                                    <button class="px-2 mt-2 p-4">Approve</button>
+                                    <button class="bg-green-200 hover:bg-green-400 text-green-900 hover:text-white rounded p-2 mr-2 my-2">Approve</button>
                                 </form>
                                 <form action="{{ route('appreciation.delete') }}" method="POST">
                                     @method('DELETE')
                                     @csrf
                                     <input hidden name="appreciation_id" value="{{ $appreciation->id }}">
-                                    <button class="px-2 mt-2 p-4"><i data-feather="trash" class="text-gray-700 inline-block"></i></button>
+                                    <button class="bg-red-200 text-red-400 rounded p-2 mr-2 my-2">Verwijderen</button>
                                 </form>
                                 <form action="{{ route('ip.store') }}" method="POST">
                                     @csrf
                                     <input hidden name="ip" value="{{ $appreciation->ip }}">
-                                    <button class="px-2 mt-2 p-4"><i data-feather="lock" class="text-gray-700 inline-block"></i></button>
+                                    <button class="bg-orange-200 text-orange-400 rounded p-2 mr-2 my-2">Blokkeren</button>
                                 </form>
                         </div>
-                        <br>
-                        <p class="absolute bottom-0 right-0 p-4 text-right text-xs text-gray-600">{{ $appreciation->created_at->diffForHumans() }}</p>
                     </div>
                 @endforeach
             </div>
@@ -114,7 +112,7 @@
 
             <div class="flex flex-wrap justify-center">
                 @foreach($chunk as $appreciation)
-                    <div class="relative w-full sm:w-full md:w-full lg:w-1/6 xl:w-1/6 m-2 bg-white p-4 shadow-md text-gray-900">
+                    <div class="relative w-full sm:w-full md:w-full lg:w-1/6 xl:w-1/6 m-2 bg-white p-4 text-gray-900">
                         {!! $appreciation->message !!}
 
                         <div class="flex">
@@ -123,17 +121,15 @@
                             @method('DELETE')
                             @csrf
                             <input hidden name="appreciation_id" value="{{ $appreciation->id }}">
-                            <button class="px-2 mt-2 p-4"><i data-feather="trash" class="text-gray-700 inline-block"></i></button>
+                            <button class="px-2 mt-2 p-4">Verwijderen</button>
                         </form>
                         <form action="{{ route('ip.store') }}" method="POST">
                             @csrf
                             <input hidden name="ip" value="{{ $appreciation->ip }}">
-                            <button class="px-2 mt-2 p-4"><i data-feather="lock" class="text-gray-700 inline-block"></i></button>
+                            <button class="px-2 mt-2 p-4">Blokkeren</button>
                         </form>
                         @endif
                         </div>
-                        <br>
-                        <p class="absolute bottom-0 right-0 p-4 text-right text-xs text-gray-600">{{ $appreciation->created_at->diffForHumans() }}</p>
                     </div>
                 @endforeach
             </div>

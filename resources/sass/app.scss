@@ -3,18 +3,3 @@
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
-
-//@import url('https://fonts.googleapis.com/css?family=Montserrat:700&display=swap');
-//
-//h1 {
-//	font-family: 'Montserrat', sans-serif;
-//}
-
-.modal {
-	transition: opacity 0.25s ease;
-}
-
-.stop-scrolling {
-	height: 100%;
-	overflow: hidden;
-}

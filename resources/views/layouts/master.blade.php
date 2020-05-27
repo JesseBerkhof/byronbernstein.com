@@ -75,58 +75,59 @@
         </style>
     </head>
     <body class="bg-blue-100 @if(config('app.env') === 'local' && env('RESPONSIVE_DEBUG'))sm:bg-red-500 md:bg-blue-500 lg:bg-pink-500 xl:bg-green-500 @endif">
+        <div id="app">
+            @if($errors->isNotEmpty())
+                <div class="flex mb-8">
+                    <div class="w-full bg-red-400 text-red-900 p-4 text-center">
+                        <ul class="font-bold">
+                            @foreach($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                </div>
+            @endif
 
-        @if($errors->isNotEmpty())
-            <div class="flex mb-8">
-                <div class="w-full bg-red-400 text-red-900 p-4 text-center">
-                    <ul class="font-bold">
-                        @foreach($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
+            @if(session()->has('success'))
+                <div class="flex mb-8">
+                    <div class="w-full bg-green-400 text-green-900 p-4 text-center">
+                        <ul class="font-bold">
+                            Het is gelukt! Uw bedankje wordt zo snel mogelijk toegevoegd aan de lijst.
+                        </ul>
+                    </div>
+                </div>
+            @elseif(session()->has('error'))
+                <div class="flex mb-8">
+                    <div class="w-full bg-red-400 text-red-900 p-4 text-center">
+                        <ul class="font-bold">
+                            {{ session()->get('error') }}
+                        </ul>
+                    </div>
+                </div>
+            @endif
+
+            <div class="container mx-auto">
+                <div class="flex mt-4 sm:mt-8 md:mt-8 lg:mt-8 xl:mt-8 mb-24">
+                    <div class="w-full sm:w-full md:w-full lg:w-full xl:w-full text-center">
+                        @include('components.navigation')
+                    </div>
                 </div>
             </div>
-        @endif
 
-        @if(session()->has('success'))
-            <div class="flex mb-8">
-                <div class="w-full bg-green-400 text-green-900 p-4 text-center">
-                    <ul class="font-bold">
-                        Het is gelukt! Uw bedankje wordt zo snel mogelijk toegevoegd aan de lijst.
-                    </ul>
+            @yield('content')
+
+            <div class="flex text-center">
+                <div class="w-full my-8 text-blue-900 text-xs">
+                    <a href="https://www.facebook.com/zorgverlenersbedankt-103029398010932/" target="_blank" class="font-bold mx-6">
+                        <i data-feather="facebook" class="m-1 sm:m-1 md:m-2 lg:m-2 xl:m-2 text-gray-700 inline-block"></i>
+                    </a>
+                    <a href="https://instagram.com/zorgverlenersbedankt" target="_blank" class="font-bold mx-6">
+                        <i data-feather="instagram" class="m-1 sm:m-1 md:m-2 lg:m-2 xl:m-2 text-gray-700 inline-block"></i>
+                    </a>
+                    <a href="mailto:contact@zorgverlenersbedankt.nl" class="font-bold mx-6">
+                        <i data-feather="mail" class="m-1 sm:m-1 md:m-2 lg:m-2 xl:m-2 text-gray-700 inline-block"></i>
+                    </a>
                 </div>
-            </div>
-        @elseif(session()->has('error'))
-            <div class="flex mb-8">
-                <div class="w-full bg-red-400 text-red-900 p-4 text-center">
-                    <ul class="font-bold">
-                        {{ session()->get('error') }}
-                    </ul>
-                </div>
-            </div>
-        @endif
-
-        <div class="container mx-auto">
-            <div class="flex mt-4 sm:mt-8 md:mt-8 lg:mt-8 xl:mt-8 mb-24">
-                <div class="w-full sm:w-full md:w-full lg:w-full xl:w-full text-center">
-                    @include('components.navigation')
-                </div>
-            </div>
-        </div>
-
-        @yield('content')
-
-        <div class="flex text-center">
-            <div class="w-full my-8 text-blue-900 text-xs">
-                <a href="https://www.facebook.com/zorgverlenersbedankt-103029398010932/" target="_blank" class="font-bold mx-6">
-                    <i data-feather="facebook" class="m-1 sm:m-1 md:m-2 lg:m-2 xl:m-2 text-gray-700 inline-block"></i>
-                </a>
-                <a href="https://instagram.com/zorgverlenersbedankt" target="_blank" class="font-bold mx-6">
-                    <i data-feather="instagram" class="m-1 sm:m-1 md:m-2 lg:m-2 xl:m-2 text-gray-700 inline-block"></i>
-                </a>
-                <a href="mailto:contact@zorgverlenersbedankt.nl" class="font-bold mx-6">
-                    <i data-feather="mail" class="m-1 sm:m-1 md:m-2 lg:m-2 xl:m-2 text-gray-700 inline-block"></i>
-                </a>
             </div>
         </div>
     </body>
