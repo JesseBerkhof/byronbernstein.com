@@ -6,7 +6,7 @@
 
         <div class="flex items-center justify-center mt-12">
             <div class="w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/3 text-center text-2xl text-blue-800">
-                Er is al <b>{{ env('DONATIONS') }}</b> euro opgehaald voor het <br><span class="text-red-500 font-bold">Rode Kruis</span>
+                Doneer aan het <span class="text-red-500 font-bold">Rode Kruis</span>
             </div>
         </div>
 
@@ -19,7 +19,7 @@
         </div>
 
         <div class="flex items-center justify-center mt-12">
-            <div class="w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/3 bg-white shadow p-8 rounded">
+            <div class="w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/3 bg-white p-8 rounded-md">
                 <form class="w-full mb-4" action="{{ route('thanks.store') }}" method="POST">
                     @csrf
                     <div class="flex flex-wrap mb-6">
@@ -27,22 +27,22 @@
                             <h1 class="text-blue-800 text-2xl">Laat een bedankje achter</h1>
                         </div>
                         <div class="w-full mb-6">
-                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="first_name">
+                            <label class="block uppercase tracking-wide text-blue-800 text-xs font-bold mb-2" for="first_name">
                                 @lang('fields.first_name')
                             </label>
-                            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="first_name" placeholder="@lang('fields.placeholders.first_name')" type="text">
+                            <input class="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-100 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-300" name="first_name" type="text">
                         </div>
                         <div class="w-full mb-6 md:mb-4">
-                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="last_name">
+                            <label class="block uppercase tracking-wide text-blue-800 text-xs font-bold mb-2" for="last_name">
                                 @lang('fields.last_name') (@lang('fields.optional'))
                             </label>
-                            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="last_name" placeholder="@lang('fields.placeholders.last_name')" type="text">
+                            <input class="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-100 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-300" name="last_name" type="text">
                         </div>
                         <div class="w-full mb-6 md:mb-4">
-                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="city">
+                            <label class="block uppercase tracking-wide text-blue-800 text-xs font-bold mb-2" for="city">
                                 @lang('fields.city') (@lang('fields.optional'))
                             </label>
-                            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="city" placeholder="@lang('fields.placeholders.city')" type="text">
+                            <input class="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-100 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-300" name="city" type="text">
                         </div>
                     </div>
                     <div class="flex flex-wrap mb-2">
@@ -74,25 +74,25 @@
         @foreach($unapproved->chunk(4) as $index => $chunk)
             <div class="flex flex-wrap justify-center">
                 @foreach($chunk as $appreciation)
-                    <div class="relative w-full sm:w-full md:w-full lg:w-1/6 xl:w-1/6 m-2 bg-gray-200 p-4 text-gray-900">
+                    <div class="relative w-full sm:w-full md:w-full lg:w-1/6 xl:w-1/6 m-2 bg-gray-100 p-4 text-gray-700 rounded-md">
                         {!! $appreciation->message !!}
 
                         <div class="flex">
                                 <form action="{{ route('appreciation.approve', $appreciation) }}" method="POST">
                                     @csrf
                                     @method('PUT')
-                                    <button class="bg-green-200 hover:bg-green-400 text-green-900 hover:text-white rounded p-2 mr-2 my-2">Approve</button>
+                                    <button class="bg-gray-100 text-gray-600 hover:bg-gray-300 hover:text-gray-600 rounded p-2 mr-2 my-2"><i class="w-4 h-4" data-feather="check"></i></button>
                                 </form>
                                 <form action="{{ route('appreciation.delete') }}" method="POST">
                                     @method('DELETE')
                                     @csrf
                                     <input hidden name="appreciation_id" value="{{ $appreciation->id }}">
-                                    <button class="bg-red-200 text-red-400 rounded p-2 mr-2 my-2">Verwijderen</button>
+                                    <button class="bg-gray-100 text-gray-600 hover:bg-gray-300 hover:text-gray-600 rounded p-2 mr-2 my-2"><i class="w-4 h-4" data-feather="trash"></i></button>
                                 </form>
                                 <form action="{{ route('ip.store') }}" method="POST">
                                     @csrf
                                     <input hidden name="ip" value="{{ $appreciation->ip }}">
-                                    <button class="bg-orange-200 text-orange-400 rounded p-2 mr-2 my-2">Blokkeren</button>
+                                    <button class="bg-gray-100 text-gray-600 hover:bg-gray-300 hover:text-gray-600 rounded p-2 mr-2 my-2"><i class="w-4 h-4" data-feather="lock"></i></button>
                                 </form>
                         </div>
                     </div>
@@ -112,7 +112,7 @@
 
             <div class="flex flex-wrap justify-center">
                 @foreach($chunk as $appreciation)
-                    <div class="relative w-full sm:w-full md:w-full lg:w-1/6 xl:w-1/6 m-2 bg-white p-4 text-gray-900">
+                    <div class="relative w-full sm:w-full md:w-full lg:w-1/6 xl:w-1/6 m-2 bg-white p-4 text-blue-800 rounded-md">
                         {!! $appreciation->message !!}
 
                         <div class="flex">
@@ -121,12 +121,12 @@
                             @method('DELETE')
                             @csrf
                             <input hidden name="appreciation_id" value="{{ $appreciation->id }}">
-                            <button class="px-2 mt-2 p-4">Verwijderen</button>
+                            <button class="bg-blue-100 text-gray-600 hover:bg-gray-300 hover:text-gray-600 rounded p-2 mr-2 my-2"><i class="w-4 h-4" data-feather="trash"></i></button>
                         </form>
                         <form action="{{ route('ip.store') }}" method="POST">
                             @csrf
                             <input hidden name="ip" value="{{ $appreciation->ip }}">
-                            <button class="px-2 mt-2 p-4">Blokkeren</button>
+                            <button class="bg-blue-100 text-gray-600 hover:bg-gray-300 hover:text-gray-600 rounded p-2 mr-2 my-2"><i class="w-4 h-4" data-feather="lock"></i></button>
                         </form>
                         @endif
                         </div>

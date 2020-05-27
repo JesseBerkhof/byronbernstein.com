@@ -119,13 +119,13 @@
             <div class="flex text-center">
                 <div class="w-full my-8 text-blue-900 text-xs">
                     <a href="https://www.facebook.com/zorgverlenersbedankt-103029398010932/" target="_blank" class="font-bold mx-6">
-                        <i data-feather="facebook" class="m-1 sm:m-1 md:m-2 lg:m-2 xl:m-2 text-gray-700 inline-block"></i>
+                        <i data-feather="facebook" class="m-1 sm:m-1 md:m-2 lg:m-2 xl:m-2 text-blue-800 inline-block"></i>
                     </a>
                     <a href="https://instagram.com/zorgverlenersbedankt" target="_blank" class="font-bold mx-6">
-                        <i data-feather="instagram" class="m-1 sm:m-1 md:m-2 lg:m-2 xl:m-2 text-gray-700 inline-block"></i>
+                        <i data-feather="instagram" class="m-1 sm:m-1 md:m-2 lg:m-2 xl:m-2 text-blue-800 inline-block"></i>
                     </a>
                     <a href="mailto:contact@zorgverlenersbedankt.nl" class="font-bold mx-6">
-                        <i data-feather="mail" class="m-1 sm:m-1 md:m-2 lg:m-2 xl:m-2 text-gray-700 inline-block"></i>
+                        <i data-feather="mail" class="m-1 sm:m-1 md:m-2 lg:m-2 xl:m-2 text-blue-800 inline-block"></i>
                     </a>
                 </div>
             </div>
