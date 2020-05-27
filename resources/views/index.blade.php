@@ -5,20 +5,6 @@
         @include('components.header')
 
         <div class="flex items-center justify-center mt-12">
-            <div class="w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/3 text-center text-2xl text-blue-800">
-                Doneer aan het <span class="text-red-500 font-bold">Rode Kruis</span>
-            </div>
-        </div>
-
-        <div class="flex items-center justify-center mt-12">
-            <div class="w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/3 text-center text-blue-800">
-                <li class="mx-2 sm:mx-4 md:mx-6 lg:mx-10 xl:mx-12 inline-block">
-                    <a class="text-blue-900 bg-blue-200 hover:bg-red-400 hover:text-white font-bold p-4 px-8 rounded" href="https://www.geef.nl/nl/actie/covid-19/donateurs" target="_blank">Doneren</a>
-                </li>
-            </div>
-        </div>
-
-        <div class="flex items-center justify-center mt-12">
             <div class="w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/3 bg-white p-8 rounded-md">
                 <form class="w-full mb-4" action="{{ route('thanks.store') }}" method="POST">
                     @csrf
