@@ -2,23 +2,22 @@
 
 namespace App\Http\Controllers;
 
-use App\Appreciation;
-use GuzzleHttp\Client;
+use App\Heart;
+use App\Message;
 
 class SiteController extends Controller
 {
      public function index() {
 
-         $appreciations = Appreciation::query()->whereNotNull('approved_at')->orderByDesc('created_at')->paginate(100);
-         $unapproved = Appreciation::query()->whereNull('approved_at')->orderByDesc('created_at')->paginate(100);
+         $messages = Message::query()->whereNotNull('approved_at')->orderByDesc('created_at')->paginate(100);
+         $unapproved = Message::query()->whereNull('approved_at')->orderByDesc('created_at')->paginate(100);
+
+         $hearts = Heart::all()->count();
 
          return view('index')->with([
-            'appreciations' => $appreciations,
-             'unapproved' => $unapproved
+            'messages' => $messages,
+            'hearts' => $hearts,
+            'unapproved' => $unapproved
         ]);
-     }
-
-     public function measures() {
-        return view('measures');
      }
 }

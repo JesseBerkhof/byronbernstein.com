@@ -2,42 +2,42 @@
 
 namespace App\Http\Controllers;
 
-use App\Appreciation;
-use App\Http\Requests\AppreciationRequest;
+use App\Message;
+use App\Http\Requests\MessageRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 
-class AppreciationController extends Controller
+class MessageController extends Controller
 {
-    public function store(AppreciationRequest $request)
+    public function store(MessageRequest $request)
     {
-        $appreciation = new Appreciation;
+        $message = new Message;
 
         $payload = Arr::add($request->all(), 'ip', $request->ip());
 
-        $appreciation->fill($payload);
-        $appreciation->save();
+        $message->fill($payload);
+        $message->save();
 
         $request->session()->flash('success', 'Het is gelukt! Uw bedankje wordt zo snel mogelijk toegevoegd aan de lijst.');
 
         return redirect()->back();
     }
 
-    public function approve(Appreciation $appreciation, Request $request)
+    public function approve(Message $message, Request $request)
     {
-        $appreciation->update([
+        $message->update([
             'approved_at' => now()
         ]);
 
-        $appreciation->save();
+        $message->save();
 
         return redirect()->back();
     }
 
     public function delete(Request $request)
     {
-        $appreciation = Appreciation::find($request->appreciation_id);
-        $appreciation->delete();
+        $message = Message::find($request->appreciation_id);
+        $message->delete();
 
         $request->session()->flash('error', 'Bedankje is gearchiveerd.');
 

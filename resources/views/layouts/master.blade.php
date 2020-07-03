@@ -28,17 +28,13 @@
         <meta name="theme-color" content="#ffffff">
 
         <title>{{ config('app.name') }}</title>
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
         <script src="https://unpkg.com/feather-icons"></script>
 
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <script src="{{ asset('js/share.js') }}"></script>
         <script defer="" src="{{ mix('js/app.js') }}"></script>
 
         <script data-ad-client="ca-pub-6313840088307831" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5e7294f8d9f9b800124a2d35&product=inline-share-buttons" async="async"></script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id={{ config('app.analytics') }}"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -48,7 +44,6 @@
         </script>
 
         <style>
-
             @font-face {
                 font-family: "Montserrat";
                 url("public/fonts/Montserrat-Black.ttf") format('truetype');
@@ -74,7 +69,7 @@
 
         </style>
     </head>
-    <body class="bg-blue-100 @if(config('app.env') === 'local' && env('RESPONSIVE_DEBUG'))sm:bg-red-500 md:bg-blue-500 lg:bg-pink-500 xl:bg-green-500 @endif">
+    <body class="bg-black @if(config('app.env') === 'local' && env('RESPONSIVE_DEBUG'))sm:bg-red-500 md:bg-blue-500 lg:bg-pink-500 xl:bg-green-500 @endif">
         <div id="app">
             @if($errors->isNotEmpty())
                 <div class="flex mb-8">
@@ -115,20 +110,6 @@
             </div>
 
             @yield('content')
-
-            <div class="flex text-center">
-                <div class="w-full my-8 text-blue-900 text-xs">
-                    <a href="https://www.facebook.com/zorgverlenersbedankt-103029398010932/" target="_blank" class="font-bold mx-6">
-                        <i data-feather="facebook" class="m-1 sm:m-1 md:m-2 lg:m-2 xl:m-2 text-blue-800 inline-block"></i>
-                    </a>
-                    <a href="https://instagram.com/zorgverlenersbedankt" target="_blank" class="font-bold mx-6">
-                        <i data-feather="instagram" class="m-1 sm:m-1 md:m-2 lg:m-2 xl:m-2 text-blue-800 inline-block"></i>
-                    </a>
-                    <a href="mailto:contact@zorgverlenersbedankt.nl" class="font-bold mx-6">
-                        <i data-feather="mail" class="m-1 sm:m-1 md:m-2 lg:m-2 xl:m-2 text-blue-800 inline-block"></i>
-                    </a>
-                </div>
-            </div>
         </div>
     </body>
 

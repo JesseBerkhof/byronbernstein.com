@@ -6,25 +6,15 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateBlacklistTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
-        Schema::create('blacklist', function (Blueprint $table) {
+        Schema::create('blacklist', static function (Blueprint $table) {
             $table->increments('id');
             $table->string('ip');
             $table->timestamps();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('blacklist');

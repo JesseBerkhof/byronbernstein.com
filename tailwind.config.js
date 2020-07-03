@@ -7,6 +7,6 @@ module.exports = {
     })
   },
   plugins: [
-    require('tailwindcss-plugins/pagination'),
+    require('@tailwindcss/ui'),
   ],
 }
