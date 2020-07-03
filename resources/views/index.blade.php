@@ -40,7 +40,9 @@
                         </div>
                     </div>
                 </div>
-                </p>
+                <div class="mt-5 grid grid-cols-1 mx-auto mt-12 mb-24">
+                    <iframe src="https://open.spotify.com/embed/playlist/0NqHLCyC0ZmMb7isMMl85V" width="300" height="100" frameborder="0" class="mx-auto" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
             </div>
         </div>
     </div>
@@ -72,7 +74,7 @@
             </div>
         @endforeach
 
-        <div class="flex flex-wrap justify-center my-8">
+        <div class="flex flex-wrap justify-center my-8 text-center">
             <div class="w-full">
                 {{ $messages->links() }}
             </div>
