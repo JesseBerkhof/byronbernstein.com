@@ -41,7 +41,7 @@
                     </div>
                 </div>
                 <div class="mt-5 grid grid-cols-1 mx-auto mt-12 mb-24">
-                    <iframe width="560" height="315" class="mx-auto" src="https://www.youtube.com/embed/lKlBTmylvqY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="280" height="155" class="mx-auto" src="https://www.youtube.com/embed/lKlBTmylvqY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
