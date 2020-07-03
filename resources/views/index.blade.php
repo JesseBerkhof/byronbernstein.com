@@ -78,7 +78,7 @@
     <div class="container-fluid">
         <div class="flex">
             <div class="w-full mx-auto my-12">
-                {{ $messages->links() }}
+                {{ $messages->onEachSide(1)->links() }}
             </div>
         </div>
     </div>
