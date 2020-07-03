@@ -3,12 +3,18 @@
     <head>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1" name="viewport">
-        <meta property="og:title" content="{{ config('app.name') }}"/>
+        <meta property="og:title" content="RIP Byron 'Reckful' Bernstein "/>
         <meta property="og:type" content="charity"/>
         <meta property="og:url" content="{{ config('app.url') }}"/>
-        <meta property="og:site_name" content="{{ config('app.name') }}"/>
-        <meta property="og:description" content="{{ trans('socials.description') }}"/>
-
+        <meta property="og:site_name" content="RIP Byron 'Reckful' Bernstein"/>
+        <meta property="og:image" content="{{ asset('images/social.jpg') }}"/>
+        <meta property="og:description" content="RIP Byron 'Reckful' Bernstein | May 8, 1989 - July 2, 2020"/>
+        <meta property="twitter:title" content="RIP Byron 'Reckful' Bernstein "/>
+        <meta property="twitter:type" content="charity"/>
+        <meta property="twitter:url" content="{{ config('app.url') }}"/>
+        <meta property="twitter:site_name" content="RIP Byron 'Reckful' Bernstein"/>
+        <meta property="twitter:card" content="{{ asset('images/social.jpg') }}"/>
+        <meta property="twitter:description" content="RIP Byron 'Reckful' Bernstein | May 8, 1989 - July 2, 2020"/>
         <title>{{ config('app.name') }}</title>
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
         <script src="https://unpkg.com/feather-icons"></script>
@@ -87,7 +93,6 @@
                     </div>
                 </div>
             </div>
-
             @yield('content')
         </div>
     </body>
