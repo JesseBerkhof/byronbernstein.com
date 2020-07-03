@@ -7,7 +7,7 @@
         <div class="flex">
             <div class="w-full text-center">
                 <p class="text-white font-semibold mt-24">
-                    Leave a message or one last heart in the chat in memory of Byron.
+                    Leave a message or heart in the chat in memory of Byron.
                 </p>
                 <div class="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-3 mx-auto mt-24 mb-24">
                     <div class="overflow-hidden">
