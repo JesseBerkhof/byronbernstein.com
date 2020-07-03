@@ -3,7 +3,7 @@
         <div class="w-full text-center mb-6 mt-8">
             <button @click="submitHeart()" class="p-4 mb-4 rounded transition duration-500 ease-in-out bg-purple-600 hover:bg-purple-600 hover:text-white transform hover:-translate-y-1 font-bold"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="24" class="fill-current text-white"><path class="bg-white" d="M12.76 3.76a6 6 0 0 1 8.48 8.48l-8.53 8.54a1 1 0 0 1-1.42 0l-8.53-8.54a6 6 0 0 1 8.48-8.48l.76.75.76-.75zm7.07 7.07a4 4 0 1 0-5.66-5.66l-1.46 1.47a1 1 0 0 1-1.42 0L9.83 5.17a4 4 0 1 0-5.66 5.66L12 18.66l7.83-7.83z"/></svg></button>
             <br>
-            <button @click="showModel = !showModel" class="p-4 rounded transition duration-500 ease-in-out bg-white hover:bg-red-600 hover:text-white transform hover:-translate-y-1 font-bold">Leave a message</button>
+            <button @click="showModel = !showModel" class="p-4 rounded transition duration-500 ease-in-out bg-white hover:bg-purple-600 hover:text-white transform hover:-translate-y-1 font-bold">Leave a message</button>
         </div>
 
         <!-- Form Model -->
@@ -57,7 +57,7 @@
                     </div>
                     <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
                   <span class="flex w-full rounded-md shadow-sm sm:ml-3 sm:w-auto">
-                    <button v-on:click="submit()" type="button" class="inline-flex justify-center w-full rounded-md border border-transparent px-4 py-2 bg-green-600 text-base leading-6 font-medium text-white shadow-sm hover:bg-green-500 focus:outline-none focus:border-green-700 focus:shadow-outline-green transition ease-in-out duration-150 sm:text-sm sm:leading-5">
+                    <button v-on:click="submit()" type="button" class="inline-flex justify-center w-full rounded-md border border-transparent px-4 py-2 bg-purple-600 text-base leading-6 font-medium text-white shadow-sm hover:bg-purple-500 focus:outline-none focus:border-purple-700 focus:shadow-outline-purple transition ease-in-out duration-150 sm:text-sm sm:leading-5">
                       Submit Message
                     </button>
                   </span>
@@ -98,8 +98,8 @@
             >
                 <div class="bg-white rounded-lg px-4 pt-5 pb-4 overflow-hidden shadow-xl transform transition-all sm:max-w-sm sm:w-full sm:p-6" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
                     <div>
-                        <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100">
-                            <svg class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-purple-100">
+                            <svg class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
                         </div>
@@ -116,7 +116,7 @@
                     </div>
                     <div class="mt-5 sm:mt-6">
                       <span class="flex w-full rounded-md shadow-sm">
-                        <button @click="toggleSuccess()" type="button" class="inline-flex justify-center w-full rounded-md border border-transparent px-4 py-2 bg-green-600 text-base leading-6 font-medium text-white shadow-sm hover:bg-green-500 focus:outline-none focus:border-green-700 focus:shadow-outline-green transition ease-in-out duration-150 sm:text-sm sm:leading-5">
+                        <button @click="toggleSuccess()" type="button" class="inline-flex justify-center w-full rounded-md border border-transparent px-4 py-2 bg-purple-600 text-base leading-6 font-medium text-white shadow-sm hover:bg-purple-500 focus:outline-none focus:border-purple-700 focus:shadow-outline-purple transition ease-in-out duration-150 sm:text-sm sm:leading-5">
                           Close
                         </button>
                       </span>

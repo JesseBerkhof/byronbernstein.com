@@ -2613,7 +2613,7 @@ var render = function() {
         "button",
         {
           staticClass:
-            "p-4 rounded transition duration-500 ease-in-out bg-white hover:bg-red-600 hover:text-white transform hover:-translate-y-1 font-bold",
+            "p-4 rounded transition duration-500 ease-in-out bg-white hover:bg-purple-600 hover:text-white transform hover:-translate-y-1 font-bold",
           on: {
             click: function($event) {
               _vm.showModel = !_vm.showModel
@@ -2853,7 +2853,7 @@ var render = function() {
                                 "button",
                                 {
                                   staticClass:
-                                    "inline-flex justify-center w-full rounded-md border border-transparent px-4 py-2 bg-green-600 text-base leading-6 font-medium text-white shadow-sm hover:bg-green-500 focus:outline-none focus:border-green-700 focus:shadow-outline-green transition ease-in-out duration-150 sm:text-sm sm:leading-5",
+                                    "inline-flex justify-center w-full rounded-md border border-transparent px-4 py-2 bg-purple-600 text-base leading-6 font-medium text-white shadow-sm hover:bg-purple-500 focus:outline-none focus:border-purple-700 focus:shadow-outline-purple transition ease-in-out duration-150 sm:text-sm sm:leading-5",
                                   attrs: { type: "button" },
                                   on: {
                                     click: function($event) {
@@ -2977,13 +2977,13 @@ var render = function() {
                     "div",
                     {
                       staticClass:
-                        "mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100"
+                        "mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-purple-100"
                     },
                     [
                       _c(
                         "svg",
                         {
-                          staticClass: "h-6 w-6 text-green-600",
+                          staticClass: "h-6 w-6 text-purple-600",
                           attrs: {
                             fill: "none",
                             viewBox: "0 0 24 24",
@@ -3042,7 +3042,7 @@ var render = function() {
                         "button",
                         {
                           staticClass:
-                            "inline-flex justify-center w-full rounded-md border border-transparent px-4 py-2 bg-green-600 text-base leading-6 font-medium text-white shadow-sm hover:bg-green-500 focus:outline-none focus:border-green-700 focus:shadow-outline-green transition ease-in-out duration-150 sm:text-sm sm:leading-5",
+                            "inline-flex justify-center w-full rounded-md border border-transparent px-4 py-2 bg-purple-600 text-base leading-6 font-medium text-white shadow-sm hover:bg-purple-500 focus:outline-none focus:border-purple-700 focus:shadow-outline-purple transition ease-in-out duration-150 sm:text-sm sm:leading-5",
                           attrs: { type: "button" },
                           on: {
                             click: function($event) {

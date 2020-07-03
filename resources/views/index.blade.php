@@ -9,10 +9,38 @@
                 <p class="text-white font-semibold mt-24">
                     Leave a message or one last heart in the chat in memory of Byron.
                 </p>
-                <p class="text-white font-semibold mt-24">
-                    {{ $messages->total() }} messages & {{ $hearts }} hearts
+                <div class="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-3 mx-auto mt-24 mb-24">
+                    <div class="overflow-hidden">
+                        <div class="px-4 py-5 sm:p-6">
+                            <dl>
+                                <dt class="text-sm leading-5 font-medium text-gray-400 truncate">
+                                    Messages
+                                </dt>
+                                <dd class="mt-1 text-3xl leading-9 font-semibold text-purple-600">
+                                    {{ $messages->total() }}
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="overflow-hidden">
+                        <div class="px-4 py-5 sm:p-6">
+                            <message-form></message-form>
+                        </div>
+                    </div>
+                    <div class="overflow-hidden">
+                        <div class="px-4 py-5 sm:p-6">
+                            <dl>
+                                <dt class="text-sm leading-5 font-medium text-gray-400 truncate">
+                                    Hearts
+                                </dt>
+                                <dd class="mt-1 text-3xl leading-9 font-semibold text-purple-600">
+                                    {{ $hearts }}
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
                 </p>
-                <message-form></message-form>
             </div>
         </div>
     </div>

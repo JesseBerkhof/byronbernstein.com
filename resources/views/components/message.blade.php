@@ -1,4 +1,4 @@
-<div class="bg-gray-900 sm:rounded-lg m-2 {{ $unapproved === true ? 'border-2 border-red-500' : '' }}">
+<div class="bg-gray-900 sm:rounded-lg m-2 {{ $unapproved === true ? 'border-2 border-purple-500' : '' }}">
     <div class="px-4 py-5 sm:p-6">
         <h3 class="text-lg leading-6 font-medium text-gray-400">
             {{ $message->username }}
@@ -15,7 +15,7 @@
                     <form action="{{ route('message.approve', $message) }}" method="POST">
                         @csrf
                         @method('PUT')
-                        <button class="bg-green-400 text-green-800 hover:bg-green-300 hover:text-green-600 rounded p-2 mr-2 my-2"><i class="w-4 h-4" data-feather="check"></i></button>
+                        <button class="bg-purple-400 text-purple-800 hover:bg-purple-300 hover:text-purple-600 rounded p-2 mr-2 my-2"><i class="w-4 h-4" data-feather="check"></i></button>
                     </form>
                 @endif
                 <form action="{{ route('message.delete') }}" method="POST">
