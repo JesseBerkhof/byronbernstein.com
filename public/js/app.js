@@ -2019,6 +2019,65 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2028,7 +2087,9 @@ __webpack_require__.r(__webpack_exports__);
         body: ''
       },
       errors: [],
-      showModel: false
+      showModel: false,
+      formSubmitted: false,
+      showSuccess: false
     };
   },
   methods: {
@@ -2039,10 +2100,24 @@ __webpack_require__.r(__webpack_exports__);
         username: this.message.username,
         body: this.message.body
       }).then(function (response) {
-        console.log(response);
+        _this.showModel = !_this.showModel;
+        _this.showSuccess = !_this.showSuccess;
       })["catch"](function (e) {
         _this.errors.push(e);
       });
+    },
+    submitHeart: function submitHeart() {
+      var _this2 = this;
+
+      axios__WEBPACK_IMPORTED_MODULE_0___default.a.post('/api/heart').then(function (response) {
+        _this2.showSuccess = !_this2.showSuccess;
+      })["catch"](function (e) {
+        _this2.errors.push(e);
+      });
+    },
+    toggleSuccess: function toggleSuccess() {
+      this.showSuccess = !this.showSuccess;
+      location.reload();
     }
   }
 });
@@ -2599,7 +2674,43 @@ var render = function() {
         "button",
         {
           staticClass:
-            "p-4 rounded transition duration-500 ease-in-out bg-white hover:bg-red-600 hover:text-white transform hover:-translate-y-1 hover:scale-110 font-bold",
+            "p-4 mb-4 rounded transition duration-500 ease-in-out bg-red-600 hover:bg-red-600 hover:text-white transform hover:-translate-y-1 font-bold",
+          on: {
+            click: function($event) {
+              return _vm.submitHeart()
+            }
+          }
+        },
+        [
+          _c(
+            "svg",
+            {
+              attrs: {
+                xmlns: "http://www.w3.org/2000/svg",
+                viewBox: "0 0 24 24",
+                width: "26",
+                height: "24"
+              }
+            },
+            [
+              _c("path", {
+                attrs: {
+                  d:
+                    "M12.76 3.76a6 6 0 0 1 8.48 8.48l-8.53 8.54a1 1 0 0 1-1.42 0l-8.53-8.54a6 6 0 0 1 8.48-8.48l.76.75.76-.75zm7.07 7.07a4 4 0 1 0-5.66-5.66l-1.46 1.47a1 1 0 0 1-1.42 0L9.83 5.17a4 4 0 1 0-5.66 5.66L12 18.66l7.83-7.83z"
+                }
+              })
+            ]
+          )
+        ]
+      ),
+      _vm._v(" "),
+      _c("br"),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass:
+            "p-4 rounded transition duration-500 ease-in-out bg-white hover:bg-red-600 hover:text-white transform hover:-translate-y-1 font-bold",
           on: {
             click: function($event) {
               _vm.showModel = !_vm.showModel
@@ -2673,207 +2784,382 @@ var render = function() {
                 }
               },
               [
-                _c(
-                  "div",
-                  { staticClass: "bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4" },
-                  [
-                    _c("div", { staticClass: "sm:flex sm:items-start" }, [
+                !_vm.formSubmitted
+                  ? _c("div", [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4"
+                        },
+                        [
+                          _c("div", { staticClass: "sm:flex sm:items-start" }, [
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "mt-3 text-center sm:mt-4 sm:ml-4 mx-auto"
+                              },
+                              [
+                                _c(
+                                  "h3",
+                                  {
+                                    staticClass:
+                                      "text-lg leading-6 font-medium text-gray-900",
+                                    attrs: { id: "modal-headline" }
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                                Leave a message in memory of Byron asd\n                            "
+                                    )
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c("div", { staticClass: "mt-2" }, [
+                                  _c("div", [
+                                    _c(
+                                      "label",
+                                      {
+                                        staticClass:
+                                          "block text-sm font-medium leading-5 text-gray-700 mt-4",
+                                        attrs: { for: "username" }
+                                      },
+                                      [_vm._v("Username")]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "mt-1 relative rounded-md shadow-sm"
+                                      },
+                                      [
+                                        _c("input", {
+                                          directives: [
+                                            {
+                                              name: "model",
+                                              rawName: "v-model",
+                                              value: _vm.message.username,
+                                              expression: "message.username"
+                                            }
+                                          ],
+                                          staticClass:
+                                            "form-input block w-full sm:text-sm sm:leading-5",
+                                          attrs: {
+                                            id: "username",
+                                            placeholder: "username"
+                                          },
+                                          domProps: {
+                                            value: _vm.message.username
+                                          },
+                                          on: {
+                                            input: function($event) {
+                                              if ($event.target.composing) {
+                                                return
+                                              }
+                                              _vm.$set(
+                                                _vm.message,
+                                                "username",
+                                                $event.target.value
+                                              )
+                                            }
+                                          }
+                                        })
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "label",
+                                      {
+                                        staticClass:
+                                          "block text-sm font-medium leading-5 text-gray-700 mt-4",
+                                        attrs: { for: "message" }
+                                      },
+                                      [
+                                        _vm._v(
+                                          "\n                                        Message\n                                    "
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass: "mt-1 rounded-md shadow-sm"
+                                      },
+                                      [
+                                        _c("textarea", {
+                                          directives: [
+                                            {
+                                              name: "model",
+                                              rawName: "v-model",
+                                              value: _vm.message.body,
+                                              expression: "message.body"
+                                            }
+                                          ],
+                                          staticClass:
+                                            "form-textarea block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5",
+                                          attrs: { id: "message", rows: "3" },
+                                          domProps: { value: _vm.message.body },
+                                          on: {
+                                            input: function($event) {
+                                              if ($event.target.composing) {
+                                                return
+                                              }
+                                              _vm.$set(
+                                                _vm.message,
+                                                "body",
+                                                $event.target.value
+                                              )
+                                            }
+                                          }
+                                        })
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "p",
+                                      {
+                                        staticClass:
+                                          "mt-2 text-sm text-gray-500"
+                                      },
+                                      [
+                                        _vm._v(
+                                          "Write a few sentences about Byron."
+                                        )
+                                      ]
+                                    )
+                                  ])
+                                ])
+                              ]
+                            )
+                          ])
+                        ]
+                      ),
+                      _vm._v(" "),
                       _c(
                         "div",
                         {
                           staticClass:
-                            "mt-3 text-center sm:mt-4 sm:ml-4 sm:text-left"
+                            "bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse"
                         },
                         [
                           _c(
-                            "h3",
+                            "span",
                             {
                               staticClass:
-                                "text-lg leading-6 font-medium text-gray-900",
-                              attrs: { id: "modal-headline" }
+                                "flex w-full rounded-md shadow-sm sm:ml-3 sm:w-auto"
                             },
                             [
-                              _vm._v(
-                                "\n                            Leave a message in memory of Byron\n                        "
+                              _c(
+                                "button",
+                                {
+                                  staticClass:
+                                    "inline-flex justify-center w-full rounded-md border border-transparent px-4 py-2 bg-green-600 text-base leading-6 font-medium text-white shadow-sm hover:bg-green-500 focus:outline-none focus:border-green-700 focus:shadow-outline-green transition ease-in-out duration-150 sm:text-sm sm:leading-5",
+                                  attrs: { type: "button" },
+                                  on: {
+                                    click: function($event) {
+                                      return _vm.submit()
+                                    }
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                  Submit Message\n                "
+                                  )
+                                ]
                               )
                             ]
                           ),
                           _vm._v(" "),
-                          _c("div", { staticClass: "mt-2" }, [
-                            _c("div", [
+                          _c(
+                            "span",
+                            {
+                              staticClass:
+                                "mt-3 flex w-full rounded-md shadow-sm sm:mt-0 sm:w-auto"
+                            },
+                            [
                               _c(
-                                "label",
+                                "button",
                                 {
                                   staticClass:
-                                    "block text-sm font-medium leading-5 text-gray-700 mt-4",
-                                  attrs: { for: "username" }
-                                },
-                                [_vm._v("Username")]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "div",
-                                {
-                                  staticClass:
-                                    "mt-1 relative rounded-md shadow-sm"
-                                },
-                                [
-                                  _c("input", {
-                                    directives: [
-                                      {
-                                        name: "model",
-                                        rawName: "v-model",
-                                        value: _vm.message.username,
-                                        expression: "message.username"
-                                      }
-                                    ],
-                                    staticClass:
-                                      "form-input block w-full sm:text-sm sm:leading-5",
-                                    attrs: {
-                                      id: "username",
-                                      placeholder: "username"
-                                    },
-                                    domProps: { value: _vm.message.username },
-                                    on: {
-                                      input: function($event) {
-                                        if ($event.target.composing) {
-                                          return
-                                        }
-                                        _vm.$set(
-                                          _vm.message,
-                                          "username",
-                                          $event.target.value
-                                        )
-                                      }
+                                    "inline-flex justify-center w-full rounded-md border border-gray-300 px-4 py-2 bg-white text-base leading-6 font-medium text-gray-700 shadow-sm hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue transition ease-in-out duration-150 sm:text-sm sm:leading-5",
+                                  attrs: { type: "button" },
+                                  on: {
+                                    click: function($event) {
+                                      _vm.showModel = !_vm.showModel
                                     }
-                                  })
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "label",
-                                {
-                                  staticClass:
-                                    "block text-sm font-medium leading-5 text-gray-700 mt-4",
-                                  attrs: { for: "message" }
+                                  }
                                 },
                                 [
                                   _vm._v(
-                                    "\n                                    Message\n                                "
+                                    "\n                  Cancel\n                "
                                   )
                                 ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "div",
-                                { staticClass: "mt-1 rounded-md shadow-sm" },
-                                [
-                                  _c("textarea", {
-                                    directives: [
-                                      {
-                                        name: "model",
-                                        rawName: "v-model",
-                                        value: _vm.message.body,
-                                        expression: "message.body"
-                                      }
-                                    ],
-                                    staticClass:
-                                      "form-textarea block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5",
-                                    attrs: { id: "message", rows: "3" },
-                                    domProps: { value: _vm.message.body },
-                                    on: {
-                                      input: function($event) {
-                                        if ($event.target.composing) {
-                                          return
-                                        }
-                                        _vm.$set(
-                                          _vm.message,
-                                          "body",
-                                          $event.target.value
-                                        )
-                                      }
-                                    }
-                                  })
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "p",
-                                { staticClass: "mt-2 text-sm text-gray-500" },
-                                [_vm._v("Write a few sentences about Byron.")]
                               )
-                            ])
-                          ])
+                            ]
+                          )
                         ]
                       )
                     ])
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass:
-                      "bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse"
-                  },
-                  [
+                  : _vm._e()
+              ]
+            )
+          ]
+        )
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        directives: [
+          {
+            name: "show",
+            rawName: "v-show",
+            value: _vm.showSuccess,
+            expression: "showSuccess"
+          }
+        ],
+        staticClass:
+          "fixed bottom-0 inset-x-0 px-4 pb-4 sm:inset-0 sm:flex sm:items-center sm:justify-center"
+      },
+      [
+        _c(
+          "transition",
+          {
+            attrs: {
+              "enter-active-class":
+                "transition ease-out duration-100 transform",
+              "enter-class": "opacity-0 scale-95",
+              "enter-to-class": "opacity-100 scale-100",
+              "leave-active-class": "transition ease-in duration-75 transform",
+              "leave-class": "opacity-100 scale-100",
+              "leave-to-class": "opacity-0 scale-95"
+            }
+          },
+          [
+            _c("div", { staticClass: "fixed inset-0 transition-opacity" }, [
+              _c("div", {
+                staticClass: "absolute inset-0 bg-gray-500 opacity-75"
+              })
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "transition",
+          {
+            attrs: {
+              "enter-active-class":
+                "transition ease-out duration-100 transform",
+              "enter-class": "opacity-0 scale-95",
+              "enter-to-class": "opacity-100 scale-100",
+              "leave-active-class": "transition ease-in duration-75 transform",
+              "leave-class": "opacity-100 scale-100",
+              "leave-to-class": "opacity-0 scale-95"
+            }
+          },
+          [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "bg-white rounded-lg px-4 pt-5 pb-4 overflow-hidden shadow-xl transform transition-all sm:max-w-sm sm:w-full sm:p-6",
+                attrs: {
+                  role: "dialog",
+                  "aria-modal": "true",
+                  "aria-labelledby": "modal-headline"
+                }
+              },
+              [
+                _c("div", [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100"
+                    },
+                    [
+                      _c(
+                        "svg",
+                        {
+                          staticClass: "h-6 w-6 text-green-600",
+                          attrs: {
+                            fill: "none",
+                            viewBox: "0 0 24 24",
+                            stroke: "currentColor"
+                          }
+                        },
+                        [
+                          _c("path", {
+                            attrs: {
+                              "stroke-linecap": "round",
+                              "stroke-linejoin": "round",
+                              "stroke-width": "2",
+                              d: "M5 13l4 4L19 7"
+                            }
+                          })
+                        ]
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "mt-3 text-center sm:mt-5" }, [
                     _c(
-                      "span",
+                      "h3",
                       {
                         staticClass:
-                          "flex w-full rounded-md shadow-sm sm:ml-3 sm:w-auto"
+                          "text-lg leading-6 font-medium text-gray-900",
+                        attrs: { id: "modal-headline" }
                       },
                       [
-                        _c(
-                          "button",
-                          {
-                            staticClass:
-                              "inline-flex justify-center w-full rounded-md border border-transparent px-4 py-2 bg-green-600 text-base leading-6 font-medium text-white shadow-sm hover:bg-green-500 focus:outline-none focus:border-green-700 focus:shadow-outline-green transition ease-in-out duration-150 sm:text-sm sm:leading-5",
-                            attrs: { type: "button" },
-                            on: {
-                              click: function($event) {
-                                return _vm.submit()
-                              }
-                            }
-                          },
-                          [
-                            _vm._v(
-                              "\n                  Submit Message\n                "
-                            )
-                          ]
+                        _vm._v(
+                          "\n                            Thanks for leaving a message.\n                        "
                         )
                       ]
                     ),
                     _vm._v(" "),
-                    _c(
-                      "span",
-                      {
-                        staticClass:
-                          "mt-3 flex w-full rounded-md shadow-sm sm:mt-0 sm:w-auto"
-                      },
-                      [
-                        _c(
-                          "button",
-                          {
-                            staticClass:
-                              "inline-flex justify-center w-full rounded-md border border-gray-300 px-4 py-2 bg-white text-base leading-6 font-medium text-gray-700 shadow-sm hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue transition ease-in-out duration-150 sm:text-sm sm:leading-5",
-                            attrs: { type: "button" },
-                            on: {
-                              click: function($event) {
-                                _vm.showModel = !_vm.showModel
-                              }
+                    _c("div", { staticClass: "mt-2" }, [
+                      _c(
+                        "p",
+                        { staticClass: "text-sm leading-5 text-gray-500" },
+                        [
+                          _vm._v(
+                            "\n                                Your message has been saved and will be approved soon. If you or someone you know struggles with depression, know that you're not alone. Try to talk to someone or reach out to a friend.\n                            "
+                          )
+                        ]
+                      )
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "mt-5 sm:mt-6" }, [
+                  _c(
+                    "span",
+                    { staticClass: "flex w-full rounded-md shadow-sm" },
+                    [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "inline-flex justify-center w-full rounded-md border border-transparent px-4 py-2 bg-green-600 text-base leading-6 font-medium text-white shadow-sm hover:bg-green-500 focus:outline-none focus:border-green-700 focus:shadow-outline-green transition ease-in-out duration-150 sm:text-sm sm:leading-5",
+                          attrs: { type: "button" },
+                          on: {
+                            click: function($event) {
+                              return _vm.toggleSuccess()
                             }
-                          },
-                          [
-                            _vm._v(
-                              "\n                  Cancel\n                "
-                            )
-                          ]
-                        )
-                      ]
-                    )
-                  ]
-                )
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n                      Close\n                    "
+                          )
+                        ]
+                      )
+                    ]
+                  )
+                ])
               ]
             )
           ]

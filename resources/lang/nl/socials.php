@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'description' => 'Laat je steun en waardering aan alle zorgverleners zien door je naam en plaats achter te laten.'
+    'description' => 'R.I.P. Byron Bernstein | May 8, 1989 - July 2, 2020'
 ];

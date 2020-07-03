@@ -1,5 +1,6 @@
 <?php
 
+use App\Heart;
 use App\Message;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
@@ -20,7 +21,7 @@ Route::post('/message', static function (Request $request) {
 });
 
 Route::post('/heart', static function (Request $request) {
-    $heart = new Heart;
+    $heart = new Heart();
 
     $payload = Arr::add($request->all(), 'ip', $request->ip());
 

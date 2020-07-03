@@ -13,7 +13,6 @@
                     {{ $messages->total() }} messages & {{ $hearts }} hearts
                 </p>
                 <message-form></message-form>
-                <heart></heart>
             </div>
         </div>
     </div>
