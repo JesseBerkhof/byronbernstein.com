@@ -2575,7 +2575,7 @@ var render = function() {
         "button",
         {
           staticClass:
-            "p-4 mb-4 rounded transition duration-500 ease-in-out bg-red-600 hover:bg-red-600 hover:text-white transform hover:-translate-y-1 font-bold",
+            "p-4 mb-4 rounded transition duration-500 ease-in-out bg-purple-600 hover:bg-purple-600 hover:text-white transform hover:-translate-y-1 font-bold",
           on: {
             click: function($event) {
               return _vm.submitHeart()
@@ -2586,7 +2586,7 @@ var render = function() {
           _c(
             "svg",
             {
-              staticClass: "fill-current text-red-800",
+              staticClass: "fill-current text-white",
               attrs: {
                 xmlns: "http://www.w3.org/2000/svg",
                 viewBox: "0 0 24 24",

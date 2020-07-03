@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="w-full text-center mb-6 mt-8">
-            <button @click="submitHeart()" class="p-4 mb-4 rounded transition duration-500 ease-in-out bg-red-600 hover:bg-red-600 hover:text-white transform hover:-translate-y-1 font-bold"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="24" class="fill-current text-red-800"><path class="bg-white" d="M12.76 3.76a6 6 0 0 1 8.48 8.48l-8.53 8.54a1 1 0 0 1-1.42 0l-8.53-8.54a6 6 0 0 1 8.48-8.48l.76.75.76-.75zm7.07 7.07a4 4 0 1 0-5.66-5.66l-1.46 1.47a1 1 0 0 1-1.42 0L9.83 5.17a4 4 0 1 0-5.66 5.66L12 18.66l7.83-7.83z"/></svg></button>
+            <button @click="submitHeart()" class="p-4 mb-4 rounded transition duration-500 ease-in-out bg-purple-600 hover:bg-purple-600 hover:text-white transform hover:-translate-y-1 font-bold"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="24" class="fill-current text-white"><path class="bg-white" d="M12.76 3.76a6 6 0 0 1 8.48 8.48l-8.53 8.54a1 1 0 0 1-1.42 0l-8.53-8.54a6 6 0 0 1 8.48-8.48l.76.75.76-.75zm7.07 7.07a4 4 0 1 0-5.66-5.66l-1.46 1.47a1 1 0 0 1-1.42 0L9.83 5.17a4 4 0 1 0-5.66 5.66L12 18.66l7.83-7.83z"/></svg></button>
             <br>
             <button @click="showModel = !showModel" class="p-4 rounded transition duration-500 ease-in-out bg-white hover:bg-red-600 hover:text-white transform hover:-translate-y-1 font-bold">Leave a message</button>
         </div>
