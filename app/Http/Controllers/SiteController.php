@@ -13,8 +13,10 @@ class SiteController extends Controller
          $unapproved = Message::query()->whereNull('approved_at')->orderByDesc('created_at')->paginate(100);
 
          $hearts = Heart::all()->count();
+         $totalMessages = Message::all()->count();
 
          return view('index')->with([
+             'totalMessages' => $totalMessages,
             'messages' => $messages,
             'hearts' => $hearts,
             'unapproved' => $unapproved

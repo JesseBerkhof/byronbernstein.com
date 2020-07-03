@@ -17,7 +17,7 @@
                                     Messages
                                 </dt>
                                 <dd class="mt-1 text-3xl leading-9 font-semibold text-purple-600">
-                                    {{ $messages->total() }}
+                                    {{ $totalMessages }}
                                 </dd>
                             </dl>
                         </div>
