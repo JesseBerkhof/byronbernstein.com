@@ -33,16 +33,14 @@
 
         <script src="{{ asset('js/share.js') }}"></script>
         <script defer="" src="{{ mix('js/app.js') }}"></script>
-
-        <script data-ad-client="ca-pub-6313840088307831" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145004761-11"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', '{{ config('app.analytics') }}');
+            gtag('config', 'UA-145004761-11');
         </script>
-
         <style>
             @font-face {
                 font-family: "Montserrat";
