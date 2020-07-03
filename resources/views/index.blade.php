@@ -61,7 +61,7 @@
         @foreach($messages->chunk(3) as $index => $chunk)
             @if($index === 1)
             <div class="flex flex-wrap justify-center">
-                <div class="w-full sm:w-full md:w-full lg:w-1/2 xl:w-1/2 m-2 font-bold text-white text-center">
+                <div class="w-full sm:w-full lg:w-1/2 xl:w-1/2 m-2 font-bold text-white text-center">
                     <span class="text-xs text-gray-600">I'm trying to filter out all the negative messages. If something got through, please DM me <a href="https://twitter.com/Arctic7empest" class="font-bold text-gray-400">@arctic7empest</a></span>
                 </div>
             </div>
@@ -73,9 +73,11 @@
                 @endforeach
             </div>
         @endforeach
+    </div>
 
-        <div class="flex flex-wrap justify-center my-8 text-center">
-            <div class="w-full">
+    <div class="container-fluid">
+        <div class="flex">
+            <div class="w-full mx-auto my-12">
                 {{ $messages->links() }}
             </div>
         </div>
