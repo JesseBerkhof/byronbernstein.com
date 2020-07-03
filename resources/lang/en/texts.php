@@ -5,6 +5,6 @@ return [
         'title' => 'R.I.P. <br> Byron "Reckful" Bernstein',
         'subtitle' => 'May 8, 1989 - July 2, 2020'
     ],
-    'feed_cta' => 'Are you currently struggeling yourself? Don\'t be afraid to reach out.',
+    'feed_cta' => '',
     'leave_message_button' => 'Leave a message'
 ];
