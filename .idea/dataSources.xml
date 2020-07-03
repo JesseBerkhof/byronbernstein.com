@@ -7,5 +7,15 @@
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://185.104.29.50:3306/u68318p64985_zorgverlenersbedankt</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="u68318p64985_byron@185.104.29.50" uuid="caac4393-4a83-4d27-b46b-67c4d4a75e36">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://185.104.29.50:3306/u68318p64985_byron</jdbc-url>
+      <driver-properties>
+        <property name="emulateLocators" value="TRUE" />
+        <property name="serverTimezone" value="UTC" />
+      </driver-properties>
+    </data-source>
   </component>
 </project>
