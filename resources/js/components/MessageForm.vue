@@ -33,7 +33,7 @@
                 <div v-if="!formSubmitted">
                     <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                         <div class="sm:flex sm:items-start">
-                            <div class="mt-3 text-center sm:mt-4 sm:ml-4 mx-auto">
+                            <div class="mt-3 text-center sm:mt-4 mx-auto">
                                 <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-headline">
                                     Leave a message in memory of Byron asd
                                 </h3>
@@ -139,7 +139,7 @@
                   body: '',
               },
               errors: [],
-              showModel: false,
+              showModel: true,
               formSubmitted: false,
               showSuccess: false,
           }

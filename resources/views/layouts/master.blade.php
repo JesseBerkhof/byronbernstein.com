@@ -13,7 +13,6 @@
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
         <script src="https://unpkg.com/feather-icons"></script>
 
-        <script src="{{ asset('js/share.js') }}"></script>
         <script defer="" src="{{ mix('js/app.js') }}"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145004761-11"></script>
         <script>
