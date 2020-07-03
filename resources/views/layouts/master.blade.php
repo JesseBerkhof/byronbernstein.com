@@ -15,6 +15,7 @@
         <meta property="twitter:site_name" content="RIP Byron 'Reckful' Bernstein"/>
         <meta property="twitter:card" content="{{ asset('images/social.jpg') }}"/>
         <meta property="twitter:description" content="RIP Byron 'Reckful' Bernstein | May 8, 1989 - July 2, 2020"/>
+        <meta property="og:image" content="{{ asset('images/social.jpg') }}"/>
         <title>{{ config('app.name') }}</title>
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
         <script src="https://unpkg.com/feather-icons"></script>
