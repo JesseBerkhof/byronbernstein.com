@@ -6,8 +6,8 @@
 
         <div class="flex">
             <div class="w-full text-center">
-                <p class="text-white font-semibold mt-24">
-                    Leave a message or heart in the chat in memory of Byron.
+                <p class="text-white mt-24">
+                    <span class="font-semibold">Leave a message or heart in the chat in memory of Byron.</span>
                 </p>
                 <div class="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-3 mx-auto mt-24 mb-24">
                     <div class="overflow-hidden">
@@ -62,7 +62,7 @@
             @if($index === 1)
             <div class="flex flex-wrap justify-center">
                 <div class="w-full sm:w-full md:w-full lg:w-1/2 xl:w-1/2 m-2 font-bold text-white text-center">
-                    @lang('texts.feed_cta')
+                    <span class="text-xs text-gray-600">I'm trying to filter out all the negative messages. If something got through, please DM me <a href="https://twitter.com/Arctic7empest" class="font-bold text-gray-400">@arctic7empest</a></span>
                 </div>
             </div>
             @endif
