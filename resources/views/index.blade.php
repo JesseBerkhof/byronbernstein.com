@@ -9,7 +9,7 @@
                 <p class="text-white mt-24">
                     <span class="font-semibold">Leave a message or heart in the chat in memory of Byron.</span>
                 </p>
-                <div class="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-3 mx-auto mt-24 mb-24">
+                <div class="grid grid-cols-1 gap-5 sm:grid-cols-3 mx-auto mt-24">
                     <div class="overflow-hidden">
                         <div class="px-4 py-5 sm:p-6">
                             <dl>
@@ -39,6 +39,9 @@
                             </dl>
                         </div>
                     </div>
+                </div>
+                <div class="mt-5 mx-auto mb-24">
+                    <a href="https://gf.me/u/yd29c2" class="p-4 max-w-12 rounded transition duration-500 ease-in-out bg-green-300 text-green-800 hover:bg-green-600 hover:text-white transform hover:-translate-y-1 font-bold">GoFundMe</a>
                 </div>
                 <div class="mt-5 grid grid-cols-1 mx-auto mt-12 mb-24">
                     <iframe src="https://open.spotify.com/embed/track/2gVqepVqbwmR0jao7kFbAz&volume=10" volume="10" width="300" height="380" frameborder="0" class="mx-auto" allowtransparency="true" allow="encrypted-media"></iframe>

@@ -2570,12 +2570,12 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "w-full text-center mb-6 mt-8" }, [
+    _c("div", { staticClass: "w-full text-center" }, [
       _c(
         "button",
         {
           staticClass:
-            "p-4 mb-4 rounded transition duration-500 ease-in-out bg-purple-600 hover:bg-purple-600 hover:text-white transform hover:-translate-y-1 font-bold",
+            "p-4 mb-4 rounded transition duration-500 ease-in-out bg-purple-600 hover:bg-purple-600 hover:text-white transform hover:-translate-y-2 font-bold",
           on: {
             click: function($event) {
               return _vm.submitHeart()
@@ -2613,7 +2613,7 @@ var render = function() {
         "button",
         {
           staticClass:
-            "p-4 rounded transition duration-500 ease-in-out bg-white hover:bg-purple-600 hover:text-white transform hover:-translate-y-1 font-bold",
+            "p-4 rounded transition duration-500 ease-in-out bg-white hover:bg-purple-600 hover:text-white transform font-bold",
           on: {
             click: function($event) {
               _vm.showModel = !_vm.showModel
