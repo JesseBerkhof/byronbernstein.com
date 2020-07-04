@@ -16,7 +16,7 @@
                                 <dt class="text-sm leading-5 font-semibold text-gray-400 truncate">
                                     Messages
                                 </dt>
-                                <dd class="mt-1 text-3xl leading-9 font-bold text-purple-600">
+                                <dd class="mt-1 text-5xl leading-9 font-bold text-purple-600">
                                     {{ $totalMessages }}
                                 </dd>
                             </dl>
@@ -33,7 +33,7 @@
                                 <dt class="text-sm leading-5 font-semibold text-gray-400 truncate">
                                     Hearts
                                 </dt>
-                                <dd class="mt-1 text-3xl leading-9 font-bold text-purple-600">
+                                <dd class="mt-1 text-5xl leading-9 font-bold text-purple-600">
                                     {{ $hearts }}
                                 </dd>
                             </dl>
