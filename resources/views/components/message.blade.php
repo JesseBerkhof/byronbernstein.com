@@ -3,7 +3,7 @@
         <h3 class="text-lg leading-6 font-medium text-purple-400">
             {{ $message->username }}
         </h3>
-        <div class="mt-2 max-w-xl text-sm leading-5 text-gray-400">
+        <div class="mt-2 max-w-xl text-sm leading-5 text-purple-200">
             <p>
                 {{ $message->body }}
             </p>
