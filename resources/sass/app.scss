@@ -4,8 +4,8 @@
 
 @import "tailwindcss/utilities";
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
 @font-face {
-  font-family: 'Montserrat';
-  src: url('fonts/vendor/typeface-montserrat/files/montserrat-latin-100.woff2?191cc9f50f3b76b9617cb383f19acb7d') format('woff2'),
-      url('fonts/vendor/typeface-montserrat/files/montserrat-latin-100.woff?370318464551d5f25b0f0a78f374faac') format('woff');
+  font-family: 'Montserrat', sans-serif;
 }

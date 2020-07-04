@@ -1,4 +1,4 @@
-<div class="flex">
+<div class="flex ">
     <div class="w-full text-center">
         <h1 class="text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl text-white">
             @lang('texts.header.title')

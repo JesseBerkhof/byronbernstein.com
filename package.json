@@ -25,7 +25,6 @@
     "dependencies": {
         "@tailwindcss/ui": "^0.3.0",
         "feather-icons": "^4.26.0",
-        "tailwindcss": "^1.2.0",
-        "typeface-montserrat": "0.0.75"
+        "tailwindcss": "^1.2.0"
     }
 }
