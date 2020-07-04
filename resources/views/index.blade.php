@@ -42,7 +42,7 @@
                 </div>
                 <div class="mt-5 grid grid-cols-1 mx-auto mt-12 mb-24">
                     <iframe src="https://open.spotify.com/embed/track/2gVqepVqbwmR0jao7kFbAz&volume=10" volume="10" width="300" height="380" frameborder="0" class="mx-auto" allowtransparency="true" allow="encrypted-media"></iframe>
-                </div>2
+                </div>
             </div>
         </div>
     </div>
