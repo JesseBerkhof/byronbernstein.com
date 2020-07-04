@@ -155,7 +155,7 @@
                     this.showSuccess = !this.showSuccess;
                 })
                 .catch(e => {
-                    this.errors.push(e)
+                    this.showModel = !this.showModel;
                 })
             },
             submitHeart: function () {

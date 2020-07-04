@@ -10,6 +10,16 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::post('/message', static function (Request $request) {
+
+    $duplicateMessage = Message::query()->where('username', $request->get('username'))
+        ->where('body', $request->get('body'))
+        ->where('ip', $request->ip())
+        ->exists();
+
+    if ($duplicateMessage) {
+        return response()->json(['This message already exists']);
+    }
+
     $message = new Message;
 
     $payload = Arr::add($request->all(), 'ip', $request->ip());
