@@ -13,10 +13,10 @@
                     <div class="overflow-hidden">
                         <div class="px-4 py-5 sm:p-6">
                             <dl>
-                                <dt class="text-sm leading-5 font-medium text-gray-400 truncate">
+                                <dt class="text-sm leading-5 font-semibold text-gray-400 truncate">
                                     Messages
                                 </dt>
-                                <dd class="mt-1 text-3xl leading-9 font-semibold text-purple-600">
+                                <dd class="mt-1 text-3xl leading-9 font-bold text-purple-600">
                                     {{ $totalMessages }}
                                 </dd>
                             </dl>
@@ -30,10 +30,10 @@
                     <div class="overflow-hidden">
                         <div class="px-4 py-5 sm:p-6">
                             <dl>
-                                <dt class="text-sm leading-5 font-medium text-gray-400 truncate">
+                                <dt class="text-sm leading-5 font-semibold text-gray-400 truncate">
                                     Hearts
                                 </dt>
-                                <dd class="mt-1 text-3xl leading-9 font-semibold text-purple-600">
+                                <dd class="mt-1 text-3xl leading-9 font-bold text-purple-600">
                                     {{ $hearts }}
                                 </dd>
                             </dl>
@@ -41,7 +41,7 @@
                     </div>
                 </div>
                 <div class="mt-5 grid grid-cols-1 mx-auto mt-12 mb-24">
-                    <iframe src="https://open.spotify.com/embed/track/2gVqepVqbwmR0jao7kFbAz" width="300" height="380" frameborder="0" class="mx-auto" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <iframe src="https://open.spotify.com/embed/track/2gVqepVqbwmR0jao7kFbAz&volume=10" volume="10" width="300" height="380" frameborder="0" class="mx-auto" allowtransparency="true" allow="encrypted-media"></iframe>
                 </div>2
             </div>
         </div>
