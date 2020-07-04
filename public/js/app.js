@@ -2040,27 +2040,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2591,65 +2570,6 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _vm.errors.length > 0
-      ? _c("div", { staticClass: "rounded-md bg-red-50 p-4" }, [
-          _c("div", { staticClass: "flex" }, [
-            _c("div", { staticClass: "flex-shrink-0" }, [
-              _c(
-                "svg",
-                {
-                  staticClass: "h-5 w-5 text-red-400",
-                  attrs: { viewBox: "0 0 20 20", fill: "currentColor" }
-                },
-                [
-                  _c("path", {
-                    attrs: {
-                      "fill-rule": "evenodd",
-                      d:
-                        "M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z",
-                      "clip-rule": "evenodd"
-                    }
-                  })
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "ml-3" }, [
-              _c(
-                "h3",
-                { staticClass: "text-sm leading-5 font-medium text-red-800" },
-                [
-                  _vm._v(
-                    "\n                    There were 2 errors with your submission\n                "
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "mt-2 text-sm leading-5 text-red-700" },
-                [
-                  _c(
-                    "ul",
-                    { staticClass: "list-disc pl-5" },
-                    _vm._l(_vm.errors, function(error) {
-                      return _c("li", [
-                        _vm._v(
-                          "\n                            " +
-                            _vm._s(error) +
-                            "\n                        "
-                        )
-                      ])
-                    }),
-                    0
-                  )
-                ]
-              )
-            ])
-          ])
-        ])
-      : _vm._e(),
-    _vm._v(" "),
     _c("div", { staticClass: "w-full text-center mb-6 mt-8" }, [
       _c(
         "button",
@@ -2734,9 +2654,7 @@ var render = function() {
           },
           [
             _c("div", { staticClass: "fixed inset-0 transition-opacity" }, [
-              _c("div", {
-                staticClass: "absolute inset-0 bg-gray-500 opacity-75"
-              })
+              _c("div", { staticClass: "absolute inset-0 bg-black opacity-75" })
             ])
           ]
         ),
@@ -2786,8 +2704,7 @@ var render = function() {
                                   "h3",
                                   {
                                     staticClass:
-                                      "text-lg leading-6 font-medium text-gray-900",
-                                    attrs: { id: "modal-headline" }
+                                      "text-lg leading-6 font-medium text-gray-900"
                                   },
                                   [
                                     _vm._v(
@@ -3019,9 +2936,7 @@ var render = function() {
           },
           [
             _c("div", { staticClass: "fixed inset-0 transition-opacity" }, [
-              _c("div", {
-                staticClass: "absolute inset-0 bg-gray-500 opacity-75"
-              })
+              _c("div", { staticClass: "absolute inset-0 bg-black opacity-75" })
             ])
           ]
         ),
