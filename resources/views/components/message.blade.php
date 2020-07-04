@@ -1,6 +1,6 @@
 <div class="bg-gray-900 sm:rounded-lg m-2 {{ $unapproved === true ? 'border-2 border-purple-500' : '' }}">
     <div class="px-4 py-5 sm:p-6">
-        <h3 class="text-lg leading-6 font-medium text-purple-400">
+        <h3 class="text-lg leading-6 font-semibold text-purple-400">
             {{ $message->username }}
         </h3>
         <div class="mt-2 max-w-xl text-sm leading-5 text-purple-200">
