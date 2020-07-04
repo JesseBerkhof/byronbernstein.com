@@ -29,31 +29,6 @@
 
             gtag('config', 'UA-145004761-11');
         </script>
-        <style>
-            @font-face {
-                font-family: "Montserrat";
-                url("public/fonts/Montserrat-Black.ttf") format('truetype');
-                font-style: normal;
-            }
-
-            @font-face {
-                font-family: "MontserratRegular";
-            url("public/fonts/Montserrat-Regular.ttf") format('truetype');
-                font-weight: 400;
-                font-style: normal;
-            }
-
-            h1, h2, h3, h4, h4, h6 {
-                font-family: "Montserrat", sans-serif;
-                font-weight: 900
-            }
-
-            body {
-                font-family: "MontserratRegular", sans-serif;
-                font-style: normal;
-            }
-
-        </style>
     </head>
     <body class="bg-black @if(config('app.env') === 'local' && env('RESPONSIVE_DEBUG'))sm:bg-red-500 md:bg-blue-500 lg:bg-pink-500 xl:bg-green-500 @endif">
         <div id="app">

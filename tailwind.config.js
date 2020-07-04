@@ -1,10 +1,11 @@
 module.exports = {
   variants: {},
-  theme: {
-    pagination: theme => ({
-      // Customize the color only. (optional)
-      color: theme('colors.blue.600'),
-    })
+    theme: {
+      fontFamily: {
+        'sans': ['Montserrat', '-apple-system', 'BlinkMacSystemFont'],
+        'display': ['Montserrat', 'Oswald'],
+        'body': ['Montserrat', 'Open Sans'],
+      }
   },
   plugins: [
     require('@tailwindcss/ui'),
