@@ -49,7 +49,7 @@
 
     <div class="container-fluid lg:mx-24">
         <div class="flex flex-wrap justify-center">
-            @include('components.message', ['message' => $pinnedMessage, 'pinned' => true])
+            @include('components.pinned')
         </div>
         @if(in_array(\Illuminate\Support\Facades\Request::ip(), config('admins'), true))
         @foreach($unapproved->chunk(4) as $index => $chunk)

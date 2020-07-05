@@ -11,14 +11,12 @@ class SiteController extends Controller
 
          $messages = Message::query()->whereNotNull('approved_at')->orderByDesc('created_at')->paginate(75);
          $unapproved = Message::query()->whereNull('approved_at')->orderByDesc('created_at')->paginate(75);
-         $pinnedMessage = Message::find(16509);
 
          return view('index')->with([
              'totalMessages' => Message::count(),
              'messages' => $messages,
              'hearts' => Heart::count(),
              'unapproved' => $unapproved,
-             'pinnedMessage' => $pinnedMessage
         ]);
      }
 }
