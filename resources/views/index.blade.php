@@ -62,7 +62,7 @@
             @if($index === 1)
             <div class="flex flex-wrap justify-center">
                 <div class="w-full sm:w-full lg:w-1/2 xl:w-1/2 m-2 font-bold text-white text-center">
-                    <span class="text-xs text-gray-600">I'm trying to filter out all the negative messages. If something got through, please DM me <a href="https://twitter.com/Arctic7empest" class="font-bold text-gray-400">@arctic7empest</a></span>
+                    <span class="text-xs text-gray-600"><a href="https://twitter.com/Arctic7empest" class="font-bold text-gray-400">Contact</a> me if you have any suggestions, seen negative messages or about something else.</span>
                 </div>
             </div>
             @endif
