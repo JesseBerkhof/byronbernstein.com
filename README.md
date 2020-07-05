@@ -1,2 +1,1 @@
-# Byron Daniel "Reckful" Bernstein's Memorial Page
-Rest In Peace.
+### Memorial Page in memory of Byron Daniel "Reckful" Bernstein
