@@ -11,7 +11,7 @@ Route::get('/', 'SiteController@index')->name('index');
 
 Route::post('/message', 'MessageController@store')->name('thanks.store');
 
-Route::middleware(['admin'])->group(static function () {
+Route::middleware(['auth'])->group(static function () {
     Route::delete('/message/{message}', 'MessageController@delete')->name('message.delete');
     Route::put('/approve/{message}', 'MessageController@approve')->name('message.approve');
     Route::post('/block', 'BlacklistController@store')->name('ip.store');
