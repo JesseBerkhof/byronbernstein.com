@@ -51,16 +51,6 @@
         <div class="flex flex-wrap justify-center">
             @include('components.pinned')
         </div>
-        @if(in_array(\Illuminate\Support\Facades\Request::ip(), config('admins'), true))
-        @foreach($unapproved->chunk(4) as $index => $chunk)
-            <div class="flex flex-wrap justify-center">
-                @foreach($chunk as $message)
-                    @include('components.message', ['message' => $message, 'unapproved' => true])
-                @endforeach
-            </div>
-        @endforeach
-        @endif
-
         @foreach($messages->chunk(3) as $index => $chunk)
             @if($index === 1)
             <div class="flex flex-wrap justify-center">
