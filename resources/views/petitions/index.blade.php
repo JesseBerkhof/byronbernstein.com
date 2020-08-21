@@ -5,8 +5,6 @@
         <div class="py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-6">
             <div class="relative max-w-xl mx-auto">
                 <div class="text-center">
-                </div>
-                <div class="text-center">
                     <div class="flex mb-12">
                         <div class="mx-auto">
                             <img src="{{ asset('images/reckh.png') }}" alt="reckH">
@@ -18,6 +16,11 @@
                     <p class="mt-4 text-lg leading-6 text-gray-500">
                         For <span class="font-bold">reckH</span> to be a twitch global emote
                     </p>
+                    <h2 class="text-3xl leading-9 font-extrabold tracking-tight text-purple-500 sm:text-4xl sm:leading-10 mt-10">
+                        {{ $messages->count() }}
+                        <br>
+                        signed
+                    </h2>
                 </div>
                 <div class="mt-12">
                     <form action="{{ route('petitions.store') }}" method="POST" class="grid grid-cols-1 row-gap-6 sm:grid-cols-2 sm:col-gap-8">
@@ -40,6 +43,9 @@
                               Sign petition
                             </button>
                           </span>
+                            <div class="text-center text-xs mt-2 text-gray-600">
+                                Your message have to be approved before it's shown on the page.
+                            </div>
                         </div>
                     </form>
                 </div>
