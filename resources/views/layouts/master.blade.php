@@ -66,13 +66,6 @@
                 </div>
             @endif
 
-            <div class="container mx-auto">
-                <div class="flex mt-4 sm:mt-8 md:mt-8 lg:mt-8 xl:mt-8 mb-24">
-                    <div class="w-full sm:w-full md:w-full lg:w-full xl:w-full text-center">
-                        @include('components.navigation')
-                    </div>
-                </div>
-            </div>
             @yield('content')
         </div>
     </body>
