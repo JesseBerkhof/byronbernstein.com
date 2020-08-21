@@ -44,6 +44,8 @@
                             </button>
                           </span>
                             <div class="text-center text-xs mt-2 text-gray-600">
+                                <div class="addthis_inline_share_toolbox"></div>
+                                <br>
                                 Your message have to be approved before it's shown on the page.
                             </div>
                         </div>
