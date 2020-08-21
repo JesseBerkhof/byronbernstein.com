@@ -52,7 +52,7 @@
             </div>
         </div>
 
-        @foreach($messages->chunk(3) as $index => $chunk)
+        @foreach($messages->chunk(4) as $index => $chunk)
             @if($index === 1)
                 <div class="flex flex-wrap justify-center">
                     <div class="w-full sm:w-full lg:w-1/2 xl:w-1/2 m-2 font-bold text-white text-center">
