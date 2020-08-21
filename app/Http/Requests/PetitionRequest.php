@@ -15,7 +15,7 @@ class PetitionRequest extends FormRequest
     {
         return [
             'name' => 'string|required',
-            'message' => 'max:140',
+            'message' => 'max:280',
         ];
     }
 }
