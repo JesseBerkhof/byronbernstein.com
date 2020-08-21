@@ -70,7 +70,7 @@
         </div>
     </body>
 
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e7a750d5b294f87"></script>
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5f40425ac8e5ad00121d28e9&product=sop' async='async'></script>
     <script>
         feather.replace()
     </script>
