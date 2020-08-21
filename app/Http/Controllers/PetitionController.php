@@ -9,7 +9,7 @@ class PetitionController extends Controller
 {
     public function index()
     {
-        $messages = Petition::query()->whereNotNull('approved_at')->paginate(75);
+        $messages = Petition::query()->whereNotNull('approved_at')->orderByDesc('created_at')->paginate(75);
 
         return view('petitions.index')->with([
             'messages' => $messages
