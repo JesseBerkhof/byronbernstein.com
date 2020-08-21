@@ -61,7 +61,7 @@
                 </div>
             @endif
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 @foreach($chunk as $message)
                     <div class="bg-gray-900 sm:rounded-lg m-2">
                         <div class="px-4 py-5 sm:p-6">
