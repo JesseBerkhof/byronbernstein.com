@@ -21,6 +21,14 @@
                         <br>
                         signed
                     </h2>
+                    <p class="mt-4 text-lg leading-6 text-gray-500">
+                        Share this page on social media after you've signed it
+                        <br>and make sure to mention <span class="font-bold">@twitch</span>.
+                        <br>
+                        <br>
+                        Let's make this happen, together.
+                        <br><span class="font-bold text-purple-500">#reckH</span>
+                    </p>
                 </div>
                 <div class="mt-12">
                     <form action="{{ route('petitions.store') }}" method="POST" class="grid grid-cols-1 row-gap-6 sm:grid-cols-2 sm:col-gap-8">
