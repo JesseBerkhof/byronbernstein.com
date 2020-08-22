@@ -3,18 +3,18 @@
     <head>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1" name="viewport">
-        <meta property="og:title" content="Petition for Reckful's reckH to be a global Twitch emote"/>
+        <meta property="og:title" content="Petition for Reckful's reckH to be a global Twitch emote @twitch @twitchsupport #twitch #reckful"/>
         <meta property="og:type" content="petition"/>
         <meta property="og:url" content="{{ config('app.url') }}"/>
-        <meta property="og:site_name" content="Petition for Reckful's reckH to be a global Twitch emote"/>
+        <meta property="og:site_name" content="Petition for Reckful's reckH to be a global Twitch emote @twitch @twitchsupport #twitch #reckful"/>
         <meta property="og:image" content="{{ asset('images/social.jpg') }}"/>
-        <meta property="og:description" content="Petition for Reckful's reckH to be a global Twitch emote"/>
-        <meta property="twitter:title" content="Petition for Reckful's reckH to be a global Twitch emote "/>
+        <meta property="og:description" content="Petition for Reckful's reckH to be a global Twitch emote @twitch @twitchsupport #twitch #reckful"/>
+        <meta property="twitter:title" content="Petition for Reckful's reckH to be a global Twitch emote @twitch @twitchsupport #twitch #reckful "/>
         <meta property="twitter:type" content="charity"/>
         <meta property="twitter:url" content="{{ config('app.url') }}"/>
-        <meta property="twitter:site_name" content="Petition for Reckful's reckH to be a global Twitch emote"/>
+        <meta property="twitter:site_name" content="Petition for Reckful's reckH to be a global Twitch emote @twitch @twitchsupport #twitch #reckful"/>
         <meta property="twitter:card" content="{{ asset('images/social.jpg') }}"/>
-        <meta property="twitter:description" content="Petition for Reckful's reckH to be a global Twitch emote"/>
+        <meta property="twitter:description" content="Petition for Reckful's reckH to be a global Twitch emote @twitch @twitchsupport #twitch #reckful"/>
         <meta property="twitter:image" content="{{ asset('images/social.jpg') }}"/>
         <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('/favicon/apple-touch-icon.png') }}">
         <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('/favicon/favicon-32x32.png') }}">
