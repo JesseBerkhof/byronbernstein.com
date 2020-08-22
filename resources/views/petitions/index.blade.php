@@ -22,8 +22,8 @@
                         signed
                     </h2>
                     <p class="mt-4 text-lg leading-6 text-gray-500">
-                        Share this page on social media after you've signed it
-                        <br>and make sure to mention <span class="font-bold">@twitch</span>.
+                        <br>
+                        <a href="https://twitch.uservoice.com/forums/928738-emotes/suggestions/41210275-make-reckh-a-global-emote" class="font-bold text-purple-500" target="_blank">!! Vote on the Twitch forums !! </a>
                         <br>
                         <br>
                         Let's make this happen, together.
