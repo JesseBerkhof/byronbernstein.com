@@ -54,16 +54,8 @@
             </div>
         </div>
 
-        @foreach($messages->chunk(4) as $index => $chunk)
-            @if($index === 1)
-                <div class="flex flex-wrap justify-center">
-                    <div class="w-full sm:w-full lg:w-1/2 xl:w-1/2 m-2 font-bold text-white text-center">
-                    <span class="text-xs text-gray-600"><a href="https://twitter.com/arcticn0b" class="font-bold text-gray-400">Contact</a> me if you've seen a negative message. Or have any suggestions for the page. <br> Memories such as fan art can be sent to <a href="mailto:memories@byronbernstein.com" class="text-gray-400">memories@byronbernstein.com</a></span/>
-                    </div>
-                </div>
-            @endif
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        @foreach($messages->chunk(5) as $index => $chunk)
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5">
                 @foreach($chunk as $message)
                     <div class="bg-gray-900 sm:rounded-lg m-2">
                         <div class="px-4 py-5 sm:p-6">
