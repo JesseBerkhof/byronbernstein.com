@@ -14,7 +14,7 @@
                         Sign this petition
                     </h2>
                     <p class="mt-4 text-lg leading-6 text-gray-500">
-                        For <span class="font-bold">reckH</span> to be a twitch global emote
+                        For <span class="font-bold">reckH</span> to be a global Twitch emote
                     </p>
                     <h2 class="text-3xl leading-9 font-extrabold tracking-tight text-purple-500 sm:text-4xl sm:leading-10 mt-10">
                         {{ $messages->total() }}
