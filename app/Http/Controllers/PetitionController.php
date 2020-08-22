@@ -20,6 +20,12 @@ class PetitionController extends Controller
 
     public function store(PetitionRequest $request)
     {
+        $duplicate = Petition::query()->where('name', $request->get('name'))->where('message', $request->get('message'));
+
+        if ($duplicate->exists()) {
+            return redirect()->route('petitions.vote');
+        }
+
         $petition = new Petition($request->all());
         $petition->save();
 
