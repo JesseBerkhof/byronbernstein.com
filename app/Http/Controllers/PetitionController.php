@@ -10,9 +10,11 @@ class PetitionController extends Controller
     public function index()
     {
         $messages = Petition::query()->whereNotNull('approved_at')->orderByDesc('created_at')->paginate(75);
+        $total = Petition::count();
 
         return view('petitions.index')->with([
-            'messages' => $messages
+            'messages' => $messages,
+            'total' => $total
         ]);
     }
 
