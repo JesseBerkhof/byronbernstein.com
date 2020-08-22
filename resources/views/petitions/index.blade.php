@@ -22,8 +22,11 @@
                         signed
                     </h2>
                     <p class="mt-4 text-lg leading-6 text-gray-500">
-                        <br>
-                        <a href="https://twitch.uservoice.com/forums/928738-emotes/suggestions/41210275-make-reckh-a-global-emote" class="font-bold text-purple-500" target="_blank">!! Vote on the Twitch forums !! </a>
+                        <span class="mx-auto inline-flex rounded-md shadow-sm">
+                            <a href="https://twitch.uservoice.com/forums/928738-emotes/suggestions/41210275-make-reckh-a-global-emote" class="font-semibold inline-flex items-center justify-center px-6 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-purple-600 hover:bg-purple-500 focus:outline-none focus:border-purple-700 focus:shadow-outline-purple active:bg-purple-700 transition ease-in-out duration-150">
+                              Vote on Twitch
+                            </a>
+                          </span>
                         <br>
                         <br>
                         Let's make this happen, together.
