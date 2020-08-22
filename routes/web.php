@@ -13,6 +13,7 @@ Route::post('/message', 'MessageController@store')->name('thanks.store');
 
 Route::get('/reckh', 'PetitionController@index')->name('petitions.index');
 Route::post('/reckh', 'PetitionController@store')->name('petitions.store');
+Route::get('/reckh/vote', 'PetitionController@vote')->name('petitions.vote');
 
 Route::middleware(['auth'])->group(static function () {
     Route::delete('/message/{message}', 'MessageController@delete')->name('message.delete');

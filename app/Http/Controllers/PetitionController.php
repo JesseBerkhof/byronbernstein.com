@@ -21,6 +21,11 @@ class PetitionController extends Controller
         $petition = new Petition($request->all());
         $petition->save();
 
-        return redirect()->away('https://twitch.uservoice.com/forums/928738-emotes/suggestions/41210275-make-reckh-a-global-emote');
+        return redirect()->route('petitions.vote');
+    }
+
+    public function vote()
+    {
+        return view('petitions.vote');
     }
 }
