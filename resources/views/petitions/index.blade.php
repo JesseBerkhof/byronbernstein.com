@@ -29,6 +29,9 @@
                           </span>
                         <br>
                         <br>
+                        Make sure to vote via the button above. Share this on social media and send it to Twitch to make them notice this.
+                        <br>
+                        <br>
                         Let's make this happen, together.
                         <br><span class="font-bold text-purple-500">#reckH</span>
                     </p>

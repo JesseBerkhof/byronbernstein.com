@@ -14,7 +14,7 @@
                         Thank you for signing
                     </h2>
                     <p class="mt-4 text-lg leading-6 text-gray-500 mb-12">
-                        Your message will be approved shortly
+                        Your message will be approved shortly. In the meantime, make sure to vote via the button below. Share this on social media and send it to Twitch to make them notice this.
                     </p>
 
                     <span class="inline-flex rounded-md shadow-sm">
