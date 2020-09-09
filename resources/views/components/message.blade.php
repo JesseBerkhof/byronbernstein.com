@@ -1,7 +1,7 @@
 <div class="bg-gray-900 sm:rounded-lg m-2">
     <div class="px-4 py-5 sm:p-6">
         <h3 class="text-lg leading-6 font-semibold text-purple-400">
-            {{ $message->username }} @isset($pinned)
+            {{ $message->username }} - {{ $message->created_at->diffForHumans() }} @isset($pinned)
                 <span class="ml-2 mb-1 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium leading-4 bg-purple-100 text-purple-800">
                   Pinned
                 </span>

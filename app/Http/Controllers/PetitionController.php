@@ -4,23 +4,29 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\PetitionRequest;
 use App\Petition;
+use Illuminate\Contracts\View\View;
+use Illuminate\Http\RedirectResponse;
 
 class PetitionController extends Controller
 {
-    public function index()
+    public function index(): View
     {
-        $messages = Petition::query()->whereNotNull('approved_at')->orderByDesc('created_at')->paginate(75);
-        $total = Petition::count();
+        $messages = Petition::query()
+            ->whereNotNull('approved_at')
+            ->orderByDesc('created_at')
+            ->paginate(75);
 
         return view('petitions.index')->with([
             'messages' => $messages,
-            'total' => $total
+            'total' => Petition::count(),
         ]);
     }
 
-    public function store(PetitionRequest $request)
+    public function store(PetitionRequest $request): RedirectResponse
     {
-        $duplicate = Petition::query()->where('name', $request->get('name'))->where('message', $request->get('message'));
+        $duplicate = Petition::query()
+            ->where('name', $request->get('name'))
+            ->where('message', $request->get('message'));
 
         if ($duplicate->exists()) {
             return redirect()->route('petitions.vote');
@@ -32,7 +38,7 @@ class PetitionController extends Controller
         return redirect()->route('petitions.vote');
     }
 
-    public function vote()
+    public function vote(): View
     {
         return view('petitions.vote');
     }

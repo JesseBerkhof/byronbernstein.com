@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Message;
-use Illuminate\Http\Request;
+use App\Petition;
 
 class HomeController extends Controller
 {
@@ -17,6 +17,14 @@ class HomeController extends Controller
         $messages = Message::query()->whereNull('approved_at')->orderByDesc('created_at')->paginate(75);
         return view('home')->with([
             'messages' => $messages,
+        ]);
+    }
+
+    public function petitions()
+    {
+        $petitions = Petition::query()->whereNull('approved_at')->orderByDesc('created_at')->paginate(75);
+        return view('home.petitions')->with([
+            'petitions' => $petitions,
         ]);
     }
 }

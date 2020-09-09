@@ -8,7 +8,7 @@ class FakeMessages extends Seeder
 {
     public function run(): void
     {
-        for($i = 0; $i < 1000; $i++) {
+        for ($i = 0; $i < 1000; $i++) {
             DB::table('messages')->insert([
                 'username' => '[TEST] ' . Factory::create('en')->userName,
                 'body' => Factory::create('en')->text(200),

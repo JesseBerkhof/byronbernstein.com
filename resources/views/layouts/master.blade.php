@@ -34,7 +34,7 @@
             gtag('config', 'UA-145004761-11');
         </script>
     </head>
-    <body class="bg-black @if(config('app.env') === 'local' && env('RESPONSIVE_DEBUG'))sm:bg-red-500 md:bg-blue-500 lg:bg-pink-500 xl:bg-green-500 @endif">
+    <body class="bg-black antialiased">
         <div id="app">
             @if($errors->isNotEmpty())
                 <div class="flex mb-8">
