@@ -12,6 +12,8 @@ Auth::routes();
 
 Route::get('/', [SiteController::class, 'index'])->name('index');
 Route::post('/message', [MessageController::class, 'store'])->name('thanks.store');
+Route::get('/message/search', [MessageController::class, 'search'])->name('messages.search');
+Route::get('/message/{message}', [MessageController::class, 'show'])->name('messages.show');
 
 Route::get('/reckh', [PetitionController::class, 'index'])->name('petitions.index');
 Route::get('/reckh/vote', [PetitionController::class, 'vote'])->name('petitions.vote');

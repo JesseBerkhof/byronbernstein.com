@@ -26,4 +26,23 @@ class MessageController extends Controller
 
         return redirect()->back();
     }
+
+    public function show(Message $message)
+    {
+        return view('messages.show')->with([
+            'message' => $message
+        ]);
+    }
+
+    public function search(Request $request)
+    {
+        $messages = Message::query()
+            ->orWhere('username', 'like', '%' . $request->get('q') . '%')
+            ->orWhere('body', 'like', '%' . $request->get('q') . '%')
+            ->paginate(20);
+
+        return view('messages.search')->with([
+            'messages' => $messages
+        ]);
+    }
 }

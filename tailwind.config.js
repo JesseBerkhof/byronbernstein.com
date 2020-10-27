@@ -4,7 +4,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'body': ['Kumbh Sans'],
+      'body': ['Montserrat'],
     }
   }
 }

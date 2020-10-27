@@ -12,7 +12,7 @@ class SiteController extends Controller
         $messages = Message::query()
              ->whereNotNull('approved_at')
              ->orderByDesc('created_at')
-             ->paginate(75);
+             ->paginate(20);
 
         return view('index')->with([
              'totalMessages' => Message::count(),
