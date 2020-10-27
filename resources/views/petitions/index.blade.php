@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container-fluid">
-        <div class="py-8 px-4 overflow-hidden">
+        <div class="py-8 lg:py-2 px-4 overflow-hidden">
             <div class="relative md:pb-2 lg:pb-4 xl:pb-8">
                 <div class="max-w-screen-xl mx-auto px-4 sm:px-6">
                     <nav class="relative flex items-center justify-between sm:h-10 md:justify-center">
