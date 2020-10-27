@@ -15,16 +15,5 @@
                 {{ Str::limit($message->body, 140) }}
             </p>
         </div>
-        @auth
-        <div class="mt-5">
-            <span class="inline-flex rounded-md shadow-sm">
-                <form action="{{ route('message.delete', $message) }}" method="POST">
-                    @method('DELETE')
-                    @csrf
-                    <button class="bg-gray-900 text-gray-600 hover:bg-gray-700 hover:text-gray-900 rounded p-2 mr-2 my-2"><i class="w-4 h-4" data-feather="trash"></i></button>
-                </form>
-            </span>
-        </div>
-        @endauth
     </div>
 </a>

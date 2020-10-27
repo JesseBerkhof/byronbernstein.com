@@ -1,12 +1,21 @@
 @extends('layouts.master')
 
 @section('content')
-    <div class="container-fluid lg:mx-12">
-        <div class="py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-6">
+    <div class="container-fluid">
+        <div class="py-8 px-4 overflow-hidden">
+            <div class="relative md:pb-2 lg:pb-4 xl:pb-8">
+                <div class="max-w-screen-xl mx-auto px-4 sm:px-6">
+                    <nav class="relative flex items-center justify-between sm:h-10 md:justify-center">
+                        <div class="mx-auto md:flex md:space-x-10">
+                            <a href="{{ route('index') }}" class="font-medium text-purple-500 hover:text-purple-900 transition duration-150 ease-in-out">Go back to the messages</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
             <div class="relative max-w-xl mx-auto">
                 <div class="text-center">
                     <div class="flex mb-12">
-                        <div class="mx-auto">
+                        <div class="mx-auto mt-12">
                             <img src="{{ asset('images/reckh.png') }}" alt="reckH">
                         </div>
                     </div>
@@ -68,26 +77,30 @@
             </div>
         </div>
 
-        @foreach($messages->chunk(5) as $index => $chunk)
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5">
-                @foreach($chunk as $message)
-                    <div class="bg-gray-900 sm:rounded-lg m-2">
-                        <div class="px-4 py-5 sm:p-6">
-                            <h3 class="text-lg leading-6 font-semibold text-purple-400">
-                                {{ $message->name }} - {{ $message->created_at->diffForHumans() }}
-                            </h3>
-                            <div class="mt-2 max-w-xl text-sm leading-5 text-purple-200">
-                                <p>
-                                    {{ $message->message }}
-                                </p>
-                            </div>
+        <div class="container mx-auto">
+            <div class="flex">
+                <div class="w-full">
+                    @foreach($messages->chunk(4) as $index => $chunk)
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                            @foreach($chunk as $message)
+                                <div class="group transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 hover:bg-purple-600 transition ease-in-out duration-300 rounded-lg m-4 hover:text-white">
+                                    <div class="px-4 py-5 sm:p-6">
+                                        <h2 class="text-lg leading-6 font-bold text-white">
+                                            {{ $message->name }}
+                                            <br>
+                                            <span class="text-xs">{{ $message->created_at->diffForHumans() }}</span>
+                                        </h2>
+                                        <div class="mt-2 max-w-xl leading-5 text-gray-400 group-hover:text-white">
+                                            {{ $message->message }}
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
                         </div>
-                    </div>
-
-                @endforeach
+                    @endforeach
+                </div>
             </div>
-        @endforeach
-    </div>
+        </div>
 
     <div class="container-fluid">
         <div class="flex">

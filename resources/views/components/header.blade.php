@@ -1,4 +1,4 @@
-<div class="relative pt-2 md:pb-2 lg:pb-4 xl:pb-8">
+<div class="relative py-8 md:pb-2 lg:pb-4 xl:pb-8">
     <div class="max-w-screen-xl mx-auto px-4 sm:px-6">
         <nav class="relative flex items-center justify-between sm:h-10 md:justify-center">
             <div class="mx-auto md:flex md:space-x-10">
